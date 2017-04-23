@@ -1,0 +1,222 @@
+body{
+	background-image: url("Background.jpg");
+}
+
+.logoutButton{
+		padding: 10px 20px;
+		text-align: center;
+		font-size: 15px;
+		font-weight: 900;
+		font-family: Consolas;
+		cursor: pointer;
+		color: #151e3f;
+		background-color: gold;
+		border-style: solid;
+		border-color: #151e3f;
+		border-width: 2px;
+		border-radius: 30px;
+		text-decoration: none;
+		width: 100%;
+}
+			
+.logoutButton:hover {
+				font-weight: bold;
+				background-color: gold;
+				border-color: gold;
+				border-width: 4px;
+				color: #847CB6;
+				border-width: 5px;
+				box-shadow: 0px 0px 10px #847CB6;
+}
+
+.logoutButton:active {
+				background-color: #151e3f;
+				color: gold;
+				transform: translateY(5px);
+				box-shadow: 0 1px 2px gold;
+}
+
+.highscoresButton{
+		padding: 10px 20px;
+		text-align: center;
+		font-size: 25px;
+		font-weight: 900;
+		font-family: Consolas;
+		cursor: pointer;
+		color: #151e3f;
+		background-color: gold;
+		border-style: solid;
+		border-color: #151e3f;
+		border-width: 2px;
+		border-radius: 30px;
+		text-decoration: none;
+		width: 100%;
+}
+			
+.highscoresButton:hover {
+				font-weight: bold;
+				background-color: gold;
+				border-color: gold;
+				border-width: 4px;
+				color: #847CB6;
+				border-width: 5px;
+				box-shadow: 0px 0px 10px #847CB6;
+}
+
+.highscoresButton:active {
+				background-color: #151e3f;
+				color: gold;
+				transform: translateY(5px);
+				box-shadow: 0 1px 2px gold;
+}
+
+div.fii{
+	position: absolute;
+	left: 50px;
+	top: 5px;
+}
+
+#rulesRectangle {
+	position: absolute;
+	left: 60px;
+	top: 120px;
+	width: 470px;
+	height: 205px;
+	background: transparent;
+	border-style: solid;
+	border-width: 2px;
+	border-color: gold;
+	box-shadow: 0px 0px 10px yellow;
+}
+
+div.rulesTitle{
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	font-family: consolas;
+	font-size: 120%;
+	color: gold;
+	text-shadow: 2px 2px purple;
+}
+
+div.rules{
+	position: absolute;
+	left: 70px;
+	top: 170px;
+	font-family: consolas;
+	font-size: 100%;
+	color: gold;
+	text-shadow: 2px 2px purple;
+}
+
+#controlsRectangle {
+	position: absolute;
+	left: 60px;
+	top: 370px;
+	width: 240px;
+	height: 95px;
+	background: transparent;
+	border-style: solid;
+	border-width: 2px;
+	border-color: gold;
+	box-shadow: 0px 0px 10px yellow;
+}
+
+div.controlsTitle{
+	position: absolute;
+	left: 100px;
+	top: 350px;
+	font-family: consolas;
+	font-size: 120%;
+	color: gold;
+	text-shadow: 2px 2px purple;
+}
+
+div.controls{
+	position: absolute;
+	left: 70px;
+	top: 420px;
+	font-family: consolas;
+	font-size: 100%;
+	color: gold;
+	text-shadow: 2px 2px purple;
+}
+
+div.story{
+	position: absolute;
+	left: 60px;
+	right: 1500px;
+	top: 650px;
+	font-family: consolas;
+	font-size: 100%;
+	color: gold;
+	text-align: center;
+	font-size: 120%;
+	text-shadow: 2px 2px purple;
+}
+
+div.pill{
+	position: absolute;
+	left: 210px;
+	top: 750px;
+}
+
+div.pac-fac{
+	position: absolute;
+	left: 770px;
+	top: -70px;
+	font-family: consolas;
+	font-size: 650%;
+	color: gold;
+	text-shadow: 2px 2px purple;
+}
+
+div.game{
+	position: absolute;
+	left: 700px;
+	top: 150px;
+	border: 2px solid gold;
+	box-shadow: 0px 0px 10px yellow;
+}
+
+div.player{
+	position: absolute;
+	left: 1611px;
+	top: 25px;
+	font-family: consolas;
+	font-size: 130%;
+	color: gold;
+	text-shadow: 2px 2px purple;
+}
+
+div.playerIcon{
+	position: absolute;
+	left: 1580px;
+	top: 75px;
+	border: 2px solid gold;
+	box-shadow: 0px 0px 10px yellow;
+}
+
+div.logout{
+	position: absolute;
+	left: 1601px;
+	top: 260px;
+}
+
+div.highscoresTitle{
+	position: absolute;
+	left: 1320px;
+	top: 650px;
+	right: 50px;
+	font-family: consolas;
+	font-size: 120%;
+	color: gold;
+	text-align: center;
+	text-shadow: 2px 2px purple;
+}
+
+div.highscores{
+	position: absolute;
+	left: 1475px;
+	top: 780px;
+}
