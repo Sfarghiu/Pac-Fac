@@ -1,0 +1,96 @@
+body{
+	background-color:#151e3f;
+}
+.container {
+  
+  margin:250px auto;
+  width: 450px;
+  padding :500 px;
+  border-style: outset;
+  border-color: gold;
+  border-width: 4px;
+}
+ 
+.login {
+  position: relative;
+  margin: 0 auto;
+   text-align:center;
+  padding: 0px 20px 20px;
+  width: 330px;
+  color: gold;
+  font-family: Consolas;
+}
+
+button{
+	  padding: 6px 6px;
+    position:center;
+    font-size: 24px;
+    font-family: Consolas;
+    cursor: pointer;
+    color: #151e3f;
+    background-color: gold;
+    border-style: solid;
+    border-color: #151e3f;
+    border-width: 2px;
+    border-radius: 30px;
+    text-decoration: none;
+    width: 90%;
+}
+			
+button:hover {
+				font-weight: bold;
+        background-color: gold;
+        border-color: gold;
+        border-width: 2px;
+        color: #847CB6;
+        box-shadow: 0px 0px 10px #847CB6;
+}
+
+button:active {
+				background-color: #151e3f;
+				color: gold;
+				box-shadow: 0 1px 2px gold;
+				transform: translateY(5px);
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px 15px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size:100%;
+}
+
+a:link {
+    text-decoration: none;
+    color: #847CB6;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #847CB6;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #847CB6;
+}
+a:active {
+    text-decoration: underline;
+    color:gold;
+}
+
+
+#pacfac{
+  margin-bottom:30px;
+  text-align:center;
+  font-size:400%;
+  color:gold;
+}
+
+#signup {
+	margin-top:70px;
+	text-align:center;
+}
