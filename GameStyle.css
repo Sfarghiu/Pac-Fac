@@ -1,0 +1,189 @@
+body{
+	background-color:#12264f;
+}
+
+#pagewrap{
+	margin: 0 auto;
+	width:100%;
+}
+
+#col1{
+	float:left;
+	width: 33%; 
+	overflow:hidden;
+	
+}
+
+#col2{
+	float:left;
+	width:33%;
+}
+
+#col3{
+	float: left;
+	width: 33%;
+	position:relative;
+
+}
+
+.ul{
+	list-style-type: disc;
+}
+
+button{
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 900;
+	font-family: Consolas;
+	cursor: pointer;
+	color: #151e3f;
+	background-color: gold;
+	border-style: solid;
+	border-color: #151e3f;
+	border-width: 2px;
+	border-radius: 30px;
+	text-decoration: none;
+	
+}
+
+button:hover {
+	font-weight: bold;
+	background-color: gold;
+	border-color: gold;
+	border-width: 4px;
+	color: #847CB6;
+	border-width: 5px;
+	box-shadow: 0px 0px 10px #847CB6;
+}
+
+button:active {
+	background-color: #12264f;
+	color: gold;
+	transform: translateY(3px);
+}
+
+div.fii{
+}
+
+
+
+#rulesRectangle {
+	display: block;
+	margin:0 auto;
+	width: 500px;
+	height: 200px;
+	background: gold ;
+	border-style:solid ;
+	border-color: gold;
+	border-radius: 30px;
+	margin-top: 100px;
+
+}
+
+div.rulesTitle{
+	font-family: consolas;
+	font-size: 170%;
+	color: #12264f;
+	text-align: center;
+	
+}
+
+div.rules{
+	font-family: consolas;
+	font-size: 16px;
+	color: #12264f;
+}
+
+#controlsRectangle {
+	
+	margin:0 auto;
+	display: block;
+	width: 500px;
+	height: 140px;
+	background: gold;
+	border-style: solid ;
+	border-color: gold;
+	border-radius: 30px;
+}
+
+div.controlsTitle{
+	font-family: consolas;
+	font-size: 170%;
+	color: #12264f;
+	text-align: center;
+}
+
+div.controls{
+	font-family: consolas;
+	font-size: 16px;
+	color: #12264f;
+}
+
+div.story{
+
+	font-family: consolas;
+	font-size: 100%;
+	color: gold;
+	text-align:center;
+	font-size: 120%;
+	margin-top:138px; 
+}
+
+#pill{
+	display: block;
+	margin:0 auto;
+}
+
+
+#game_title{
+	font-family: consolas;
+	font-size: 40px;
+	color: gold;
+	text-align:center;
+}
+
+
+
+#game{
+	margin:0 auto;
+	display: block;
+	border: 2px solid gold;
+	width:600px;
+	height:750px;
+}
+
+div.player{
+	font-family: consolas;
+	font-size: 130%;
+	color: gold;
+	text-align:center;
+	margin-top:200px;
+}
+
+#playerIcon{
+
+	border: 2px solid gold;
+	width:100px;
+	height:100px;
+}
+
+div.logout{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	position:absolute;
+}
+
+div.highscores{
+	margin-top: 360px;
+	font-family: consolas;
+	font-size: 120%;
+	color: gold;
+	text-align: center;
+}
+
+
+
