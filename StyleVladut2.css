@@ -1,0 +1,164 @@
+body{
+	background-color:#12264f;
+}
+.homeButton{
+		position: absolute;
+		top: 100px;
+		left: 1580px;
+		padding: 10px 20px;
+		text-align: center;
+		font-size: 25px;
+		font-weight: 900;
+		font-family: Consolas;
+		cursor: pointer;
+		color: #151e3f;
+		background-color: gold;
+		border-style: solid;
+		border-color: #151e3f;
+		border-width: 2px;
+		border-radius: 30px;
+		text-decoration: none;
+		
+}
+			
+.homeButton:hover {
+				font-weight: bold;
+				background-color: gold;
+				border-color: gold;
+				border-width: 4px;
+				color: #847CB6;
+				border-width: 5px;
+				box-shadow: 0px 0px 10px navy;
+}
+
+.homeButton:active {
+				background-color: #12264f;
+				color: gold;
+				transform: translateY(3px);
+}
+
+div.pac-fac{
+	position: absolute;
+	font-family: consolas;
+	font-size: 650%;
+	color: gold;
+	top:-50px;
+	left:650px;
+
+}
+
+div.scores{
+	position:fixed;
+	font-family:consolas;
+	color:#12264f;
+	text-align: justified;
+	font-size: 150%;
+	top:300px;
+	left: 780px;
+}
+.button {
+	font-weight: bold;
+	font-size: 25px;
+	padding: 10px 20px;
+	color: #151e3f;
+	background-color: gold;
+	border-style: solid;
+	border-color: #gold;
+	border-width: 2px;
+	border-radius: 30px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+}
+.button:hover {
+	font-weight: bold;
+	background-color: gold;
+	border-color: gold;
+	border-width: 4px;
+	color: #847CB6;
+	border-width: 5px;
+	box-shadow: 0px 0px 10px navy;
+}
+.button:active{
+	background-color: #12264f;
+	color: gold;
+	transform: translateY(3px);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: navy;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: navy;
+}
+.popup .close:hover {
+  color: gold;
+}
+.popup .content {
+  max-height: 50%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+  .popupall{
+	  width:70%;
+  }
+}
+
+div.footer{
+	position: absolute;
+	font-family: consolas;
+	color: gold;
+	text-align: center;
+	font-size: 500%;
+	left: 800px;
+	bottom: 100px;
+
+}
+
+div.pacman{
+	position:absolute;
+	left: 850px;
+	bottom: 20px;
+}
