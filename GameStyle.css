@@ -1,3 +1,8 @@
+@media screen and (max-width: 1000px) {
+    #pagewrap {
+        width: 1000px;
+    }
+}
 body{
 	background-color:#12264f;
 }
@@ -5,24 +10,31 @@ body{
 #pagewrap{
 	margin: 0 auto;
 	width:100%;
+	display:inline-block;
 }
 
 #col1{
+	
 	float:left;
-	width: 33%; 
+	max-width: 33%; 
 	overflow:hidden;
 	
 }
 
 #col2{
+	display:inline-block;
 	float:left;
-	width:33%;
+	max-width:33%;
+
+
+	
 }
 
 #col3{
-	float: left;
-	width: 33%;
+	float: right;
+	max-width: 33%;
 	position:relative;
+	
 
 }
 
@@ -149,7 +161,8 @@ div.story{
 	margin:0 auto;
 	display: block;
 	border: 2px solid gold;
-	width:600px;
+	min-width:600px;
+	max-width:600px;
 	height:750px;
 }
 

@@ -77,15 +77,17 @@
 			</div>
 			<br>
 			<div class="logout">
-				<button id="logoutButton"> Logout </button>
+			<a href="http://localhost:8181/Pac-Fac/login.php"><button>Logout</button>
+    </a>
+				
 
 
 			</div>
 			<div class="highscores">
 				<p> Always up for a challenge? Check out your and other players' highscores: </p>
 
-
-				<button id="highscoresButton"> View Highscores </button>
+				<a href="http://localhost:8181/Pac-Fac/HighScores.html"><button>View Highscores</button>
+				
 			</div>
 
 
