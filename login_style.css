@@ -1,10 +1,11 @@
 body{
 	background-color:#12264f;
-	overflow:hidden;
+  overflow:hidden;
+
 }
 .container {
   
-  margin:300px auto;
+  margin:0px auto;
   width: 450px;
   }
  
@@ -17,6 +18,26 @@ body{
   color: gold;
   font-family: Consolas;
 }
+
+#tuplea{
+  position: relative;
+  margin-top:0px;
+  margin-left:0px;
+  width:200px;
+  height:200px;
+
+}
+
+
+#buraga{
+  position: relative;
+  margin-top:-300px;
+  margin-right:0px;
+  width:200px;
+  height:200px;
+
+}
+
 
 button{
 	  padding: 8px 8px;

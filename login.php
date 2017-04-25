@@ -6,6 +6,10 @@
 </head>
 
 <body>
+<img id="tuplea" src="tuplea.png" >
+<img id="buraga" src="buraga.png" >
+
+
 <div class="container">
   <div class="login">
   <p id="pacfac">Pac-Fac</p>
@@ -29,7 +33,9 @@
  
   </div>
  <img src="pac-man.jpg" alt="Pac-Man">
+
 </div>
+
 
 </body>
 </html>
