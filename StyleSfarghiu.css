@@ -39,33 +39,40 @@ button:active {
 }
 
 div.pac-fac{
-	position: absolute;
+	text-align: center;
+
+	height: 0vh;
+	display:block;
+	position: relative;
 	font-family: consolas;
-	font-size: 650%;
+	font-size: 12vmin;
 	color: gold;
-	top:-50px;
-	left:650px;
+	top:-125px;
+	
 
 }
 
 div.description{
-	position:absolute;
+	height:0vh;
+	display:block;
 	font-family:consolas;
 	color:gold;
 	text-align: center;
-	font-size: 150%;
+	font-size: 3vmin;
 	top:200px;
 	left: 0px;
 }
 
 div.urla{
-	position: absolute;
+	height: 0vh;
+	position: relative;
+	display:block;
 	font-family: consolas;
 	color: gold;
 	text-align: center;
-	font-size: 650%;
-	left: 765px;
-	top:400px;
+	font-size: 12vmin;
+	border: 2px;
+	top:45vh;
 
 }
 
@@ -73,4 +80,7 @@ div.pacman{
 	position:absolute;
 	left: 850px;
 	top: 600px;
+}
+.container{
+	display: inline-block;
 }
