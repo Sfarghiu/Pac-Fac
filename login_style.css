@@ -1,15 +1,11 @@
 body{
-	background-color:#151e3f;
+	background-color:#12264f;
 }
 .container {
   
-  margin:250px auto;
+  margin:300px auto;
   width: 450px;
-  padding :500 px;
-  border-style: outset;
-  border-color: gold;
-  border-width: 4px;
-}
+  }
  
 .login {
   position: relative;
@@ -22,19 +18,19 @@ body{
 }
 
 button{
-	  padding: 6px 6px;
+	  padding: 8px 8px;
     position:center;
     font-size: 24px;
     font-family: Consolas;
     cursor: pointer;
-    color: #151e3f;
+    color: #12264f;
     background-color: gold;
     border-style: solid;
-    border-color: #151e3f;
+    border-color: #12264f;
     border-width: 2px;
     border-radius: 30px;
     text-decoration: none;
-    width: 90%;
+    width: 98%;
 }
 			
 button:hover {
@@ -47,10 +43,9 @@ button:hover {
 }
 
 button:active {
-				background-color: #151e3f;
+				background-color: #12264f;
 				color: gold;
-				box-shadow: 0 1px 2px gold;
-				transform: translateY(5px);
+				transform: translateY(3px);
 }
 
 
@@ -93,4 +88,10 @@ a:active {
 #signup {
 	margin-top:70px;
 	text-align:center;
+}
+
+img{
+  display: block;
+  margin:100px auto;
+}
 }
