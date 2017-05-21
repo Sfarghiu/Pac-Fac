@@ -1,40 +1,40 @@
 body{
-	background-image: url("Background.jpg");
+	background-color:#12264f;
 }
 .homeButton{
-		position: absolute;
-		top: 100px;
-		left: 1580px;
-		padding: 10px 20px;
-		text-align: center;
-		font-size: 25px;
-		font-weight: 900;
-		font-family: Consolas;
-		cursor: pointer;
-		color: gold;
-		background-color: navy;
-		border-style: solid;
-		border-color: gold;
-		border-width: 2px;
-		border-radius: 30px;
-		text-decoration: none;
+		position:relative;
 		
+		left: 1580px;
+		
+		font-family:Consolas;
+		font-weight: bold;
+	font-size: 25px;
+	padding: 10px 20px;
+	color: #151e3f;
+	background-color: gold;
+	border-style: solid;
+	border-color: #151e3f;
+	border-width: 2px;
+	border-radius: 30px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
 }
 			
 .homeButton:hover {
-				font-weight: bold;
-				background-color: gold;
-				border-color: navy;
-				border-width: 4px;
-				color: navy;
-				border-width: 5px;
+	font-weight: bold;
+	background-color: gold;
+	border-color: gold;
+	border-width: 3px;
+	color: #847CB6;
+	border-width: 4px;
+	box-shadow: 0px 0px 10px navy;
 }
 
 .homeButton:active {
-				background-color: navy;
+				background-color: #12264f;
 				color: gold;
-				transform: translateY(2px);
-				border-color: gold;
+				transform: translateY(3px);
 }
 
 div.pac-fac{
@@ -44,35 +44,47 @@ div.pac-fac{
 	color: gold;
 	top:-50px;
 	left:650px;
+	text-align:center;
 
 }
 
 div.scores{
-	position:relative;
+	position:fixed;
 	font-family:consolas;
-	color:gold;
+	color:#12264f;
 	text-align: justified;
 	font-size: 150%;
-	top:200px;
-	left: 850px;
+	top:300px;
+	left: 780px;
 }
 .button {
-  font-size: 1em;
-  padding: 10px;
-  color: #fff;
-  border: 2px solid #06D85F;
-  border-radius: 20px/50px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
+	
+	font-weight: bold;
+	font-size: 25px;
+	padding: 10px 20px;
+	color: #151e3f;
+	background-color: gold;
+	border-style: solid;
+	border-color: #151e3f;
+	border-width: 2px;
+	border-radius: 30px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
 }
 .button:hover {
-  font-weight: bold;
-				background-color: gold;
-				border-color: navy;
-				border-width: 4px;
-				color: navy;
-				border-width: 5px;
+	font-weight: bold;
+	background-color: gold;
+	border-color: gold;
+	border-width: 3px;
+	color: #847CB6;
+	border-width: 4px;
+	box-shadow: 0px 0px 10px navy;
+}
+.button:active{
+	background-color: #12264f;
+	color: gold;
+	transform: translateY(3px);
 }
 
 .overlay {
@@ -103,7 +115,7 @@ div.scores{
 
 .popup h2 {
   margin-top: 0;
-  color: #333;
+  color: navy;
   font-family: Tahoma, Arial, sans-serif;
 }
 .popup .close {
@@ -114,13 +126,13 @@ div.scores{
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: navy;
 }
 .popup .close:hover {
-  color: #06D85F;
+  color: gold;
 }
 .popup .content {
-  max-height: 30%;
+  max-height: 50%;
   overflow: auto;
 }
 
@@ -130,6 +142,9 @@ div.scores{
   }
   .popup{
     width: 70%;
+  }
+  .popupall{
+	  width:70%;
   }
 }
 
@@ -149,5 +164,3 @@ div.pacman{
 	left: 850px;
 	bottom: 20px;
 }
-
-

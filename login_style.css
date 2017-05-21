@@ -53,13 +53,14 @@ button{
     border-radius: 30px;
     text-decoration: none;
     width: 98%;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
 }
 			
 button:hover {
-				font-weight: bold;
+			
         background-color: gold;
         border-color: gold;
-        border-width: 2px;
         color: #847CB6;
         box-shadow: 0px 0px 10px #847CB6;
 }
