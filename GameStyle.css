@@ -1,40 +1,33 @@
-@media screen and (max-width: 1000px) {
-    #pagewrap {
-        width: 1000px;
-    }
+* {
+	box-sizing: border-box;
 }
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+}
+html {
+	font-family: Consolas;
+	color:gold;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+	width: 100%;
+}
+
+.desktop{
+	display:none;
+}
+
 body{
 	background-color:#12264f;
 }
-
-#pagewrap{
-	margin: 0 auto;
-	width:100%;
-	display:inline-block;
-}
-
-#col1{
-	
-	float:left;
-	max-width: 33%; 
-	overflow:hidden;
-	
-}
-
-#col2{
-	display:inline-block;
-	float:left;
-	max-width:33%;
-
-
-	
-}
-
-#col3{
-	float: right;
-	max-width: 33%;
-	position:relative;
-	
+.col-4,.col-m-3,.col-m-9,.col-m-12{
 
 }
 
@@ -43,29 +36,31 @@ body{
 }
 
 button{
-	padding: 10px 20px;
-	text-align: center;
-	font-size: 25px;
-	font-weight: 900;
+	padding: 8px 8px;
+	position:center;
+	font-size: 16px;
 	font-family: Consolas;
 	cursor: pointer;
-	color: #151e3f;
+	color: #12264f;
 	background-color: gold;
 	border-style: solid;
-	border-color: #151e3f;
+	border-color: #12264f;
 	border-width: 2px;
 	border-radius: 30px;
 	text-decoration: none;
+	width:150px;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+	display: block;
+	margin:0 auto;
+
 	
 }
-
+a {text-decoration: none;}
 button:hover {
-	font-weight: bold;
 	background-color: gold;
 	border-color: gold;
-	border-width: 4px;
 	color: #847CB6;
-	border-width: 5px;
 	box-shadow: 0px 0px 10px #847CB6;
 }
 
@@ -75,128 +70,229 @@ button:active {
 	transform: translateY(3px);
 }
 
-div.fii{
+#fii{
+	display:inline-block;
+	height:50px;
+	width:50px;
 }
 
-
-
-#rulesRectangle {
+.logout{
 	display: block;
 	margin:0 auto;
-	width: 500px;
-	height: 200px;
-	background: gold ;
-	border-style:solid ;
-	border-color: gold;
-	border-radius: 30px;
-	margin-top: 100px;
-
 }
 
-div.rulesTitle{
-	font-family: consolas;
-	font-size: 170%;
-	color: #12264f;
-	text-align: center;
-	
-}
-
-div.rules{
-	font-family: consolas;
-	font-size: 16px;
-	color: #12264f;
-}
-
-#controlsRectangle {
-	
-	margin:0 auto;
-	display: block;
-	width: 500px;
-	height: 140px;
+#rulesRectangle,#controlsRectangle{
 	background: gold;
 	border-style: solid ;
 	border-color: gold;
 	border-radius: 30px;
+	display: block;
+	margin:0 auto;
+	padding-right:10px;
+
+} 
+#rulesRectangle{
+	width: 240px;
+	height: 270px;
+}
+#controlsRectangle {
+	width: 240px;
+	height: 110px;
 }
 
-div.controlsTitle{
+.rulesTitle,.controlsTitle{
 	font-family: consolas;
-	font-size: 170%;
+	font-size: 20px;
 	color: #12264f;
 	text-align: center;
+	
 }
 
-div.controls{
+.rules,.controls{
 	font-family: consolas;
 	font-size: 16px;
 	color: #12264f;
 }
 
-div.story{
 
-	font-family: consolas;
-	font-size: 100%;
-	color: gold;
+.story{
+	font-size: 16px;
 	text-align:center;
-	font-size: 120%;
-	margin-top:138px; 
+	
+	
 }
 
 #pill{
 	display: block;
 	margin:0 auto;
+	margin-top:-5px;
 }
 
 
 #game_title{
-	font-family: consolas;
-	font-size: 40px;
-	color: gold;
+	font-size: 20px;
 	text-align:center;
 }
 
 
 
 #game{
-	margin:0 auto;
-	display: block;
 	border: 2px solid gold;
-	min-width:600px;
-	max-width:600px;
-	height:750px;
+	width:300px;
+	height:500px;
+	display: block;
+	margin:0 auto;
+
 }
 
 div.player{
-	font-family: consolas;
-	font-size: 130%;
-	color: gold;
+	font-size: 16px;
 	text-align:center;
-	margin-top:200px;
 }
 
 #playerIcon{
-
 	border: 2px solid gold;
 	width:100px;
 	height:100px;
+	display: block;
+	margin:0 auto;
 }
 
-div.logout{
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	position:absolute;
-}
 
 div.highscores{
-	margin-top: 360px;
-	font-family: consolas;
-	font-size: 120%;
+	font-size: 16px;
 	color: gold;
-	text-align: center;
+	text-align:center;
+	
 }
 
 
+@media only screen and (min-width: 480px){
+	
+	/* For tablets: */
+	.col-m-1 {width: 8.33%;}
+	.col-m-2 {width: 16.66%;}
+	.col-m-3 {width: 25%;}
+	.col-m-4 {width: 33.33%;}
+	.col-m-5 {width: 41.66%;}
+	.col-m-6 {width: 50%;}
+	.col-m-7 {width: 58.33%;}
+	.col-m-8 {width: 66.66%;}
+	.col-m-9 {width: 75%;}
+	.col-m-10 {width: 83.33%;}
+	.col-m-11 {width: 91.66%;}
+	.col-m-12 {width: 100%;}
 
+	#rulesRectangle{
+		width: 500px;
+		height: 220px;
+
+	}
+	#controlsRectangle {
+		width: 500px;
+		height: 140px;
+	}
+	#game{
+		width:500px;
+		height:750px;
+
+	}
+
+	#game_title{
+		font-size: 26px;
+	}
+
+
+
+	#fii{
+		height:70px;
+		width:70px;
+	}
+
+	button{
+		width:200px;
+		font-size:20px;
+	}
+	.story{
+		font-size: 20px;
+	}
+	div.highscores{
+		font-size:20px;
+	}
+	div.player{
+		font-size:20px;
+	}
+
+	@media screen and (min-width: 1800px) {
+
+		/* For desktop: */
+		.col-1 {width: 8.33%;}
+		.col-2 {width: 16.66%;}
+		.col-3 {width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-41 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%;}
+		.col-9 {width: 75%;}
+		.col-10 {width: 83.33%;}
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%;}
+
+		#rulesRectangle{
+			width: 500px;
+			height: 200px;
+			margin-top:75px;
+		}
+		#controlsRectangle {
+			width: 500px;
+			height: 140px;
+		}
+		#game_title{
+			font-size: 65px;
+		}
+
+		#game{
+			width:600px;
+			height:700px;
+
+		}
+		.story{
+			margin-top:210px;
+			font-size: 20px;	
+		}
+		div.highscores{
+			margin-top: 390px;
+			font-size: 20px;
+		}
+
+		.rulesTitle,.controlsTitle{
+			font-size: 26px;	
+		}
+
+
+		#pill{
+			margin-top:-5px;
+		}
+
+		div.player{
+			font-size: 20px;
+			margin-top:75px;
+		}
+
+		#fii{
+			height:100px;
+			width:100px;
+		}
+
+		button{
+			width:300px;
+			font-size:26px;
+		}
+		.mobile{display:none;}
+		.desktop{
+			display:initial;
+		}
+
+	}

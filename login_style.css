@@ -1,48 +1,78 @@
-body{
-	background-color:#12264f;
-  overflow:hidden;
 
+* {
+    box-sizing: border-box;
 }
-.container {
-  
-  margin:0px auto;
-  width: 450px;
-  }
- 
-.login {
-  position: relative;
-  margin: 0 auto;
-   text-align:center;
-  padding: 0px 20px 20px;
-  width: 330px;
-  color: gold;
-  font-family: Consolas;
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
+[class*="col-"] {
+    float: left;
+    
+}
+html {
+    font-family: Consolas;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+body{
+  background-color:#12264f;
+}
+
+div.col-12,div.col-m-12{
+text-align:center;
+color:gold;
+}
+
 
 #tuplea{
-  position: relative;
-  margin-top:0px;
-  margin-left:0px;
-  width:200px;
-  height:200px;
+  display: inline-block;
+ width:80px;
+  height:80px;
+
 
 }
 
-
 #buraga{
-  position: relative;
-  margin-top:-300px;
-  margin-right:0px;
-  width:200px;
-  height:200px;
+  float:right;
+ width:80px;
+  height:80px;
+
+}
+
+#pacfac{
+  font-size:20px;
+}
+
+#signup {
+  font-size:16px;
+}
+
+#iftene{
+  display: inline-block;
+ width:80px;
+  height:80px;
+
+
+}
+
+#radulescu{
+  float:right;
+  width:80px;
+  height:80px;
 
 }
 
 
 button{
-	  padding: 8px 8px;
+    padding: 8px 8px;
     position:center;
-    font-size: 24px;
+    font-size:16px;
     font-family: Consolas;
     cursor: pointer;
     color: #12264f;
@@ -52,13 +82,13 @@ button{
     border-width: 2px;
     border-radius: 30px;
     text-decoration: none;
-    width: 98%;
+    width:150px;
     cursor: pointer;
     transition: all 0.3s ease-out;
 }
-			
+      
 button:hover {
-			
+      
         background-color: gold;
         border-color: gold;
         color: #847CB6;
@@ -66,20 +96,11 @@ button:hover {
 }
 
 button:active {
-				background-color: #12264f;
-				color: gold;
-				transform: translateY(3px);
+        background-color: #12264f;
+        color: gold;
+        transform: translateY(3px);
 }
 
-
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 15px 15px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    font-size:100%;
-}
 
 a:link {
     text-decoration: none;
@@ -101,20 +122,60 @@ a:active {
 }
 
 
+
+@media only screen and (min-width: 480px){
+    
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+}
+
+@media screen and (min-width: 768px) {
+
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    
+#tuplea,#buraga,#iftene,#radulescu{
+  width:200px;
+  height:200px;
+
+}
+
+button{
+  font-size:26px;
+  width:320px;
+}
+
 #pacfac{
+  font-size:65px;
+
   margin-bottom:30px;
-  text-align:center;
-  font-size:400%;
-  color:gold;
 }
 
 #signup {
-	margin-top:70px;
-	text-align:center;
+  margin-top:70px;
 }
 
-img{
-  display: block;
-  margin:100px auto;
-}
 }

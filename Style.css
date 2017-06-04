@@ -1,23 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+    font-family: Consolas;
+}
+.header {
+    padding: 15px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
 body{
 	background-image: url("Background.jpg");
 }
 
-.logoutButton{
-		
-		font-family:Consolas;
-		font-weight: bold;
-	font-size: 25px;
-	padding: 10px 20px;
-	color: #151e3f;
-	background-color: gold;
-	border-style: solid;
-	border-color: #151e3f;
-	border-width: 2px;
-	border-radius: 30px;
-	text-decoration: none;
-	cursor: pointer;
-	transition: all 0.3s ease-out;
+button{
+	padding: 8px 8px;
+    position:center;
+    font-size: 20px;
+    font-family: Consolas;
+    cursor: pointer;
+    color: #12264f;
+    background-color: gold;
+    border-style: solid;
+    border-color: #12264f;
+    border-width: 2px;
+    border-radius: 30px;
+    text-decoration: none;
+    width:250px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
 }
+
 			
 .logoutButton:hover {
 				font-weight: bold;

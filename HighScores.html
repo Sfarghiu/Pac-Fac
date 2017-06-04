@@ -1,61 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<head>
-		<title> HighScores </title>
-        <link rel = "stylesheet" type = "text/css" href = "StyleVladut.css">
-	</head>
 
-        <div class = "fii">
-            <image src = "fii.png" height = "100" width = "100"
-        </div>
-        
-        <div class = "pac-fac">
-            <p> HighScores </p>
-        </div>
-        
-        <div class = "home">
-            <a class = "homeButton" href="Game.php"> Return to game </a>
-        </div>
+<head>
+	<title> HighScores </title>
+	<link rel = "stylesheet" type = "text/css" href = "StyleVladut.css">
+	<meta name="viewport" content="width=device-width" />
+</head>
+<body>
+	<div class = "header">
+		<img id="fii" src = "fii.png">
+	</img>
 
- 
-</div>
-        <div class = "scores">
-	<ul>
-		<ul style="line-style:none">
-		
-		 <li>  
-		 <a class="button" href="#popup1">MyScores</a>
-		 <div id="popup1" class="overlay">
-	<div class="popup">
-		<h2>MyScores</h2>
-		<a class="close" href="#">&times;</a>
-		<a class="content" href="#MyScores.php"></a>
+	<div class="but">
+		<a href="Game.php"><button>Return to game</button>
+		</a>
 	</div>
 </div>
-</li>
-<br><br>
-<li>  
-		 <a class="button" href="#popup2">AllScores</a>
-		 <div id="popup2" class="overlay">
-	<div class="popup">
-		<h2>AllScores</h2>
-		<a class="close" href="#">&times;</a>
-		<a class="content" href="#MyScores.php"></a>
+
+<div class="col-12 col-m-12">
+	<div class = "pac-fac">
+		<p> HighScores </p>
 	</div>
+
+	<div class = "scores">
+		<a href="#popup1"><button>MyScores</button>
+		</a>
+
+		<div id="popup1" class="overlay">
+			<div class="popup">
+				<a class="close" href="#">&times;</a>
+				<a class="content" href="#MyScores.php"></a>
+			</div>
+		</div>
+		<br><br>
+		<a href="#popup2"><button>AllScores</button>
+		</a>
+		<div id="popup2" class="overlay">
+			<div class="popup">
+				<a class="close" href="#">&times;</a>
+				<a class="content" href="#MyScores.php"></a>
+			</div>
+		</div>
+
+	</div>
+
+	<div class = "pac-fac">
+		<p> Pac-Fac </p>
+	</div>
+
+	<img id="pacman" src = "pac-man.png">
+	
+
 </div>
-</li>
-</ul>
-     </div>
-
-        <div class = "footer">
-            <p> Pac-Fac </p>
-        </div>
-        <div class = "pacman">
-            <a>
-            <img src = "pac-man.jpg">
-            </a>
-        </div>
-
-
+</body>
 </html>

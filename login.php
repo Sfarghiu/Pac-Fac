@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Page</title>
-	<link rel="stylesheet" type="text/css" href="login_style.css">
+<meta name="viewport" content="width=device-width" />
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="login_style.css">
 </head>
 
 <body>
+<div class="header">
   <img id="tuplea" src="tuplea.png" >
   <img id="buraga" src="buraga.png" >
+ </div> 
 
-
-  <div class="container">
-    <div class="login">
+    <div class="col-12 col-m-12">
       <p id="pacfac">Pac-Fac</p>
       <form method="post" action="http://localhost:8181/Pac-Fac/Game.php">
       <!--<p><input type="text" name="login"  placeholder="GitHub Username or Email"></p>
@@ -29,11 +30,14 @@
     <p>Forgot password? <a href="#">Reset it.</a></p>
   </p>-->
 
-  <p id="signup">Don't have a GitHub account? <a href="https://github.com/join?source=login">Sign up.</a></p>
+  <p id="signup">Don't have a GitHub account? <a href="https://github.com/join?source=login">Sign up.</a></p><br>
   
-</div>
-<img src="pac-man.jpg" alt="Pac-Man">
 
+</div>
+
+<div class="footer">
+  <img id="iftene" src="iftene.png" >
+  <img id="radulescu" src="radulescu.png" >
 </div>
 
 
