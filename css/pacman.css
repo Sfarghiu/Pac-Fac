@@ -252,7 +252,7 @@ h3 {
 	position: absolute;
 }
 .sound img { 
-	height: 28px;
+	height: 0px;
 }
 #home .sound { 
 	bottom: 0px;
@@ -275,7 +275,7 @@ h3 {
 	bottom: 8px;
 	right: 55px;
 	margin: auto;
-	font-size: 14px;
+	font-size: 0px;
 	font-weight: bold;
 	text-transform: lowercase;
 	letter-spacing: 0.5px;
