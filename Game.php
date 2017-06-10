@@ -202,7 +202,7 @@ window.onload = function() {
 		</div>-->
 	
 		<div id="home">
-			<h1>pac-man</h1>
+			<h1>pac-fac</h1>
 			<!--<h3>Lucio PANEPINTO<br><em>2015</em></h3>-->
 			<canvas id="canvas-home-title-pacman"></canvas>
 			<div id="presentation">
@@ -225,7 +225,7 @@ window.onload = function() {
 		<img id="iftene" src="iftene.png">
 	
 		<div id="panel">
-			<h1>pac-man</h1>
+			<h1>pac-fac</h1>
 			<canvas id="canvas-panel-title-pacman"></canvas>
 			<div id="score"><h2>1UP</h2><span>00</span></div>
 			<div id="highscore"><h2>High Score</h2><span>00</span></div>
@@ -255,8 +255,8 @@ window.onload = function() {
 			<canvas id="canvas-lifes"></canvas>
 			<canvas id="canvas-level-fruits"></canvas>
 			<div id="message"></div>
-			<div class="help-button">- help -</div>
-			<a class="sound" href="javascript:void(0);" data-sound="on"><img src="img/sound-on.png" alt="" border="0"></a>
+			<!--<div class="help-button">- help -</div>-->
+			<!--<a class="sound" href="javascript:void(0);" data-sound="on"><img src="img/sound-on.png" alt="" border="0"></a>-->
 		</div>
 	
 	<!-- Game -->

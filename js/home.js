@@ -57,7 +57,7 @@ function initHome() {
 
 	$("#panel").hide();
 	$("#home").show();
-	$("#home h3 em").append( " - " + new Date().getFullYear() );
+	// $("#home h3 em").append( " - " + new Date().getFullYear() );
 	
 	
 	var ctx = null;

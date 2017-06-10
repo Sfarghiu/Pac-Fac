@@ -37,25 +37,30 @@ body {
 #score, #highscore  { 
 	position: absolute;
 	display: inline;
-	top: 70px;
+	top: 30px;
 	margin: 0px;
 	padding: 0px;
 	width: 160px;
 }
+
+#score {
+	left: 75px;
+}
+
 #highscore { 
-	left: 180px;
+	left: 350px;
 }
 #score h2, #score span, #highscore h2, #highscore span { 
 	display: block;
 	text-transform: uppercase;
-	font-weight: normal;
+	font-weight: bolder;
 	letter-spacing: 2px;
-	font-size: 16px;
-	height: 21px;
+	font-size: 25px;
+	height: 30px;
 	margin: 0px;
 	padding: 0px;
 	text-align: right;
-	padding-right: 15px;
+	/*padding-right: 15px;*/
 	color: #CD5C5C;
 }
 #score span, #highscore span { 
@@ -63,7 +68,7 @@ body {
 	color: #CD5C5C;
 }
 #highscore span { 
-	padding-right: 40px;
+	padding-right: 0px;
 }
 #message { 
 	position: absolute;

@@ -26,12 +26,12 @@
 	width: 100%;*/
 }
 #canvas-panel-title-pacman { 
-	background-color: #000;
+	/*background-color: #DEB887;*/
 	position: absolute;
-	top: 6px;
-	left: 47px;
-	height: 32px;
-	width: 38px;
+	top: 30px;
+	left: 30px;
+	height: 60px;
+	width: 60px;
 }
 
 #presentation { 
