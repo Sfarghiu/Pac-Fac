@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <?php 
+ session_start();
+ $accessToken = isset($_SESSION['accessToken']) ? $_SESSION['accessToken'] : NULL;
+ //echo $fbToken;
+ $playerIcon = isset($_SESSION['playerIcon']) ? $_SESSION['playerIcon'] : NULL;
+ //echo $playerIcon;?>
 	<title> Pac-Fac </title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -289,7 +295,7 @@ window.onload = function() {
 		<div class="story">
 			<p> For more information about how Pac-Fac came to be, click the memory pill: </p>
 			<div>
-				<a href="http://localhost:8181/Pac-Fac/Description.html">
+				<a href="http://localhost:8181/Pac-Fac/Description.php">
 					<img id="pill" src="pill.jpg" alt="Memory Pill" height="50" width="50">
 				</a>
 			</div>
@@ -310,7 +316,7 @@ window.onload = function() {
 		<div class="player">
 			Player 
 		</div>
-		<img src="<?php echo $pathimage1?>" id="playerIcon">
+		<img src="<?php echo $playerIcon?>" id="playerIcon">
 		<!--<canvas id="playerIcon">
 		</canvas>-->
 		
@@ -324,7 +330,7 @@ window.onload = function() {
 		<div class="highscores">
 			<p> Always up for a challenge? Check out your and other players' highscores: </p>
 		</div>
-		<a href="http://localhost:8181/Pac-Fac/HighScores.html"><button>View Highscores</button></a>
+		<a href="http://localhost:8181/Pac-Fac/HighScores.php"><button>View Highscores</button></a>
 
 	</div>
 

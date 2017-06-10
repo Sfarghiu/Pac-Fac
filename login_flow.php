@@ -1,5 +1,6 @@
 <?php
 	require_once __DIR__ . '/vendor/autoload.php';
+	session_start();
 	$fb = new Facebook\Facebook([
 	  'app_id' => '1366424746780074',
 	  'app_secret' => 'cd53e61df3dec589ebed943bc3c1eae4',
@@ -15,6 +16,7 @@
 		$response = $fb->get('/me?fields=id,name', $accessToken);
 	  $user = $response->getGraphUser();
 	  $id= $user['id'];
+	  $userName= $user['name'];
 	} catch(Facebook\Exceptions\FacebookResponseException $e) {
 	  // When Graph returns an error
 	  echo 'Graph returned an error: ' . $e->getMessage();
@@ -38,7 +40,11 @@
 	//echo 'Name: ' . $user['id'];
 	// OR
 	// echo 'Name: ' . $user->getName();
-	$pathimage1="https://graph.facebook.com/$id/picture?type=large&width=150&height=150";
-	//echo ("<script> window.location.href='".REDIRECT_URI."'</script>");
-	include 'Game.php';
+	$playerIcon="https://graph.facebook.com/$id/picture?type=large&width=150&height=150";
+	$_SESSION['accessToken'] = (string) $accessToken;
+	$_SESSION['playerIcon'] =(string)$playerIcon;
+	$_SESSION['userName'] =(string)$userName;
+	define('REDIRECT_URI',"http://localhost:8181/Pac-Fac/Game.php");
+	echo ("<script> window.location.href='".REDIRECT_URI."'</script>");
+	//include 'Game.php';
 ?>
