@@ -4,6 +4,15 @@
     <meta name="viewport" content="width=device-width" />
     <title> Description </title>
     <link rel = "stylesheet" type = "text/css" href = "StyleSfarghiu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").load("more_info.txt");
+                $("#div1").css("fontSize", "26px")
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -39,7 +48,10 @@
         </div>
         <img id="pacman" src = "pac-man.png">
 
-    </div>
+<div id="div1">
+</div>
+
+<button>More info</button>
 
 </body>
 </html>

@@ -1,5 +1,3 @@
-
-
 * {
     box-sizing: border-box;
 }
@@ -14,6 +12,7 @@
 }
 html {
     font-family: Consolas;
+    
 }
 
 /* For mobile phones: */
@@ -180,4 +179,3 @@ div.urla{
   margin-top:-50px;
 }
 }
-
