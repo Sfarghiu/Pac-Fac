@@ -164,6 +164,15 @@
 </head>
 
 <body>
+<!--<script>
+window.onload = function() {
+    var c = document.getElementById("playerIcon");
+    var ctx = c.getContext("2d");
+    var img = new Image();
+    img.src="<?php //echo $pathimage1?>";
+    ctx.drawImage(img, 1, 1, 300, 150);
+}
+</script>-->
 	<div class="header">
 		<img id="fii" src="fii.png" alt="Fii" height="100" width="100">
 	</div>
@@ -301,8 +310,10 @@
 		<div class="player">
 			Player 
 		</div>
-		<canvas id="playerIcon">
-		</canvas>
+		<img src="<?php echo $pathimage1?>" id="playerIcon">
+		<!--<canvas id="playerIcon">
+		</canvas>-->
+		
 
 		<br>
 		<div class="logout">
