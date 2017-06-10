@@ -16,12 +16,14 @@
 	color: #fff200;
 }
 #canvas-home-title-pacman { 
-	background-color: #000;
+	background-color: #DEB887;
 	position: absolute;
-	top: 10px;
-	left: 182px;
+	top: 110px;
+	left: 220px;
 	height: 100px;
 	width: 118px;
+	/*height: 100%;
+	width: 100%;*/
 }
 #canvas-panel-title-pacman { 
 	background-color: #000;
