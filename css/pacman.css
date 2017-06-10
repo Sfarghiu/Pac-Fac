@@ -56,9 +56,11 @@ body {
 	padding: 0px;
 	text-align: right;
 	padding-right: 15px;
+	color: #CD5C5C;
 }
 #score span, #highscore span { 
 	padding-right: 0px;
+	color: #CD5C5C;
 }
 #highscore span { 
 	padding-right: 40px;
@@ -76,11 +78,11 @@ body {
 	font-weight: normal;
 	letter-spacing: 2px;
 	font-size: 20px;
-	color: #fff200;
+	color: #CD5C5C;
 	text-align: center;
 }
 #message.red { 
-	color: red;
+	color: #CD5C5C;
 }
 
 span.combo, span.fruits { 
@@ -100,7 +102,7 @@ span.combo, span.fruits {
 	right: 0px;
 	position: absolute;
 	padding: 5px 10px 10px 10px;
-	background-color: #000;
+	background-color: #DEB887;
 }			
 #board, #canvas-board, #canvas-paths, #canvas-fruits, #canvas-pacman, #canvas-bubbles, #canvas-ghost-blinky, #canvas-ghost-pinky, #canvas-ghost-inky, #canvas-ghost-clyde { 
 	width: 550px;

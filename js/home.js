@@ -59,7 +59,6 @@ function initHome() {
 	$("#home").show();
 	$("#home h3 em").append( " - " + new Date().getFullYear() );
 	
-	$('#help').fadeOut("slow");
 	
 	var ctx = null;
 	var canvas = document.getElementById('canvas-home-title-pacman');
