@@ -59,70 +59,118 @@ function initHome() {
 	$("#home").show();
 	$("#home h3 em").append( " - " + new Date().getFullYear() );
 	
-	$('#help').fadeOut("slow");
 	
 	var ctx = null;
-	var canvas = document.getElementById('canvas-home-title-pacman');
-	canvas.setAttribute('width', '115');
-	canvas.setAttribute('height', '100');
-	if (canvas.getContext) { 
-		ctx = canvas.getContext('2d');
+	// var canvas = document.getElementById('canvas-home-title-pacman');
+	// canvas.setAttribute('width', '230');
+	// canvas.setAttribute('height', '200');
+	// if (canvas.getContext) { 
+	// 	ctx = canvas.getContext('2d');
+	// }
+
+	$('#head').hide();
+
+	window.onload = function() {
+    var c = document.getElementById("canvas-home-title-pacman");
+	c.setAttribute('width', '180');
+	c.setAttribute('height', '160');
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("head");
+    ctx.drawImage(img, -50, -40);
+	
+	// var x = 50;
+	// var y = 50;
+	
+	// ctx.fillStyle = "#fff200";
+	// ctx.beginPath();
+	// ctx.arc(x, y, 45, (0.35 - (3 * 0.05)) * Math.PI, (1.65 + (3 * 0.05)) * Math.PI, false);
+	// ctx.lineTo(x - 10, y);
+	// ctx.fill();
+	// ctx.closePath();
+	
+	// x = 95;
+	// y = 50;
+	
+	// ctx.fillStyle = "#dca5be";
+	// ctx.beginPath();
+	// ctx.arc(x, y, 10, 0, 2 * Math.PI, false);
+	// ctx.fill();
+	// ctx.closePath();
+
+	$('#busaco').hide();
+
+    var c = document.getElementById("canvas-presentation-blinky");
+	c.setAttribute('width', '180');
+	c.setAttribute('height', '180');
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("busaco");
+    ctx.drawImage(img, -30, -12);
+	
+	
+	// canvas = document.getElementById('canvas-presentation-blinky');
+	// canvas.setAttribute('width', '50');
+	// canvas.setAttribute('height', '50');
+	// if (canvas.getContext) { 
+	// 	ctx = canvas.getContext('2d');
+	// }
+	// ctx.fillStyle = GHOST_BLINKY_COLOR;
+	// drawHelperGhost(ctx, 25, 25, 1, 0, 0, 0);
+
+	$('#radulescu').hide();
+
+    var c = document.getElementById("canvas-presentation-pinky");
+	c.setAttribute('width', '180');
+	c.setAttribute('height', '180');
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("radulescu");
+    ctx.drawImage(img, -30, -12);
+	
+	
+	// canvas = document.getElementById('canvas-presentation-pinky');
+	// canvas.setAttribute('width', '50');
+	// canvas.setAttribute('height', '50');
+	// if (canvas.getContext) { 
+	// 	ctx = canvas.getContext('2d');
+	// }
+	// ctx.fillStyle = GHOST_PINKY_COLOR;
+	// drawHelperGhost(ctx, 25, 25, 1, 0, 0, 0);
+
+	$('#tuplea').hide();
+
+    var c = document.getElementById("canvas-presentation-inky");
+	c.setAttribute('width', '180');
+	c.setAttribute('height', '180');
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("tuplea");
+    ctx.drawImage(img, -30, -12);
+	
+	// canvas = document.getElementById('canvas-presentation-inky');
+	// canvas.setAttribute('width', '50');
+	// canvas.setAttribute('height', '50');
+	// if (canvas.getContext) { 
+	// 	ctx = canvas.getContext('2d');
+	// }
+	// ctx.fillStyle = GHOST_INKY_COLOR;
+	// drawHelperGhost(ctx, 25, 25, 1, 0, 0, 0);
+
+	$('#iftene').hide();
+
+    var c = document.getElementById("canvas-presentation-clyde");
+	c.setAttribute('width', '180');
+	c.setAttribute('height', '180');
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("iftene");
+    ctx.drawImage(img, -30, -12);
 	}
 	
-	var x = 50;
-	var y = 50;
-	
-	ctx.fillStyle = "#fff200";
-	ctx.beginPath();
-	ctx.arc(x, y, 45, (0.35 - (3 * 0.05)) * Math.PI, (1.65 + (3 * 0.05)) * Math.PI, false);
-	ctx.lineTo(x - 10, y);
-	ctx.fill();
-	ctx.closePath();
-	
-	x = 95;
-	y = 50;
-	
-	ctx.fillStyle = "#dca5be";
-	ctx.beginPath();
-	ctx.arc(x, y, 10, 0, 2 * Math.PI, false);
-	ctx.fill();
-	ctx.closePath();
-	
-	canvas = document.getElementById('canvas-presentation-blinky');
-	canvas.setAttribute('width', '50');
-	canvas.setAttribute('height', '50');
-	if (canvas.getContext) { 
-		ctx = canvas.getContext('2d');
-	}
-	ctx.fillStyle = GHOST_BLINKY_COLOR;
-	drawHelperGhost(ctx, 25, 25, 1, 0, 0, 0);
-	
-	canvas = document.getElementById('canvas-presentation-pinky');
-	canvas.setAttribute('width', '50');
-	canvas.setAttribute('height', '50');
-	if (canvas.getContext) { 
-		ctx = canvas.getContext('2d');
-	}
-	ctx.fillStyle = GHOST_PINKY_COLOR;
-	drawHelperGhost(ctx, 25, 25, 1, 0, 0, 0);
-	
-	canvas = document.getElementById('canvas-presentation-inky');
-	canvas.setAttribute('width', '50');
-	canvas.setAttribute('height', '50');
-	if (canvas.getContext) { 
-		ctx = canvas.getContext('2d');
-	}
-	ctx.fillStyle = GHOST_INKY_COLOR;
-	drawHelperGhost(ctx, 25, 25, 1, 0, 0, 0);
-	
-	canvas = document.getElementById('canvas-presentation-clyde');
-	canvas.setAttribute('width', '50');
-	canvas.setAttribute('height', '50');
-	if (canvas.getContext) { 
-		ctx = canvas.getContext('2d');
-	}
-	ctx.fillStyle = GHOST_CLYDE_COLOR;
-	drawHelperGhost(ctx, 25, 25, 1, 0, 0, 0);
+	// canvas = document.getElementById('canvas-presentation-clyde');
+	// canvas.setAttribute('width', '50');
+	// canvas.setAttribute('height', '50');
+	// if (canvas.getContext) { 
+	// 	ctx = canvas.getContext('2d');
+	// }
+	// ctx.fillStyle = GHOST_CLYDE_COLOR;
+	// drawHelperGhost(ctx, 25, 25, 1, 0, 0, 0);
 	
 	startPresentation();
 }

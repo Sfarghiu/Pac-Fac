@@ -34,7 +34,7 @@ function getBubblesCanevasContext() {
 function drawBubbles() { 
 
 	var ctx = getBubblesCanevasContext();
-	ctx.fillStyle = "#dca5be";
+	ctx.fillStyle = "#CD5C5C";
 	
 	for (var line = 1, linemax = 29, i = 0, s = 0; line <= linemax; line ++) { 
 		var y = getYFromLine(line);
@@ -98,7 +98,7 @@ function blinkSuperBubbles() {
 					eraseBubble("s", sx, sy);
 				} else { 
 					var ctx = getBubblesCanevasContext();
-					ctx.fillStyle = "#dca5be";
+					ctx.fillStyle = "#CD5C5C";
 					ctx.beginPath();
 					ctx.arc(sx, sy, SUPER_BUBBLES_SIZE, 0, 2 * Math.PI, false);
 					ctx.fill();

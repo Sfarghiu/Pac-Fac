@@ -56,9 +56,11 @@ body {
 	padding: 0px;
 	text-align: right;
 	padding-right: 15px;
+	color: #CD5C5C;
 }
 #score span, #highscore span { 
 	padding-right: 0px;
+	color: #CD5C5C;
 }
 #highscore span { 
 	padding-right: 40px;
@@ -76,11 +78,11 @@ body {
 	font-weight: normal;
 	letter-spacing: 2px;
 	font-size: 20px;
-	color: #fff200;
+	color: #CD5C5C;
 	text-align: center;
 }
 #message.red { 
-	color: red;
+	color: #CD5C5C;
 }
 
 span.combo, span.fruits { 
@@ -100,7 +102,7 @@ span.combo, span.fruits {
 	right: 0px;
 	position: absolute;
 	padding: 5px 10px 10px 10px;
-	background-color: #000;
+	background-color: #DEB887;
 }			
 #board, #canvas-board, #canvas-paths, #canvas-fruits, #canvas-pacman, #canvas-bubbles, #canvas-ghost-blinky, #canvas-ghost-pinky, #canvas-ghost-inky, #canvas-ghost-clyde { 
 	width: 550px;
@@ -250,7 +252,7 @@ h3 {
 	position: absolute;
 }
 .sound img { 
-	height: 28px;
+	height: 0px;
 }
 #home .sound { 
 	bottom: 0px;
@@ -273,7 +275,7 @@ h3 {
 	bottom: 8px;
 	right: 55px;
 	margin: auto;
-	font-size: 14px;
+	font-size: 0px;
 	font-weight: bold;
 	text-transform: lowercase;
 	letter-spacing: 0.5px;

@@ -16,12 +16,14 @@
 	color: #fff200;
 }
 #canvas-home-title-pacman { 
-	background-color: #000;
+	background-color: #DEB887;
 	position: absolute;
-	top: 10px;
-	left: 182px;
+	top: 110px;
+	left: 220px;
 	height: 100px;
 	width: 118px;
+	/*height: 100%;
+	width: 100%;*/
 }
 #canvas-panel-title-pacman { 
 	background-color: #000;
@@ -63,13 +65,13 @@
 	top: 40px;
 }
 #canvas-presentation-pinky { 
-	top: 90px;
+	top: 120px;
 }
 #canvas-presentation-inky { 
-	top: 140px;
+	top: 190px;
 }
 #canvas-presentation-clyde { 
-	top: 190px;
+	top: 280px;
 }
 #presentation-character-blinky, #presentation-character-pinky, #presentation-character-inky, #presentation-character-clyde, 
 #presentation-name-blinky, #presentation-name-pinky, #presentation-name-inky, #presentation-name-clyde { 
@@ -90,15 +92,15 @@
 	color: #ed1b24;
 }
 #presentation-character-pinky, #presentation-name-pinky { 
-	top: 100px;
-	color: #feaec9;
+	top: 140px;
+	color: #e83ce5;
 }
 #presentation-character-inky, #presentation-name-inky { 
-	top: 150px;
+	top: 210px;
 	color: #4adecb;
 }
 #presentation-character-clyde, #presentation-name-clyde { 
-	top: 200px;
+	top: 300px;
 	color: #f99c00;
 }
 

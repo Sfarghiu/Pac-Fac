@@ -19,10 +19,10 @@ function drawBoard(alternate) {
 	if (alternate && alternate === true) { 
 		ctx.strokeStyle = "#fff";
 	} else { 
-		ctx.strokeStyle = "#193fff";
+		ctx.strokeStyle = "#874d11";
 	}
 	
-	ctx.lineWidth = "2";
+	ctx.lineWidth = "4";
 	ctx.beginPath();
 	
 	// UP 
@@ -340,7 +340,7 @@ function drawBoard(alternate) {
 function drawBoardDoor() { 
 	var ctx = getBoardCanevasContext();
 	
-	ctx.strokeStyle = "white";
+	ctx.strokeStyle = "brown";
 	ctx.lineWidth = "5";
 	
 	ctx.beginPath();
