@@ -11,7 +11,7 @@
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery-buzz.js"></script>
-	<script type="text/javascript" src="Game.js"></script>
+	<!--<script type="text/javascript" src="Game.js"></script>-->
 	<script type="text/javascript" src="js/game.js"></script>
 	<script type="text/javascript" src="js/tools.js"></script>
 	<script type="text/javascript" src="js/board.js"></script>
@@ -38,46 +38,46 @@
 			
 			$(document).ready(function() { 
 				//$.mobile.loading().hide();
-				loadAllSound();
+				// loadAllSound();
 				
 				HELP_TIMER = setInterval('blinkHelp()', HELP_DELAY);
 				
 				initHome();
 				
-				$(".sound").click(function(e) { 
-					e.stopPropagation();
+				// $(".sound").click(function(e) { 
+				// 	e.stopPropagation();
 					
-					var sound = $(this).attr("data-sound");
-					if ( sound === "on" ) { 
-						$(".sound").attr("data-sound", "off");
-						$(".sound").find("img").attr("src", "img/sound-off.png");
-						GROUP_SOUND.mute();
-					} else { 
-						$(".sound").attr("data-sound", "on");
-						$(".sound").find("img").attr("src", "img/sound-on.png");
-						GROUP_SOUND.unmute();
-					}
-				});
+				// 	var sound = $(this).attr("data-sound");
+				// 	if ( sound === "on" ) { 
+				// 		$(".sound").attr("data-sound", "off");
+				// 		$(".sound").find("img").attr("src", "img/sound-off.png");
+				// 		GROUP_SOUND.mute();
+				// 	} else { 
+				// 		$(".sound").attr("data-sound", "on");
+				// 		$(".sound").find("img").attr("src", "img/sound-on.png");
+				// 		GROUP_SOUND.unmute();
+				// 	}
+				// });
 				
-				$(".help-button, #help").click(function(e) { 
-					e.stopPropagation();
-					if (!PACMAN_DEAD && !LOCK && !GAMEOVER) { 
-						if ( $('#help').css("display") === "none") { 
-							$('#help').fadeIn("slow");
-							$(".help-button").hide();
-							if ( $("#panel").css("display") !== "none") { 
-								pauseGame();
-							}
-						} else { 
-							$('#help').fadeOut("slow");
-							$(".help-button").show();
-						}
-					}
-				});
+				// $(".help-button, #help").click(function(e) { 
+				// 	e.stopPropagation();
+				// 	if (!PACMAN_DEAD && !LOCK && !GAMEOVER) { 
+				// 		if ( $('#help').css("display") === "none") { 
+				// 			$('#help').fadeIn("slow");
+				// 			$(".help-button").hide();
+				// 			if ( $("#panel").css("display") !== "none") { 
+				// 				pauseGame();
+				// 			}
+				// 		} else { 
+				// 			$('#help').fadeOut("slow");
+				// 			$(".help-button").show();
+				// 		}
+				// 	}
+				// });
 				
-				$(".github").click(function(e) { 
-					e.stopPropagation();
-				});
+				// $(".github").click(function(e) { 
+				// 	e.stopPropagation();
+				// });
 				
 				$("#home").on("click touchstart", function(e) { 
 					if ( $('#help').css("display") === "none") { 
@@ -179,7 +179,7 @@ window.onload = function() {
 
 	<!-- Game -->
 
-	<div id="sound"></div>
+	<!--<div id="sound"></div>
 	
 		<div id="help">
 			<h2>Help</h2>
@@ -193,24 +193,30 @@ window.onload = function() {
 					<tr><td>P : </td><td>PAUSE</td></tr>
 				</tbody>
 			</table>
-		</div>
+		</div>-->
 	
 		<div id="home">
 			<h1>pac-man</h1>
-			<h3>Lucio PANEPINTO<br><em>2015</em></h3>
+			<!--<h3>Lucio PANEPINTO<br><em>2015</em></h3>-->
 			<canvas id="canvas-home-title-pacman"></canvas>
 			<div id="presentation">
-				<div id="presentation-titles">character &nbsp;/&nbsp; nickname</div>
-				<canvas id="canvas-presentation-blinky"></canvas><div id="presentation-character-blinky">- shadow</div><div id="presentation-name-blinky">"blinky"</div>
-				<canvas id="canvas-presentation-pinky"></canvas><div id="presentation-character-pinky">- speedy</div><div id="presentation-name-pinky">"pinky"</div>
-				<canvas id="canvas-presentation-inky"></canvas><div id="presentation-character-inky">- bashful</div><div id="presentation-name-inky">"inky"</div>
-				<canvas id="canvas-presentation-clyde"></canvas><div id="presentation-character-clyde">- pokey</div><div id="presentation-name-clyde">"clyde"</div>
+				<!--<div id="presentation-titles">character &nbsp;/&nbsp; nickname</div>-->
+				<canvas id="canvas-presentation-blinky"></canvas><div id="presentation-character-blinky">- busaco</div><div id="presentation-name-blinky">"blinky"</div>
+				<canvas id="canvas-presentation-pinky"></canvas><div id="presentation-character-pinky">- radu</div><div id="presentation-name-pinky">"pinky"</div>
+				<canvas id="canvas-presentation-inky"></canvas><div id="presentation-character-inky">- tuplea</div><div id="presentation-name-inky">"inky"</div>
+				<canvas id="canvas-presentation-clyde"></canvas><div id="presentation-character-clyde">- ifte</div><div id="presentation-name-clyde">"clyde"</div>
 			</div>
-			<canvas id="trailer"></canvas>
+			<!--<canvas id="trailer"></canvas>
 			<div class="help-button">- help -</div>
 			<a class="sound" href="javascript:void(0);" data-sound="on"><img src="img/sound-on.png" alt="" border="0"></a>
-			<a class="github" target="_blank" href="https://github.com/luciopanepinto/pacman"><img src="img/github.png" alt="GitHub - Lucio PANEPINTO - Pac-Man"></a>
+			<a class="github" target="_blank" href="https://github.com/luciopanepinto/pacman"><img src="img/github.png" alt="GitHub - Lucio PANEPINTO - Pac-Man"></a>-->
 		</div>
+
+		<img id="head" src="pac-man.PNG">
+		<img id="busaco" src="buraga.png">
+		<img id="tuplea" src="tuplea.png">
+		<img id="radulescu" src="radulescu.png">
+		<img id="iftene" src="iftene.png">
 	
 		<div id="panel">
 			<h1>pac-man</h1>
