@@ -274,7 +274,7 @@ function lifes(l) {
 
 function gameover() { 
 	GAMEOVER = true;
-	message("game over");
+	message("AI PICAT!");
 	stopTimes();
 
 	erasePacman();
