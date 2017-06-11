@@ -49,8 +49,8 @@ if (!$conn) {
 *aici primeste usernameul jucatorului ca sa afiseze doar scorurile lui
 *in interogarea sql mai trebuie adaugat dupa where NumeUser=:myusername
 */;
-$stid = oci_parse($conn, 'SELECT * FROM HighScores WHERE ROWNUM<10 ORDER BY Scor desc'); 
-oci_bind_by_name($stid, ':myusername', $userName);
+$stid = oci_parse($conn, 'SELECT * FROM HighScores WHERE NumeUser=:userName AND ROWNUM<10 ORDER BY Scor desc'); 
+oci_bind_by_name($stid, ':userName', $userName);
 if (!$stid) {
     $e = oci_error($conn);
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
