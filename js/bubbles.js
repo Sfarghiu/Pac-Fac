@@ -36,32 +36,54 @@ function drawBubbles() {
 	var ctx = getBubblesCanevasContext();
 	ctx.fillStyle = "#CD5C5C";
 	
-	for (var line = 1, linemax = 29, i = 0, s = 0; line <= linemax; line ++) { 
-		var y = getYFromLine(line);
-		for (var x = BUBBLES_X_START, xmax = BUBBLES_X_END, bubble = 1 ; x < xmax; bubble ++, x += BUBBLES_GAP) { 
-			if (canAddBubble(line, bubble)) { 
-				var type = "";
-				var size = "";
-				if (isSuperBubble(line, bubble)) { 
-					type = "s";
-					size = SUPER_BUBBLES_SIZE;
-					SUPER_BUBBLES[s] = line + ";" + bubble + ";" + parseInt(correctionX(x, bubble)) + "," + parseInt(y) + ";0";
-					s ++;
-				} else { 
-					type = "b";
-					size = BUBBLES_SIZE;
-				}
-				BUBBLES_COUNTER ++;
-				ctx.beginPath();
-				ctx.arc(correctionX(x, bubble), y, size, 0, 2 * Math.PI, false);
-				ctx.fill();
-				ctx.closePath();
+	// for (var line = 1, linemax = 29, i = 0, s = 0; line <= linemax; line ++) { 
+	// 	var y = getYFromLine(line);
+	// 	for (var x = BUBBLES_X_START, xmax = BUBBLES_X_END, bubble = 1 ; x < xmax; bubble ++, x += BUBBLES_GAP) { 
+	// 		if (canAddBubble(line, bubble)) { 
+	// 			var type = "";
+	// 			var size = "";
+	// 			if (isSuperBubble(line, bubble)) { 
+	// 				type = "s";
+	// 				size = SUPER_BUBBLES_SIZE;
+	// 				SUPER_BUBBLES[s] = line + ";" + bubble + ";" + parseInt(correctionX(x, bubble)) + "," + parseInt(y) + ";0";
+	// 				s ++;
+	// 			} else { 
+	// 				type = "b";
+	// 				size = BUBBLES_SIZE;
+	// 			}
+	// 			BUBBLES_COUNTER ++;
+	// 			ctx.beginPath();
+	// 			ctx.arc(correctionX(x, bubble), y, size, 0, 2 * Math.PI, false);
+	// 			ctx.fill();
+	// 			ctx.closePath();
 				
-				BUBBLES_ARRAY.push( parseInt(correctionX(x, bubble)) + "," + parseInt(y) + ";" + line + ";" + bubble + ";" + type + ";0" );
-				i ++;
-			}
-		}
-	}
+	// 			BUBBLES_ARRAY.push( parseInt(correctionX(x, bubble)) + "," + parseInt(y) + ";" + line + ";" + bubble + ";" + type + ";0" );
+	// 			i ++;
+	// 		}
+	// 	}
+	// }
+
+	// //add Heinz
+
+	//  ctx.beginPath();
+	//  ctx.arc(correctionX(296, 1), 416, 3, 0, 2 * Math.PI, false);
+	//  ctx.fill();
+	//  ctx.closePath();
+
+	//  BUBBLES_ARRAY.push( parseInt(correctionX(296, 1)) + "," + parseInt(416) + ";" + 1 + ";" + 1 + ";" + "b" + ";0" );
+
+	// //add 2K
+
+	//  ctx.beginPath();
+	//  ctx.arc(correctionX(226, 2), 416, 8, 0, 2 * Math.PI, false);
+	//  ctx.fill();
+	//  ctx.closePath();
+
+	//  SUPER_BUBBLES[0] = 1 + ";" + 2 + ";" + parseInt(correctionX(226, 2)) + "," + parseInt(416) + ";0";
+
+	//  BUBBLES_ARRAY.push( parseInt(correctionX(226, 2)) + "," + parseInt(416) + ";" + 1 + ";" + 2 + ";" + "s" + ";0" );
+
+
 }
 
 function stopBlinkSuperBubbles() { 

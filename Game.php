@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
- <?php 
- session_start();
- $accessToken = isset($_SESSION['accessToken']) ? $_SESSION['accessToken'] : NULL;
- //echo $fbToken;
- $playerIcon = isset($_SESSION['playerIcon']) ? $_SESSION['playerIcon'] : NULL;
- //echo $playerIcon;?>
+
+	<?php 
+	session_start();
+	$accessToken = isset($_SESSION['accessToken']) ? $_SESSION['accessToken'] : NULL;
+	//echo $fbToken;
+	$playerIcon = isset($_SESSION['playerIcon']) ? $_SESSION['playerIcon'] : NULL;
+	//echo $playerIcon;?>
+	
 	<title> Pac-Fac </title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
