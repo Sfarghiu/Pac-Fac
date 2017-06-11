@@ -29,8 +29,9 @@ session_start();
 
   function checkLoginState() {
     FB.getLoginStatus(function(response) {
-      if(response.status==="connected")
-        window.location.replace("login_flow.php");
+      if(response.status==="connected"){
+		  access_token = response.authResponse.accessToken;
+	  window.location.replace("login_flow.php");}
       else
       login();
       //smt();
@@ -75,6 +76,7 @@ function smt(){
        console.log('Welcome!  Fetching your information.... ');
        access_token = response.authResponse.accessToken; //get access token
        user_id = response.authResponse.userID; //get FB UID
+	   console.log(access_token);
        user_email = response.email;
        console.log(user_id); 
      
