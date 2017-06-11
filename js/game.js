@@ -295,6 +295,15 @@ function lifes(l) {
 function gameover() { 
 	GAMEOVER = true;
 	message("AI PICAT!");
+	$.ajax({
+            url: 'Insertintotable.php', //This is the current doc
+            type: "POST",
+            data: {score: HIGHSCORE},
+            success: function(data){
+                console.log(data);
+                           }
+	}); 
+
 	stopTimes();
 
 	erasePacman();
@@ -344,7 +353,7 @@ function score(s, type) {
 		if (HIGHSCORE === 0) { 
 			$('#highscore span').html("00");
 		} else { 
-			$('#highscore span').html(HIGHSCORE);
+			 $('#highscore span').html("HIGHSCORE");
 		}
 	}
 	
