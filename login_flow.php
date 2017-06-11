@@ -16,7 +16,7 @@
 		$response = $fb->get('/me?fields=id,name', $accessToken);
 	  $user = $response->getGraphUser();
 	  $id= $user['id'];
-	  $userName= $user['name'];
+		$userName= $user['name'];
 	} catch(Facebook\Exceptions\FacebookResponseException $e) {
 	  // When Graph returns an error
 	  echo 'Graph returned an error: ' . $e->getMessage();
