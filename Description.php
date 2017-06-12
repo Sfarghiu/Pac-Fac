@@ -51,7 +51,7 @@
 <div id="div1">
 </div>
 
-<button>More info</button>
+<button onClick = "this.style.display='none';">More info</button>
 
 </body>
 </html>
