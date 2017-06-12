@@ -24,6 +24,11 @@
         <a href="http://localhost:8181/Pac-Fac/Game.php"><button>Return to game</button>
         </a>
     </div>
+
+    <div class="but">
+        <a href="http://localhost:8181/Pac-Fac/raport.html"><button>Scholarly HTML report</button>
+        </a>
+    </div>
 </div>
 
 <div class="col-12 col-m-12">
