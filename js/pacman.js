@@ -27,6 +27,7 @@ function initPacman() {
 	if (canvas.getContext) { 
 		PACMAN_CANVAS_CONTEXT = canvas.getContext('2d');
 	}
+	
 }
 function resetPacman() { 
 	stopPacman();
@@ -34,8 +35,8 @@ function resetPacman() {
 	PACMAN_DIRECTION = 3;
 	PACMAN_DIRECTION_TRY = -1;
 	PACMAN_DIRECTION_TRY_TIMER = null;
-	PACMAN_POSITION_X = 276;
-	PACMAN_POSITION_Y = 416;
+	PACMAN_POSITION_X = 15;
+	PACMAN_POSITION_Y = 20;
 	PACMAN_MOUNTH_STATE = 3;
 	PACMAN_MOVING = false;
 	PACMAN_MOVING_TIMER = -1;
@@ -239,6 +240,7 @@ function drawPacman() {
 	ctx.lineTo(lineToX, lineToY);
 	ctx.fill();
 	ctx.closePath();
+
 }
 
 function erasePacman() { 

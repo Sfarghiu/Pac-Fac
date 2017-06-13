@@ -203,7 +203,7 @@ window.onload = function() {
 			</table>
 		</div>-->
 	
-		<div id="home">
+		<div id="home"><br><br><br>
 			<h1>pac-fac</h1>
 			<!--<h3>Lucio PANEPINTO<br><em>2015</em></h3>-->
 			<canvas id="canvas-home-title-pacman"></canvas>
@@ -237,10 +237,8 @@ window.onload = function() {
 				<canvas id="canvas-bubbles"></canvas>
 				<canvas id="canvas-fruits"></canvas>
 				<canvas id="canvas-pacman"></canvas>
-				<canvas id="canvas-ghost-blinky"></canvas>
-				<canvas id="canvas-ghost-pinky"></canvas>
-				<canvas id="canvas-ghost-inky"></canvas>
-				<canvas id="canvas-ghost-clyde"></canvas>
+				<canvas id="canvas-ghost-busaco"></canvas>
+				
 				<div id="control-up-big"></div>
 				<div id="control-down-big"></div>
 				<div id="control-left-big"></div>
