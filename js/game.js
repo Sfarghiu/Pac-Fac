@@ -59,6 +59,7 @@ function initGame(newgame) {
 			ctx.drawImage(imageObj, -20, -20);
 		};
 		imageObj.src = 'pac-man.PNG';
+		
 		// var canvas = document.getElementById('canvas-panel-title-pacman');
 		// canvas.setAttribute('width', '38');
 		// canvas.setAttribute('height', '32');
@@ -86,6 +87,31 @@ function initGame(newgame) {
 		// ctx.closePath();
 	}
 
+	initBoard();
+	drawBoard();
+	drawBoardDoor();
+	
+	initPaths();
+	drawPaths();
+	
+	initBubbles();
+	drawBubbles();
+	
+	initFruits();
+	
+	initPacman();
+	drawPacman();
+	
+	initGhosts();
+	drawGhosts();
+	
+	lifes();
+	
+	ready();
+}
+
+function nextInitGame() {
+	
 	initBoard();
 	drawBoard();
 	drawBoardDoor();
@@ -150,7 +176,7 @@ function nextLevel() {
 	resetPacman();
 	resetGhosts();
 
-	initGame();
+	nextInitGame();
 	
 	TIME_LEVEL = 0;
 	TIME_LIFE = 0;
@@ -178,7 +204,7 @@ function retry() {
 
 function ready() { 
 	LOCK = true;
-	message("ready!");
+	message("incepe examenu'!");
 	
 	playReadySound();
 	setTimeout("go()", "4100");
@@ -238,13 +264,17 @@ function pauseGame() {
 	if (!PAUSE) { 
 		stopAllSound();
 		PAUSE = true;
-		
-		message("pause");
+	
+		message("pauza de tigara");
+		playPauseSound();
 		
 		pauseTimes();
 		pausePacman();
 		pauseGhosts();
 		stopBlinkSuperBubbles();
+
+		// nextLevel();
+
 	}
 }
 function resumeGame() { 
@@ -302,8 +332,7 @@ function gameover() {
             success: function(data){
                 console.log(data);
                            }
-	}); 
-
+	});
 	stopTimes();
 
 	erasePacman();
@@ -353,7 +382,7 @@ function score(s, type) {
 		if (HIGHSCORE === 0) { 
 			$('#highscore span').html("00");
 		} else { 
-			 $('#highscore span').html("HIGHSCORE");
+			$('#highscore span').html(HIGHSCORE);
 		}
 	}
 	
