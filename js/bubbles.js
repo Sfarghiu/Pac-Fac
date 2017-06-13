@@ -499,8 +499,1090 @@ function drawBubbles() {
 
 	 BUBBLES_ARRAY.push( parseInt(correctionX(300, 62)) + "," + parseInt(300) + ";" + 3 + ";" + 62 + ";" + "b" + ";0" );
 
+	 ctx.beginPath();
+	 ctx.arc(correctionX(280, 63), 310, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
 
-	 
+	 BUBBLES_ARRAY.push( parseInt(correctionX(280, 63)) + "," + parseInt(310) + ";" + 3 + ";" + 63 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(260, 64), 310, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(260, 64)) + "," + parseInt(310) + ";" + 3 + ";" + 64 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(240, 65), 310, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(240, 65)) + "," + parseInt(310) + ";" + 3 + ";" + 65 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(240, 66), 310, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(240, 66)) + "," + parseInt(310) + ";" + 3 + ";" + 66 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(220, 67), 310, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(220, 67)) + "," + parseInt(310) + ";" + 3 + ";" + 67 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(200, 68), 310, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(200, 68)) + "," + parseInt(310) + ";" + 3 + ";" + 68 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(180, 69), 300, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(180, 69)) + "," + parseInt(300) + ";" + 3 + ";" + 69 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(180, 70), 280, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(180, 70)) + "," + parseInt(280) + ";" + 3 + ";" + 70 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(180, 71), 260, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(180, 71)) + "," + parseInt(260) + ";" + 3 + ";" + 71 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(180, 72), 240, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(180, 72)) + "," + parseInt(240) + ";" + 3 + ";" + 72 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(180, 73), 210, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(180, 73)) + "," + parseInt(210) + ";" + 3 + ";" + 73 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(160, 74), 210, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(160, 74)) + "," + parseInt(210) + ";" + 3 + ";" + 74 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(140, 75), 210, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(140, 75)) + "," + parseInt(210) + ";" + 3 + ";" + 75 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(120, 76), 210, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(120, 76)) + "," + parseInt(210) + ";" + 3 + ";" + 76 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(100, 77), 210, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(100, 77)) + "," + parseInt(210) + ";" + 3 + ";" + 77 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(80, 78), 210, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(80, 78)) + "," + parseInt(210) + ";" + 3 + ";" + 78 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(60, 79), 210, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(60, 79)) + "," + parseInt(210) + ";" + 3 + ";" + 79 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(40, 80), 210, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(40, 80)) + "," + parseInt(210) + ";" + 3 + ";" + 80 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(20, 82), 240, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(20, 82)) + "," + parseInt(240) + ";" + 3 + ";" + 82 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(40, 81), 211, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(40, 81)) + "," + parseInt(211) + ";" + 3 + ";" + 81 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(20, 83), 260, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(20, 83)) + "," + parseInt(260) + ";" + 3 + ";" + 83 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(20, 84), 280, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(20, 84)) + "," + parseInt(280) + ";" + 3 + ";" + 84 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(40, 85), 280, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(40, 85)) + "," + parseInt(280) + ";" + 3 + ";" + 85 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(60, 86), 280, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(60, 86)) + "," + parseInt(280) + ";" + 3 + ";" + 86 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(80, 87), 280, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(80, 87)) + "," + parseInt(280) + ";" + 3 + ";" + 87 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(100, 88), 280, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(100, 88)) + "," + parseInt(280) + ";" + 3 + ";" + 88 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(120, 89), 280, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(120, 89)) + "," + parseInt(280) + ";" + 3 + ";" + 89 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(140, 90), 280, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(140, 90)) + "," + parseInt(280) + ";" + 3 + ";" + 90 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(160, 91), 280, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(160, 91)) + "," + parseInt(280) + ";" + 3 + ";" + 91 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(20, 92), 300, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(20, 92)) + "," + parseInt(300) + ";" + 3 + ";" + 92 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(20, 93), 320, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(20, 93)) + "," + parseInt(320) + ";" + 3 + ";" + 93 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(20, 94), 340, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(20, 94)) + "," + parseInt(340) + ";" + 3 + ";" + 94 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(20, 95), 360, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(20, 95)) + "," + parseInt(360) + ";" + 3 + ";" + 95 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(20, 96), 380, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(20, 96)) + "," + parseInt(380) + ";" + 3 + ";" + 96 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(20, 97), 395, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(20, 97)) + "," + parseInt(395) + ";" + 3 + ";" + 97 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(40, 98), 395, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(40, 98)) + "," + parseInt(395) + ";" + 3 + ";" + 98 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(60, 99), 395, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(60, 99)) + "," + parseInt(395) + ";" + 3 + ";" + 99 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(80, 100), 395, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(80, 100)) + "," + parseInt(395) + ";" + 3 + ";" + 100 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(100, 101), 395, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(100, 101)) + "," + parseInt(395) + ";" + 3 + ";" + 101 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(120, 102), 395, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(120, 102)) + "," + parseInt(395) + ";" + 3 + ";" + 102 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(140, 103), 395, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(140, 103)) + "," + parseInt(395) + ";" + 3 + ";" + 103 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(160, 104), 395, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(160, 104)) + "," + parseInt(395) + ";" + 3 + ";" + 104 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(180, 105), 395, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(180, 105)) + "," + parseInt(395) + ";" + 3 + ";" + 105 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(200, 106), 395, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(200, 106)) + "," + parseInt(395) + ";" + 3 + ";" + 106 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(220, 107), 395, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(220, 107)) + "," + parseInt(395) + ";" + 3 + ";" + 107 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(240, 108), 395, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(240, 108)) + "," + parseInt(395) + ";" + 3 + ";" + 108 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(175, 109), 415, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(175, 109)) + "," + parseInt(415) + ";" + 3 + ";" + 109 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(175, 110), 435, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(175, 110)) + "," + parseInt(435) + ";" + 3 + ";" + 110 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(175, 111), 455, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(175, 111)) + "," + parseInt(455) + ";" + 3 + ";" + 111 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(195, 112), 455, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(195, 112)) + "," + parseInt(455) + ";" + 3 + ";" + 112 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(215, 113), 455, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(215, 113)) + "," + parseInt(455) + ";" + 3 + ";" + 113 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(235, 114), 455, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(235, 114)) + "," + parseInt(455) + ";" + 3 + ";" + 114 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(250, 115), 435, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(250, 115)) + "," + parseInt(435) + ";" + 3 + ";" + 115 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(250, 116), 415, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(250, 116)) + "," + parseInt(415) + ";" + 3 + ";" + 116 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(250, 117), 455, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(250, 117)) + "," + parseInt(455) + ";" + 3 + ";" + 117 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(250, 118), 455, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(250, 118)) + "," + parseInt(455) + ";" + 3 + ";" + 118 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(250, 119), 475, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(250, 119)) + "," + parseInt(475) + ";" + 3 + ";" + 119 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(250, 120), 495, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(250, 120)) + "," + parseInt(495) + ";" + 3 + ";" + 120 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(220, 122), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(220, 122)) + "," + parseInt(520) + ";" + 3 + ";" + 122 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(200, 123), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(200, 123)) + "," + parseInt(520) + ";" + 3 + ";" + 123 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(180, 124), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(180, 124)) + "," + parseInt(520) + ";" + 3 + ";" + 124 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(160, 125), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(160, 125)) + "," + parseInt(520) + ";" + 3 + ";" + 125 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(140, 126), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(140, 126)) + "," + parseInt(520) + ";" + 3 + ";" + 126 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(120, 127), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(120, 127)) + "," + parseInt(520) + ";" + 3 + ";" + 127 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(100, 128), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(100, 128)) + "," + parseInt(520) + ";" + 3 + ";" + 128 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(80, 129), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(80, 129)) + "," + parseInt(520) + ";" + 3 + ";" + 129 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(60, 130), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(60, 130)) + "," + parseInt(520) + ";" + 3 + ";" + 130 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(40, 131), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(40, 131)) + "," + parseInt(520) + ";" + 3 + ";" + 131 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(25, 132), 509, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(25, 132)) + "," + parseInt(509) + ";" + 4 + ";" + 132 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(25, 133), 500, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(25, 133)) + "," + parseInt(500) + ";" + 4 + ";" + 133 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(25, 134), 480, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(25, 134)) + "," + parseInt(480) + ";" + 4 + ";" + 134 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(25, 135), 480, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(25, 135)) + "," + parseInt(480) + ";" + 4 + ";" + 135 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(40, 136), 455, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(40, 136)) + "," + parseInt(455) + ";" + 4 + ";" + 136 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(60, 137), 455, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(60, 137)) + "," + parseInt(455) + ";" + 4 + ";" + 137 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(80, 138), 455, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(80, 138)) + "," + parseInt(455) + ";" + 4 + ";" + 138 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(100, 139), 455, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(100, 139)) + "," + parseInt(455) + ";" + 4 + ";" + 139 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(120, 140), 455, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(120, 140)) + "," + parseInt(455) + ";" + 4 + ";" + 140 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(140, 141), 455, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(140, 141)) + "," + parseInt(455) + ";" + 4 + ";" + 141 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(160, 142), 455, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(160, 142)) + "," + parseInt(455) + ";" + 4 + ";" + 142 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(160, 143), 455, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(160, 143)) + "," + parseInt(455) + ";" + 4 + ";" + 143 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(300, 144), 320, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(300, 144)) + "," + parseInt(320) + ";" + 4 + ";" + 144 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(300, 145), 340, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(300, 145)) + "," + parseInt(340) + ";" + 4 + ";" + 145 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(300, 146), 360, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(300, 146)) + "," + parseInt(360) + ";" + 4 + ";" + 146 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(300, 147), 380, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(300, 147)) + "," + parseInt(380) + ";" + 4 + ";" + 147 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(300, 148), 400, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(300, 148)) + "," + parseInt(400) + ";" + 4 + ";" + 148 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(300, 149), 420, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(300, 149)) + "," + parseInt(420) + ";" + 4 + ";" + 149 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(300, 150), 440, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(300, 150)) + "," + parseInt(440) + ";" + 4 + ";" + 150 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(300, 151), 460, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(300, 151)) + "," + parseInt(460) + ";" + 4 + ";" + 151 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(300, 152), 480, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(300, 152)) + "," + parseInt(480) + ";" + 4 + ";" + 152 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(300, 153), 500, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(300, 153)) + "," + parseInt(500) + ";" + 4 + ";" + 153 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(300, 154), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(300, 154)) + "," + parseInt(520) + ";" + 4 + ";" + 154 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(320, 155), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(320, 155)) + "," + parseInt(520) + ";" + 4 + ";" + 155 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(340, 156), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(340, 156)) + "," + parseInt(520) + ";" + 4 + ";" + 156 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(360, 157), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(360, 157)) + "," + parseInt(520) + ";" + 4 + ";" + 157 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(380, 158), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(380, 158)) + "," + parseInt(520) + ";" + 4 + ";" + 158 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(400, 159), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(400, 159)) + "," + parseInt(520) + ";" + 4 + ";" + 159 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(420, 160), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(420, 160)) + "," + parseInt(520) + ";" + 4 + ";" + 160 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(440, 161), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(440, 161)) + "," + parseInt(520) + ";" + 4 + ";" + 161 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(460, 163), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(460, 163)) + "," + parseInt(520) + ";" + 4 + ";" + 163 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(480, 164), 500, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 164)) + "," + parseInt(500) + ";" + 4 + ";" + 164 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(480, 165), 480, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 165)) + "," + parseInt(480) + ";" + 4 + ";" + 165 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(480, 166), 460, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 166)) + "," + parseInt(460) + ";" + 4 + ";" + 166 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(480, 167), 440, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 167)) + "," + parseInt(440) + ";" + 4 + ";" + 167 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(480, 168), 420, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 168)) + "," + parseInt(420) + ";" + 4 + ";" + 168 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(480, 169), 400, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 169)) + "," + parseInt(400) + ";" + 4 + ";" + 169 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(480, 170), 380, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 170)) + "," + parseInt(380) + ";" + 4 + ";" + 170 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(480, 171), 360, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 171)) + "," + parseInt(360) + ";" + 4 + ";" + 171 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(480, 172), 340, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 172)) + "," + parseInt(340) + ";" + 4 + ";" + 172 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(480, 173), 320, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 173)) + "," + parseInt(320) + ";" + 4 + ";" + 173 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(480, 174), 300, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 174)) + "," + parseInt(300) + ";" + 4 + ";" + 174 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(480, 175), 280, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 175)) + "," + parseInt(280) + ";" + 4 + ";" + 175 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(480, 176), 260, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 176)) + "," + parseInt(260) + ";" + 4 + ";" + 176 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(480, 177), 240, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 177)) + "," + parseInt(240) + ";" + 4 + ";" + 177 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(480, 178), 220, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 178)) + "," + parseInt(220) + ";" + 4 + ";" + 178 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(480, 179), 200, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 179)) + "," + parseInt(200) + ";" + 4 + ";" + 179 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(480, 180), 200, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 180)) + "," + parseInt(200) + ";" + 4 + ";" + 180 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 181), 20, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 181)) + "," + parseInt(20) + ";" + 4 + ";" + 181 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 182), 40, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 182)) + "," + parseInt(40) + ";" + 4 + ";" + 182 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 183), 60, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 183)) + "," + parseInt(60) + ";" + 4 + ";" + 183 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 184), 80, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 184)) + "," + parseInt(80) + ";" + 4 + ";" + 184 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 185), 100, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 185)) + "," + parseInt(100) + ";" + 4 + ";" + 185 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 186), 120, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 186)) + "," + parseInt(120) + ";" + 4 + ";" + 186 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 187), 140, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 187)) + "," + parseInt(140) + ";" + 4 + ";" + 187 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 188), 160, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 188)) + "," + parseInt(160) + ";" + 4 + ";" + 186 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 189), 180, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 189)) + "," + parseInt(180) + ";" + 4 + ";" + 189 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 190), 200, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 190)) + "," + parseInt(200) + ";" + 4 + ";" + 190 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 191), 220, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 191)) + "," + parseInt(220) + ";" + 4 + ";" + 191 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 192), 240, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 192)) + "," + parseInt(240) + ";" + 4 + ";" + 192 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 193), 260, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 193)) + "," + parseInt(260) + ";" + 4 + ";" + 193 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 194), 280, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 194)) + "," + parseInt(280) + ";" + 4 + ";" + 194 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 195), 300, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 195)) + "," + parseInt(300) + ";" + 4 + ";" + 195 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 196), 320, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 196)) + "," + parseInt(320) + ";" + 4 + ";" + 196 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 197), 340, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 197)) + "," + parseInt(340) + ";" + 4 + ";" + 197 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 198), 360, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 198)) + "," + parseInt(360) + ";" + 4 + ";" + 198 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 199), 380, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 199)) + "," + parseInt(380) + ";" + 4 + ";" + 199 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 200), 400, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 200)) + "," + parseInt(400) + ";" + 4 + ";" + 200 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 201), 420, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 201)) + "," + parseInt(420) + ";" + 4 + ";" + 201 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 202), 440, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 202)) + "," + parseInt(440) + ";" + 4 + ";" + 202 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(370, 203), 460, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(370, 203)) + "," + parseInt(460) + ";" + 4 + ";" + 203 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(350, 204), 460, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(350, 204)) + "," + parseInt(460) + ";" + 4 + ";" + 204 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(330, 205), 460, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(330, 205)) + "," + parseInt(460) + ";" + 4 + ";" + 205 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(430, 206), 460, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(430, 206)) + "," + parseInt(460) + ";" + 4 + ";" + 206 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(390, 207), 460, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(390, 207)) + "," + parseInt(460) + ";" + 4 + ";" + 207 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(410, 208), 460, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(410, 208)) + "," + parseInt(460) + ";" + 4 + ";" + 208 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(450, 209), 460, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(450, 209)) + "," + parseInt(460) + ";" + 4 + ";" + 209 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(350, 210), 310, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(350, 210)) + "," + parseInt(310) + ";" + 4 + ";" + 210 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(330, 211), 310, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(330, 211)) + "," + parseInt(310) + ";" + 4 + ";" + 211 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(390, 212), 310, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(390, 212)) + "," + parseInt(310) + ";" + 4 + ";" + 212 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(410, 213), 310, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(410, 213)) + "," + parseInt(310) + ";" + 4 + ";" + 213 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(430, 214), 310, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(430, 214)) + "," + parseInt(310) + ";" + 4 + ";" + 214 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(450, 215), 310, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(450, 215)) + "," + parseInt(310) + ";" + 4 + ";" + 215 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(450, 216), 180, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(450, 216)) + "," + parseInt(180) + ";" + 4 + ";" + 216 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(430, 217), 180, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(430, 217)) + "," + parseInt(180) + ";" + 4 + ";" + 217 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(410, 218), 180, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(410, 218)) + "," + parseInt(180) + ";" + 4 + ";" + 218 + ";" + "b" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(390, 219), 180, 3, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(390, 219)) + "," + parseInt(180) + ";" + 4 + ";" + 219 + ";" + "b" + ";0" );
 	 
 
 	// //add 2K
@@ -519,11 +1601,30 @@ function drawBubbles() {
 	 ctx.fill();
 	 ctx.closePath();
 
-	 SUPER_BUBBLES[0] = 2 + ";" + 42 + ";" + parseInt(correctionX(60, 42)) + "," + parseInt(170) + ";0";
+	 SUPER_BUBBLES[1] = 2 + ";" + 42 + ";" + parseInt(correctionX(60, 42)) + "," + parseInt(170) + ";0";
 
 	 BUBBLES_ARRAY.push( parseInt(correctionX(60, 42)) + "," + parseInt(170) + ";" + 1 + ";" + 42 + ";" + "s" + ";0" );
 
-	 BUBBLES_COUNTER = 63;
+	 ctx.beginPath();
+	 ctx.arc(correctionX(250, 121), 520, 8, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 SUPER_BUBBLES[2] = 3 + ";" + 121 + ";" + parseInt(correctionX(250, 121)) + "," + parseInt(520) + ";0";
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(250, 121)) + "," + parseInt(520) + ";" + 1 + ";" + 121 + ";" + "s" + ";0" );
+
+	 ctx.beginPath();
+	 ctx.arc(correctionX(480, 162), 520, 8, 0, 2 * Math.PI, false);
+	 ctx.fill();
+	 ctx.closePath();
+
+	 SUPER_BUBBLES[3] = 3 + ";" + 162 + ";" + parseInt(correctionX(480, 162)) + "," + parseInt(520) + ";0";
+
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 162)) + "," + parseInt(520) + ";" + 1 + ";" + 162 + ";" + "s" + ";0" );
+
+	 BUBBLES_COUNTER = 220;
+	 
 
 
 }
@@ -621,7 +1722,7 @@ function isSuperBubble(line, bubble) {
 	// 	return true;
 	// }
 
-	if (SUPER_BUBBLES[0] || SUPER_BUBBLES[1]) {
+	if (SUPER_BUBBLES[0] || SUPER_BUBBLES[1] || SUPER_BUBBLES[2] || SUPER_BUBBLES[3]) {
 		return true;
 	}
 	

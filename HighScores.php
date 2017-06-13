@@ -39,7 +39,7 @@
 				<a class="content" > <h1>MyScores</h1> 
 				<?php
 
-$conn = oci_connect('vladut', 'LAB11', 'localhost/XE'); //schimbam cu conexiunea actuala aici
+$conn = oci_connect('student', 'STUDENT', 'localhost/XE'); //schimbam cu conexiunea actuala aici
 if (!$conn) {
     $e = oci_error();
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
@@ -49,7 +49,7 @@ if (!$conn) {
 *aici primeste usernameul jucatorului ca sa afiseze doar scorurile lui
 *in interogarea sql mai trebuie adaugat dupa where NumeUser=:myusername
 */;
-$stid = oci_parse($conn, 'SELECT * FROM HighScores WHERE NumeUser=:userName AND ROWNUM<10 ORDER BY Scor desc'); 
+$stid = oci_parse($conn, 'SELECT * FROM(select * from HighScores WHERE NumeUser=:userName order by Scor desc) where ROWNUM<10'); 
 oci_bind_by_name($stid, ':userName', $userName);
 if (!$stid) {
     $e = oci_error($conn);
@@ -91,13 +91,13 @@ oci_close($conn);
 				<h1> All Scores</h1>
 							<?php
 
-$conn = oci_connect('vladut', 'LAB11', 'localhost/XE'); //schimbam cu conexiunea actuala aici
+$conn = oci_connect('student', 'STUDENT', 'localhost/XE'); //schimbam cu conexiunea actuala aici
 if (!$conn) {
     $e = oci_error();
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 }
 // Prepare the statement
-$stid = oci_parse($conn, 'SELECT * FROM HighScores WHERE ROWNUM<10 ORDER BY Scor desc'); //asta ramane asa
+$stid = oci_parse($conn, 'SELECT * FROM(select* from HighScores order by Scor desc ) WHERE ROWNUM<10 '); //asta ramane asa
 if (!$stid) {
     $e = oci_error($conn);
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);

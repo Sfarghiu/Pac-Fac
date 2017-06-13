@@ -43,8 +43,8 @@
         under the guidance of their professor Ciprian Amariei. </p>
         <p> This project aims to recreate the legendary game of Pac-Man, but with a twist: the levels are
             inspired by the computer science building layout, the users will be able to connect using
-            various social accounts, the power-ups are student-themed (cheat-sheets, smart-watches etc.),
-            the ghosts are professors, and a whole lot more. </p>
+            various social accounts,
+            the ghosts are professors and a whole lot more. </p>
             <p> We gladly present to you</p>
         </div>
 
