@@ -266,6 +266,7 @@ function pauseGame() {
 		PAUSE = true;
 	
 		message("pauza de tigara");
+		playPauseSound();
 		
 		pauseTimes();
 		pausePacman();
@@ -381,7 +382,7 @@ function score(s, type) {
 		if (HIGHSCORE === 0) { 
 			$('#highscore span').html("00");
 		} else { 
-			$('#highscore span').html("HIGHSCORE");
+			$('#highscore span').html(HIGHSCORE);
 		}
 	}
 	

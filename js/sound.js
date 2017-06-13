@@ -29,6 +29,10 @@ var DIE_SOUND = new buzz.sound([
     "./sound/picat.mp3" 
 ]);
 
+var PAUSE_SOUND = new buzz.sound([
+	"./sound/tigara.mp3"
+]);
+
 var GROUP_SOUND = new buzz.group([ EATING_SOUND, SIREN_SOUND, EAT_PILL_SOUND, EAT_GHOST_SOUND, READY_SOUND, DIE_SOUND, WAZA_SOUND, GHOST_EATEN_SOUND, EXTRA_LIFE_SOUND, EAT_FRUIT_SOUND ]);
 
 var EATING_SOUND_LOOPING = false;
@@ -141,5 +145,11 @@ function playDieSound() {
 function stopAllSound() { 
 	if (isAvailableSound()) { 
 		GROUP_SOUND.stop();
+	}
+}
+
+function playPauseSound() {
+	if (isAvailableSound()) {
+		PAUSE_SOUND.play();
 	}
 }
