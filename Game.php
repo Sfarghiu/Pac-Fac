@@ -7,6 +7,7 @@
 	$accessToken = isset($_SESSION['accessToken']) ? $_SESSION['accessToken'] : NULL;
 	//echo $fbToken;
 	$playerIcon = isset($_SESSION['playerIcon']) ? $_SESSION['playerIcon'] : NULL;
+	$userName = isset($_SESSION['userName']) ? $_SESSION['userName'] : NULL;
 	//echo $playerIcon;?>
 	
 	<title> Pac-Fac </title>
@@ -374,7 +375,7 @@ window.onload = function() {
 
 	<div class="col-4 ">
 		<div class="player">
-			Player 
+			<?php echo $userName?> 
 		</div>
 		<img src="<?php echo $playerIcon?>" id="playerIcon">
 		<!--<canvas id="playerIcon">
