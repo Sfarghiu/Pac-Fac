@@ -200,6 +200,8 @@ function retry() {
 	TIME_FRUITS = 0;
 	
 	ready();
+
+	message("restanta !")
 }
 
 function ready() { 
