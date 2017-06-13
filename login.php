@@ -21,9 +21,7 @@ session_start();
     if (response.status === 'connected') {
     } else {
       //document.getElementById('status').innerHTML = 'Please log ' +
-        //'into this app.';
-
-       
+        //'into this app.';   
     }
   }
 

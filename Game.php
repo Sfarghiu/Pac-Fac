@@ -17,6 +17,65 @@
 	<link rel="stylesheet" type="text/css" href="css/pacman.css" />
 	<link rel="stylesheet" type="text/css" href="css/pacman-home.css" />
 
+<script>
+
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    if (response.status === 'connected') {
+    	console.log("cv");
+    } else {
+      //document.getElementById('status').innerHTML = 'Please log ' +
+        //'into this app.';   
+    }
+  }
+
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      if(response.status==="connected"){
+      	console.log("cv");
+		  logout();
+	 }
+      //else
+      //login();
+      //smt();
+      //statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '1366424746780074',
+    cookie     : true,  // enable cookies to allow the server to access 
+    status     :true,  // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.8' // use graph api version 2.8
+  });
+
+  FB.getLoginStatus(function(response) {
+   
+    statusChangeCallback(response);
+  });
+
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+
+  function logout()
+  {
+    FB.logout(function(response) {
+    	 window.location.replace("login.php");
+      console.log('Bye, ' + response.name + '.');
+});
+  }</script>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery-buzz.js"></script>
 	<!--<script type="text/javascript" src="Game.js"></script>-->
@@ -324,8 +383,8 @@ window.onload = function() {
 
 		<br>
 		<div class="logout">
-			<a href="http://localhost:8181/Pac-Fac/login.php"><button>Logout</button>
-			</a>
+			<button onclick="checkLoginState();">Logout</button>
+			
 
 		</div>
 		<div class="highscores">
