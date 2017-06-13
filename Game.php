@@ -276,7 +276,7 @@ window.onload = function() {
 					<li>eat all the memory pills </li>
 					<li>avoid the evil teachers </li>
 					<li>eat piracetam to make the teachers vulnerable </li>
-					<li>eat the good grade for bonus score </li>
+					<li>eat the special pill for bonus score </li>
 				</ul>
 			</div>
 
