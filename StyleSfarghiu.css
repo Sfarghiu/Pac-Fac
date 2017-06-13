@@ -160,6 +160,7 @@ div.urla{
 
   div.urla{
       font-size:65px;
+      margin-top:-20px;
   }
 
   button{
@@ -176,6 +177,6 @@ div.urla{
 
 #pacman{
   height:200px;
-  margin-top:-50px;
+  margin-top:-80px;
 }
 }

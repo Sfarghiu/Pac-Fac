@@ -67,14 +67,39 @@ function initPaths() {
 	//  PATHS.push("276,0-276,550");
 	//  PATHS.push("0,416-550,416");
 
-	PATHS.push("15,20-340,20");
-	PATHS.push("335,20-340,520");
-	PATHS.push("160,20-165,150");
+	PATHS.push("15,20-300,20");
+	PATHS.push("299,20-300,520");
+	PATHS.push("160,20-162,128");
+	//PATHS.push("15,68-163,71");
+	PATHS.push("15,70-160,70");
+	PATHS.push("15,70-15,125");
+	PATHS.push("15,125-240,126");
 	PATHS.push("30,140-190,145");
+	PATHS.push("238,125-241,172");
+	PATHS.push("52,172-244,172");
+	// PATHS.push("335,75-500,80");
 
 	PATHS.push("490,20-490,140");
-	PATHS.push("30,310-340,310");
-	
+	PATHS.push("185,310-485,310");
+	PATHS.push("184,210-186,310");	
+	PATHS.push("20,210-186,211");
+	PATHS.push("20,278-186,279");
+	PATHS.push("20,210-21,392");
+	PATHS.push("20,392-250,393");
+	PATHS.push("173,393-174,460");
+	PATHS.push("20,460-250,460");
+	PATHS.push("249,393-250,520");
+	PATHS.push("20,520-250,520");
+	PATHS.push("21,460-21,520");
+
+	//PATHS.push("300,300-500,300");
+	PATHS.push("370,20-371,460");
+	PATHS.push("370,180-480,180");
+	PATHS.push("479,180-480,520");
+	PATHS.push("300,455-480,456");
+	PATHS.push("300,520-480,520");
+
+	PATHS.push("370,75-500,76");
 }
 
 function getPathsCanevasContext() { 

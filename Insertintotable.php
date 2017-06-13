@@ -3,7 +3,7 @@
 // Query pentru crearea tabelei : CREATE TABLE HighScores (NumeUser varchar2(25),Scor int NOT NULL);
  session_start();
 $userName = isset($_SESSION['userName']) ? $_SESSION['userName'] : NULL;
-$conn = oci_connect('vladut', 'LAB11', 'localhost/XE');
+$conn = oci_connect('student', 'STUDENT', 'localhost/XE');
 if (!$conn) {
     $e = oci_error();
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);

@@ -1,58 +1,66 @@
-var GHOST_BLINKY_CANVAS_CONTEXT = null;
-var GHOST_BLINKY_POSITION_X = 490;
-var GHOST_BLINKY_POSITION_Y = 20;
-var GHOST_BLINKY_DIRECTION = 1;
-var GHOST_BLINKY_COLOR = "#ed1b24";
-var GHOST_BLINKY_MOVING_TIMER = -1;
-var GHOST_BLINKY_MOVING = false;
-var GHOST_BLINKY_BODY_STATE = 0;
-var GHOST_BLINKY_STATE = 0;
-var GHOST_BLINKY_EAT_TIMER = null;
-var GHOST_BLINKY_AFFRAID_TIMER = null;
-var GHOST_BLINKY_AFFRAID_STATE = 0;
-var GHOST_BLINKY_TUNNEL = false;
+var GHOST_BUSACO_CANVAS_CONTEXT = null;
+//var GHOST_BUSACO_POSITION_X = 276;
+//var GHOST_BUSACO_POSITION_Y = 204;
+var GHOST_BUSACO_POSITION_X = 490;
+var GHOST_BUSACO_POSITION_Y = 20;
+var GHOST_BUSACO_DIRECTION = 1;
+var GHOST_BUSACO_COLOR = "#ed1b24";
+var GHOST_BUSACO_MOVING_TIMER = -1;
+var GHOST_BUSACO_MOVING = false;
+var GHOST_BUSACO_BODY_STATE = 0;
+var GHOST_BUSACO_STATE = 0;
+var GHOST_BUSACO_EAT_TIMER = null;
+var GHOST_BUSACO_AFFRAID_TIMER = null;
+var GHOST_BUSACO_AFFRAID_STATE = 0;
+var GHOST_BUSACO_TUNNEL = false;
 
-var GHOST_PINKY_CANVAS_CONTEXT = null;
-var GHOST_PINKY_POSITION_X = 490;
-var GHOST_PINKY_POSITION_Y = 60;
-var GHOST_PINKY_DIRECTION = 2;
-var GHOST_PINKY_COLOR = "#feaec9";
-var GHOST_PINKY_MOVING_TIMER = -1;
-var GHOST_PINKY_MOVING = false;
-var GHOST_PINKY_BODY_STATE = 1;
-var GHOST_PINKY_STATE = 0;
-var GHOST_PINKY_EAT_TIMER = null;
-var GHOST_PINKY_AFFRAID_TIMER = null;
-var GHOST_PINKY_AFFRAID_STATE = 0;
-var GHOST_PINKY_TUNNEL = false;
+var GHOST_RADU_CANVAS_CONTEXT = null;
+//var GHOST_RADU_POSITION_X = 276;
+//var GHOST_RADU_POSITION_Y = 258;
+var GHOST_RADU_POSITION_X = 490;
+var GHOST_RADU_POSITION_Y = 60;
+var GHOST_RADU_DIRECTION = 2;
+var GHOST_RADU_COLOR = "#feaec9";
+var GHOST_RADU_MOVING_TIMER = -1;
+var GHOST_RADU_MOVING = false;
+var GHOST_RADU_BODY_STATE = 1;
+var GHOST_RADU_STATE = 0;
+var GHOST_RADU_EAT_TIMER = null;
+var GHOST_RADU_AFFRAID_TIMER = null;
+var GHOST_RADU_AFFRAID_STATE = 0;
+var GHOST_RADU_TUNNEL = false;
 
-var GHOST_INKY_CANVAS_CONTEXT = null;
-var GHOST_INKY_POSITION_X = 490;
-var GHOST_INKY_POSITION_Y = 100;
-var GHOST_INKY_DIRECTION = 3;
-var GHOST_INKY_COLOR = "#4adecb";
-var GHOST_INKY_MOVING_TIMER = -1;
-var GHOST_INKY_MOVING = false;
-var GHOST_INKY_BODY_STATE = 2;
-var GHOST_INKY_STATE = 0;
-var GHOST_INKY_EAT_TIMER = null;
-var GHOST_INKY_AFFRAID_TIMER = null;
-var GHOST_INKY_AFFRAID_STATE = 0;
-var GHOST_INKY_TUNNEL = false;
+var GHOST_TUPLEA_CANVAS_CONTEXT = null;
+//var GHOST_TUPLEA_POSITION_X = 238;
+//var GHOST_TUPLEA_POSITION_Y = 258;
+var GHOST_TUPLEA_POSITION_X = 490;
+var GHOST_TUPLEA_POSITION_Y = 100;
+var GHOST_TUPLEA_DIRECTION = 3;
+var GHOST_TUPLEA_COLOR = "#4adecb";
+var GHOST_TUPLEA_MOVING_TIMER = -1;
+var GHOST_TUPLEA_MOVING = false;
+var GHOST_TUPLEA_BODY_STATE = 2;
+var GHOST_TUPLEA_STATE = 0;
+var GHOST_TUPLEA_EAT_TIMER = null;
+var GHOST_TUPLEA_AFFRAID_TIMER = null;
+var GHOST_TUPLEA_AFFRAID_STATE = 0;
+var GHOST_TUPLEA_TUNNEL = false;
 
-var GHOST_CLYDE_CANVAS_CONTEXT = null;
-var GHOST_CLYDE_POSITION_X = 490;
-var GHOST_CLYDE_POSITION_Y = 140;
-var GHOST_CLYDE_DIRECTION = 4;
-var GHOST_CLYDE_COLOR = "#f99c00";
-var GHOST_CLYDE_MOVING_TIMER = -1;
-var GHOST_CLYDE_MOVING = false;
-var GHOST_CLYDE_BODY_STATE = 3;
-var GHOST_CLYDE_STATE = 0;
-var GHOST_CLYDE_EAT_TIMER = null;
-var GHOST_CLYDE_AFFRAID_TIMER = null;
-var GHOST_CLYDE_AFFRAID_STATE = 0;
-var GHOST_CLYDE_TUNNEL = false;
+var GHOST_IFTE_CANVAS_CONTEXT = null;
+//var GHOST_IFTE_POSITION_X = 314;
+//var GHOST_IFTE_POSITION_Y = 258;
+var GHOST_IFTE_POSITION_X = 490;
+var GHOST_IFTE_POSITION_Y = 140;
+var GHOST_IFTE_DIRECTION = 4;
+var GHOST_IFTE_COLOR = "#f99c00";
+var GHOST_IFTE_MOVING_TIMER = -1;
+var GHOST_IFTE_MOVING = false;
+var GHOST_IFTE_BODY_STATE = 3;
+var GHOST_IFTE_STATE = 0;
+var GHOST_IFTE_EAT_TIMER = null;
+var GHOST_IFTE_AFFRAID_TIMER = null;
+var GHOST_IFTE_AFFRAID_STATE = 0;
+var GHOST_IFTE_TUNNEL = false;
 
 var GHOST_AFFRAID_COLOR = "#2d3eff";
 var GHOST_AFFRAID_FINISH_COLOR = "#fff";
@@ -65,14 +73,41 @@ var GHOST_AFFRAID_TIME = 8500;
 var GHOST_EAT_TIME = 5500;
 var GHOST_BODY_STATE_MAX = 6;
 
+var busaco=new Image();
+busaco.src="buraga_small.png";
+var radu=new Image();
+radu.src="radulescu_small.png";
+var tuplea=new Image();
+tuplea.src="tuplea_small.png";
+var ifte=new Image();
+ifte.src="iftene_small.png";
+
+var busaco_afraid=new Image();
+busaco_afraid.src="buraga_afraid.png";
+var radu_afraid=new Image();
+radu_afraid.src="radulescu_afraid.png";
+var tuplea_afraid=new Image();
+tuplea_afraid.src="tuplea_afraid.png";
+var ifte_afraid=new Image();
+ifte_afraid.src="iftene_afraid.png";
+
+var busaco_eaten=new Image();
+busaco_eaten.src="buraga_eaten.png";
+var radu_eaten=new Image();
+radu_eaten.src="radulescu_eaten.png";
+var tuplea_eaten=new Image();
+tuplea_eaten.src="tuplea_eaten.png";
+var ifte_eaten=new Image();
+ifte_eaten.src="iftene_eaten.png";
+
 function initGhosts() { 
-	initGhost('blinky');
-	initGhost('pinky');
-	initGhost('inky');
-	initGhost('clyde');
+	initGhost('busaco');
+	initGhost('radu');
+	initGhost('tuplea');
+	initGhost('ifte');
 }
 function initGhost(ghost) { 
-	var canvas = document.getElementById('canvas-ghost-' + ghost);
+	var canvas = document.getElementById('canvas-ghost-busaco');
 	canvas.setAttribute('width', '550');
 	canvas.setAttribute('height', '550');
 	if (canvas.getContext) { 
@@ -82,77 +117,82 @@ function initGhost(ghost) {
 function resetGhosts() { 
 	stopGhosts();
 
-	GHOST_BLINKY_POSITION_X = 276;
-	GHOST_BLINKY_POSITION_Y = 204;
-	GHOST_BLINKY_DIRECTION = 1;
-	GHOST_BLINKY_MOVING_TIMER = -1;
-	GHOST_BLINKY_MOVING = false;
-	GHOST_BLINKY_BODY_STATE = 0;
-	GHOST_BLINKY_STATE = 0;
-	GHOST_BLINKY_EAT_TIMER = null;
-	GHOST_BLINKY_AFFRAID_TIMER = null;
-	GHOST_BLINKY_AFFRAID_STATE = 0;
+	GHOST_BUSACO_POSITION_X = 490;
+	GHOST_BUSACO_POSITION_Y = 20;
 
-	GHOST_PINKY_POSITION_X = 276;
-	GHOST_PINKY_POSITION_Y = 258;
-	GHOST_PINKY_DIRECTION = 2;
-	GHOST_PINKY_MOVING_TIMER = -1;
-	GHOST_PINKY_MOVING = false;
-	GHOST_PINKY_BODY_STATE = 1;
-	GHOST_PINKY_STATE = 0;
-	GHOST_PINKY_EAT_TIMER = null;
-	GHOST_PINKY_AFFRAID_TIMER = null;
-	GHOST_PINKY_AFFRAID_STATE = 0;
+	GHOST_BUSACO_DIRECTION = 1;
+	GHOST_BUSACO_MOVING_TIMER = -1;
+	GHOST_BUSACO_MOVING = false;
+	GHOST_BUSACO_BODY_STATE = 0;
+	GHOST_BUSACO_STATE = 0;
+	GHOST_BUSACO_EAT_TIMER = null;
+	GHOST_BUSACO_AFFRAID_TIMER = null;
+	GHOST_BUSACO_AFFRAID_STATE = 0;
 
-	GHOST_INKY_POSITION_X = 238;
-	GHOST_INKY_POSITION_Y = 258;
-	GHOST_INKY_DIRECTION = 3;
-	GHOST_INKY_MOVING_TIMER = -1;
-	GHOST_INKY_MOVING = false;
-	GHOST_INKY_BODY_STATE = 2;
-	GHOST_INKY_STATE = 0;
-	GHOST_INKY_EAT_TIMER = null;
-	GHOST_INKY_AFFRAID_TIMER = null;
-	GHOST_INKY_AFFRAID_STATE = 0;
+	GHOST_RADU_POSITION_X = 490;
+	GHOST_RADU_POSITION_Y = 60;
+	GHOST_RADU_DIRECTION = 2;
+	GHOST_RADU_MOVING_TIMER = -1;
+	GHOST_RADU_MOVING = false;
+	GHOST_RADU_BODY_STATE = 1;
+	GHOST_RADU_STATE = 0;
+	GHOST_RADU_EAT_TIMER = null;
+	GHOST_RADU_AFFRAID_TIMER = null;
+	GHOST_RADU_AFFRAID_STATE = 0;
 
-	GHOST_CLYDE_POSITION_X = 314;
-	GHOST_CLYDE_POSITION_Y = 258;
-	GHOST_CLYDE_DIRECTION = 4;
-	GHOST_CLYDE_MOVING_TIMER = -1;
-	GHOST_CLYDE_MOVING = false;
-	GHOST_CLYDE_BODY_STATE = 3;
-	GHOST_CLYDE_STATE = 0;
-	GHOST_CLYDE_EAT_TIMER = null;
-	GHOST_CLYDE_AFFRAID_TIMER = null;
-	GHOST_CLYDE_AFFRAID_STATE = 0;
+	GHOST_TUPLEA_POSITION_X = 490;
+	GHOST_TUPLEA_POSITION_Y = 100;
+	GHOST_TUPLEA_DIRECTION = 3;
+	GHOST_TUPLEA_MOVING_TIMER = -1;
+	GHOST_TUPLEA_MOVING = false;
+	GHOST_TUPLEA_BODY_STATE = 2;
+	GHOST_TUPLEA_STATE = 0;
+	GHOST_TUPLEA_EAT_TIMER = null;
+	GHOST_TUPLEA_AFFRAID_TIMER = null;
+	GHOST_TUPLEA_AFFRAID_STATE = 0;
+
+	GHOST_IFTE_POSITION_X = 490;
+	GHOST_IFTE_POSITION_Y = 140;
+	GHOST_IFTE_DIRECTION = 4;
+	GHOST_IFTE_MOVING_TIMER = -1;
+	GHOST_IFTE_MOVING = false;
+	GHOST_IFTE_BODY_STATE = 3;
+	GHOST_IFTE_STATE = 0;
+	GHOST_IFTE_EAT_TIMER = null;
+	GHOST_IFTE_AFFRAID_TIMER = null;
+	GHOST_IFTE_AFFRAID_STATE = 0;
 }
 function getGhostCanevasContext(ghost) { 
 	return eval('GHOST_' + ghost.toUpperCase() + '_CANVAS_CONTEXT');
 }
 
 function drawGhosts() { 
-	drawGhost("blinky");
-	drawGhost('pinky');
-	drawGhost('inky');
-	drawGhost("clyde");
+	drawGhost("busaco");
+	drawGhost('radu');
+	drawGhost('tuplea');
+	drawGhost("ifte");
 }
 function drawGhost(ghost) { 
 
-	var ctx = getGhostCanevasContext(ghost);
+	var ctx = getGhostCanevasContext("busaco");
+	//console.log(ctx);
 	
 	if (eval('GHOST_' + ghost.toUpperCase() + '_STATE === 0')) { 
-		eval('ctx.fillStyle = GHOST_' + ghost.toUpperCase() + '_COLOR');
+		//eval('ctx.fillStyle = GHOST_' + ghost.toUpperCase() + '_COLOR');
+		ctx.drawImage(eval(ghost), eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X-17'),eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y-8'),35,40);
 	} else { 
 		if (eval('GHOST_' + ghost.toUpperCase() + '_AFFRAID_STATE === 1')) { 
-			eval('ctx.fillStyle = GHOST_AFFRAID_FINISH_COLOR');
-		} else { 
-			eval('ctx.fillStyle = GHOST_AFFRAID_COLOR');
+		} else 
+		if(eval('GHOST_' + ghost.toUpperCase() + '_STATE===-1')){
+			ctx.drawImage(eval(ghost+'_eaten'), eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X-17'),eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y-8'),35,40);
+		}
+		else { 
+			ctx.drawImage(eval(ghost+'_afraid'), eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X-17'),eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y-8'),35,40);
 		}
 	}
-	eval('drawHelperGhost(ctx, GHOST_' + ghost.toUpperCase() + '_POSITION_X, GHOST_' + ghost.toUpperCase() + '_POSITION_Y, GHOST_' + ghost.toUpperCase() + '_DIRECTION, GHOST_' + ghost.toUpperCase() + '_BODY_STATE, GHOST_' + ghost.toUpperCase() + '_STATE, GHOST_' + ghost.toUpperCase() + '_AFFRAID_STATE)');
 	
-	ctx.closePath();
-	
+	eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X');
+	var y=eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y');
 	
 }
 
@@ -162,10 +202,10 @@ function affraidGhosts() {
 	
 	SCORE_GHOST_COMBO = 200;
 
-	affraidGhost("blinky");
-	affraidGhost("pinky");
-	affraidGhost("inky");
-	affraidGhost("clyde");
+	affraidGhost("busaco");
+	affraidGhost("radu");
+	affraidGhost("tuplea");
+	affraidGhost("ifte");
 }
 function affraidGhost(ghost) { 
 	if ( eval('GHOST_' + ghost.toUpperCase() + '_AFFRAID_TIMER !== null') ) { 
@@ -192,21 +232,21 @@ function cancelAffraidGhost(ghost) {
 }
 function testStateGhosts() { 
 
-	if ( GHOST_BLINKY_STATE === 1 ||  
-		 GHOST_PINKY_STATE === 1 ||  
-		 GHOST_INKY_STATE === 1 ||  
-		 GHOST_CLYDE_STATE === 1 
-	) { 
+	if ( GHOST_BUSACO_STATE === 1 ||  
+		GHOST_RADU_STATE === 1 ||  
+		GHOST_TUPLEA_STATE === 1 ||  
+		GHOST_IFTE_STATE === 1 
+		) { 
 		playWazaSound();
-	} else if ( GHOST_BLINKY_STATE === -1 ||  
-		 GHOST_PINKY_STATE === -1 ||  
-		 GHOST_INKY_STATE === -1 ||  
-		 GHOST_CLYDE_STATE === -1 
+} else if ( GHOST_BUSACO_STATE === -1 ||  
+	GHOST_RADU_STATE === -1 ||  
+	GHOST_TUPLEA_STATE === -1 ||  
+	GHOST_IFTE_STATE === -1 
 	) { 
-		playGhostEatenSound();		
-	} else { 
-		playSirenSound();
-	}
+	playGhostEatenSound();		
+} else { 
+	playSirenSound();
+}
 }
 
 function startEatGhost(ghost) { 
@@ -255,10 +295,10 @@ function cancelEatGhost(ghost) {
 }
 
 function moveGhosts() { 
-	moveGhost("blinky");
-	moveGhost('pinky');
-	moveGhost('inky');
-	moveGhost("clyde");
+	moveGhost("busaco");
+	moveGhost('radu');
+	moveGhost('tuplea');
+	moveGhost("ifte");
 }
 function moveGhost(ghost) {
 
@@ -279,7 +319,7 @@ function moveGhost(ghost) {
 		}
 		eval('GHOST_' + ghost.toUpperCase() + '_MOVING_TIMER = setInterval("moveGhost(\'' + ghost + '\')", ' + speed + ');');
 	} else { 
-	
+		
 		changeDirection(ghost);
 		
 		if ( eval('GHOST_' + ghost.toUpperCase() + '_AFFRAID_TIMER !== null')) { 
@@ -293,13 +333,13 @@ function moveGhost(ghost) {
 		
 		if (canMoveGhost(ghost)) { 
 			eraseGhost(ghost);
-						
+			
 			if (eval('GHOST_' + ghost.toUpperCase() + '_BODY_STATE < GHOST_BODY_STATE_MAX')) { 
 				eval('GHOST_' + ghost.toUpperCase() + '_BODY_STATE ++;');
 			} else { 
 				eval('GHOST_' + ghost.toUpperCase() + '_BODY_STATE = 0;');
 			}
-						
+			
 			if ( eval('GHOST_' + ghost.toUpperCase() + '_DIRECTION === 1') ) { 
 				eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X += GHOST_POSITION_STEP;');
 			} else if ( eval('GHOST_' + ghost.toUpperCase() + '_DIRECTION === 2') ) { 
@@ -368,7 +408,7 @@ function changeDirection(ghost) {
 			var pacmanY = PACMAN_POSITION_Y;
 			var axe = oneAxe();
 			if (ghost === "blinky") { 
-			
+				
 				var nothing = whatsYourProblem();
 				if (nothing < 6) { 
 					tryDirection = getRightDirection(axe, ghostX, ghostY, pacmanX, pacmanY);
@@ -379,11 +419,11 @@ function changeDirection(ghost) {
 					}
 				}
 				
-			} else if (ghost === "pinky") { 
-			
+			} else if (ghost === "radu") { 
+				
 				var nothing = whatsYourProblem();
 				if (nothing < 3) { 
-				
+					
 					tryDirection = getRightDirection(axe, ghostX, ghostY, pacmanX, pacmanY);
 					if ( !(canMoveGhost(ghost, tryDirection) && (direction != tryDirection -2 && direction != tryDirection + 2)) ) { 
 						axe ++;
@@ -393,7 +433,7 @@ function changeDirection(ghost) {
 					tryDirection = reverseDirection(tryDirection);
 				}
 				
-			} else if (ghost === "inky") { 
+			} else if (ghost === "tuplea") { 
 				var good = anyGoodIdea();
 				if (good < 3) { 
 					tryDirection = getRightDirection(axe, ghostX, ghostY, pacmanX, pacmanY);
@@ -412,7 +452,7 @@ function changeDirection(ghost) {
 		var axe = oneAxe();
 		tryDirection = getRightDirectionForHome(axe, ghostX, ghostY);
 		if (canMoveGhost(ghost, tryDirection) && (direction != tryDirection -2 && direction != tryDirection + 2)) { 
-		
+			
 		} else { 
 			axe ++;
 			if (axe > 2) axe = 1; 
@@ -436,13 +476,13 @@ function getRightDirectionForHome(axe, ghostX, ghostY) {
 	} else { 
 		if (axe === 1) { 
 			if (ghostX > homeX) { 
-			 return 3;
+				return 3;
 			} else { 
 				return 1;
 			}
 		} else { 
 			if (ghostY > homeY) { 
-			 return 4;
+				return 4;
 			} else { 
 				return 2;
 			}
@@ -452,13 +492,13 @@ function getRightDirectionForHome(axe, ghostX, ghostY) {
 function getRightDirection(axe, ghostX, ghostY, pacmanX, pacmanY) { 
 	if (axe === 1) { 
 		if (ghostX > pacmanX) { 
-		 return 3;
+			return 3;
 		} else { 
 			return 1;
 		}
 	} else { 
 		if (ghostY > pacmanY) { 
-		 return 4;
+			return 4;
 		} else { 
 			return 2;
 		}
@@ -473,14 +513,14 @@ function eraseGhost(ghost) {
 
 	var ctx = getGhostCanevasContext(ghost);
 	
-	eval('ctx.clearRect(GHOST_' + ghost.toUpperCase() + '_POSITION_X - 17, GHOST_' + ghost.toUpperCase() + '_POSITION_Y - 17, 34, 34)');
+	eval('ctx.clearRect(GHOST_' + ghost.toUpperCase() + '_POSITION_X-17, GHOST_' + ghost.toUpperCase() + '_POSITION_Y-8, 35, 40)');
 }
 function eraseGhosts() { 
 
-	eraseGhost('blinky');
-	eraseGhost('pinky');
-	eraseGhost('inky');
-	eraseGhost('clyde');
+	eraseGhost('busaco');
+	eraseGhost('radu');
+	eraseGhost('tuplea');
+	eraseGhost('ifte');
 }
 
 function canMoveGhost(ghost, direction) { 
@@ -504,9 +544,9 @@ function canMoveGhost(ghost, direction) {
 	}
 	
 	for (var i = 0, imax = PATHS.length; i < imax; i ++) { 
-	
+		
 		var p = PATHS[i];
-	
+		
 		var startX = p.split("-")[0].split(",")[0];
 		var startY = p.split("-")[0].split(",")[1];
 		var endX = p.split("-")[1].split(",")[0];
@@ -553,10 +593,10 @@ function stopGhost(ghost) {
 	}
 }
 function stopGhosts() { 
-	stopGhost('blinky');
-	stopGhost('pinky');
-	stopGhost('inky');
-	stopGhost('clyde');
+	stopGhost('busaco');
+	stopGhost('radu');
+	stopGhost('tuplea');
+	stopGhost('ifte');
 }
 
 function pauseGhost(ghost) { 
@@ -573,10 +613,10 @@ function pauseGhost(ghost) {
 	}
 }
 function pauseGhosts() { 
-	pauseGhost('blinky');
-	pauseGhost('pinky');
-	pauseGhost('inky');
-	pauseGhost('clyde');
+	pauseGhost('busaco');
+	pauseGhost('radu');
+	pauseGhost('tuplea');
+	pauseGhost('ifte');
 }
 
 function resumeGhost(ghost) { 
@@ -588,120 +628,9 @@ function resumeGhost(ghost) {
 	moveGhost(ghost);
 }
 function resumeGhosts() { 
-	resumeGhost('blinky');
-	resumeGhost('pinky');
-	resumeGhost('inky');
-	resumeGhost('clyde');
+	resumeGhost('busaco');
+	resumeGhost('radu');
+	resumeGhost('tuplea');
+	resumeGhost('ifte');
 }
 
-function drawHelperGhost(ctx, x, y, d, b, s, a) { 
-	
-	if (s != -1) { 
-		ctx.beginPath();
-		ctx.moveTo((x - 15), (y + 16));
-		ctx.lineTo((x - 15), (y + 16) - 18);
-		ctx.bezierCurveTo((x - 15), (y + 16) - 26, (x - 15) + 6, (y + 16) - 32, (x - 15) + 14, (y + 16) - 32);
-		ctx.bezierCurveTo((x - 15) + 22, (y + 16) - 32, (x - 15) + 28, (y + 16) - 26, (x - 15) + 28, (y + 16) - 18);
-		ctx.lineTo((x - 15) + 28, (y + 16));
-		if (b < 4) { 
-			ctx.lineTo((x - 15) + 23.333, (y + 16) - 5.333);
-			ctx.lineTo((x - 15) + 18.666, (y + 16));
-			ctx.lineTo((x - 15) + 14, (y + 16) - 5.333);
-			ctx.lineTo((x - 15) + 9.333, (y + 16));
-			ctx.lineTo((x - 15) + 4.666, (y + 16) - 5.333);
-		} else { 
-			ctx.lineTo((x - 15) + 24.333, (y + 16) - 5.333);
-			ctx.lineTo((x - 15) + 20.666, (y + 16));
-			ctx.lineTo((x - 15) + 17.333, (y + 16) - 5.333);
-			ctx.lineTo((x - 15) + 12.666, (y + 16));
-			ctx.lineTo((x - 15) + 9, (y + 16) - 5.333);
-			ctx.lineTo((x - 15) + 5.333, (y + 16));
-			ctx.lineTo((x - 15) + 2.666, (y + 16) - 5.333);
-		}
-		ctx.lineTo((x - 15), (y + 16) );
-		ctx.fill();
-	}
-
-	var eyesX = 0;
-	var eyesY = 0;
-	
-	if (d === 4) { 
-		eyesY = -5;
-	} else if (d === 1) { 
-		eyesX = +2;
-	} else if (d === 2) { 
-		eyesY = 0;
-		eyesY = +5;
-	} else if (d === 3) { 
-		eyesX = -3;
-	}
-
-	if (s === 0 || s === -1) { 
-		ctx.fillStyle = "white";
-		ctx.beginPath();
-		ctx.moveTo((x - 15) + 8 + eyesX, (y + 16) - 24 + eyesY);
-		ctx.bezierCurveTo((x - 15) + 5 + eyesX, (y + 16) - 24 + eyesY, (x - 15) + 4 + eyesX, (y + 16) - 21 + eyesY, (x - 15) + 4 + eyesX, (y + 16) - 19 + eyesY);
-		ctx.bezierCurveTo((x - 15) + 4 + eyesX, (y + 16) - 17 + eyesY, (x - 15) + 5 + eyesX, (y + 16) - 14 + eyesY, (x - 15) + 8 + eyesX, (y + 16) - 14 + eyesY);
-		ctx.bezierCurveTo((x - 15) + 11 + eyesX, (y + 16) - 14 + eyesY, (x - 15) + 12 + eyesX, (y + 16) - 17 + eyesY, (x - 15) + 12 + eyesX, (y + 16) - 19 + eyesY);
-		ctx.bezierCurveTo((x - 15) + 12 + eyesX, (y + 16) - 21 + eyesY, (x - 15) + 11 + eyesX, (y + 16) - 24 + eyesY, (x - 15) + 8 + eyesX, (y + 16) - 24 + eyesY);
-		
-		ctx.moveTo((x - 15) + 20 + eyesX, (y + 16) - 24 + eyesY);
-		ctx.bezierCurveTo((x - 15) + 17 + eyesX, (y + 16) - 24 + eyesY, (x - 15) + 16 + eyesX, (y + 16) - 21 + eyesY, (x - 15) + 16 + eyesX, (y + 16) - 19 + eyesY);
-		ctx.bezierCurveTo((x - 15) + 16 + eyesX, (y + 16) - 17 + eyesY, (x - 15) + 17 + eyesX, (y + 16) - 14 + eyesY, (x - 15) + 20 + eyesX, (y + 16) - 14 + eyesY);
-		ctx.bezierCurveTo((x - 15) + 23 + eyesX, (y + 16) - 14 + eyesY, (x - 15) + 24 + eyesX, (y + 16) - 17 + eyesY, (x - 15) + 24 + eyesX, (y + 16) - 19 + eyesY);
-		ctx.bezierCurveTo((x - 15) + 24 + eyesX, (y + 16) - 21 + eyesY, (x - 15) + 23 + eyesX, (y + 16) - 24 + eyesY, (x - 15) + 20 + eyesX, (y + 16) - 24 + eyesY);
-		ctx.fill();
-		
-		if (d === 4) { 
-			eyesY = -9;
-			eyesX = 2;
-		} else if (d === 1) { 
-			eyesX = +6;
-		} else if (d === 2) { 
-			eyesY = +8;
-			eyesX = 2;
-		} else if (d === 3) { 
-			
-		}
-		
-		ctx.fillStyle = "#0000fa";
-		ctx.beginPath();
-		ctx.arc((x - 15) + 18 + eyesX, (y + 16) - 18 + eyesY, 2, 0, Math.PI * 2, true);
-		ctx.fill();
-
-		ctx.beginPath();
-		ctx.arc((x - 15) + 6 + eyesX, (y + 16) - 18 + eyesY, 2, 0, Math.PI * 2, true);
-		ctx.fill();
-	} else { 
-		if (a === 1) { 
-			ctx.fillStyle = "#ee2933";
-		} else { 
-			ctx.fillStyle = "#e5bed0";
-		}
-		ctx.beginPath();
-		ctx.arc((x - 15) + 18, (y + 13) - 17, 2, 0, Math.PI * 2, true);
-		ctx.fill();
-
-		ctx.beginPath();
-		ctx.arc((x - 15) + 10, (y + 13) - 17, 2, 0, Math.PI * 2, true);
-		ctx.fill();
-		
-		if (a === 1) { 
-			ctx.strokeStyle = "#ee2933";
-		} else { 
-			ctx.strokeStyle = "#e5bed0";
-		}
-		ctx.beginPath();
-		ctx.lineTo((x - 14.333) + 24, (y + 6));
-		
-		ctx.lineTo((x - 14.333) + 21, (y + 6) - 3);		
-		ctx.lineTo((x - 14.333) + 17, (y + 6));
-		
-		ctx.lineTo((x - 14.333) + 14, (y + 6) - 3);
-		ctx.lineTo((x - 14.333) + 10, (y + 6));
-		
-		ctx.lineTo((x - 14.333) + 7, (y + 6) - 3);
-		ctx.lineTo((x - 14.333) + 3, (y + 6));
-		ctx.stroke();
-	}
-}

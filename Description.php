@@ -24,6 +24,11 @@
         <a href="http://localhost:8181/Pac-Fac/Game.php"><button>Return to game</button>
         </a>
     </div>
+
+    <div class="but">
+        <a href="http://localhost:8181/Pac-Fac/raport.html"><button>Scholarly HTML report</button>
+        </a>
+    </div>
 </div>
 
 <div class="col-12 col-m-12">
@@ -38,8 +43,8 @@
         under the guidance of their professor Ciprian Amariei. </p>
         <p> This project aims to recreate the legendary game of Pac-Man, but with a twist: the levels are
             inspired by the computer science building layout, the users will be able to connect using
-            various social accounts, the power-ups are student-themed (cheat-sheets, smart-watches etc.),
-            the ghosts are professors, and a whole lot more. </p>
+            various social accounts,
+            the ghosts are professors and a whole lot more. </p>
             <p> We gladly present to you</p>
         </div>
 
@@ -51,7 +56,7 @@
 <div id="div1">
 </div>
 
-<button>More info</button>
+<button onClick = "this.style.display='none';">More info</button>
 
 </body>
 </html>

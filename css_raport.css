@@ -1,0 +1,59 @@
+@import url('./node_modules/normalize.css/normalize.css');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Serif";
+  background: #f7f7f7;
+  color: #434343;
+}
+body > section, article {
+  padding: 0 10px;
+  margin: 0 auto 120px auto;
+  max-width: 900px;
+}
+section:target h2, section:target h3, article:target h1 {
+  color: #2196f3;
+}
+section:target h2, section:target h3, article:target h1 {
+  color: #2196f3;
+}
+article {
+  padding: 88px 88px 72px 108px;
+  background: #fff;
+  border-top: 28px solid transparent;
+  border-right: 28px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 4px solid transparent;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 24px;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+h1, h2, h3 {
+  font-variant: small-caps;
+  text-align: center;
+  font-weight: 300;
+}
+h1 {
+  padding-top:  16px;
+  padding-bottom: 16px;
+  letter-spacing: .75px;
+  font-size: 24px;
+  line-height: 32px;
+}
+h2 {
+  padding-top: 16px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  letter-spacing: .75px;
+  font-size: 20px;
+}
+h3 {
+  padding-top: 16px;
+  padding-bottom: 0;
+  letter-spacing:.5px;
+  font-size: 16px;
+}

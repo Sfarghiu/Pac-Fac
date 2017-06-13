@@ -7,6 +7,7 @@
 	$accessToken = isset($_SESSION['accessToken']) ? $_SESSION['accessToken'] : NULL;
 	//echo $fbToken;
 	$playerIcon = isset($_SESSION['playerIcon']) ? $_SESSION['playerIcon'] : NULL;
+	$userName = isset($_SESSION['userName']) ? $_SESSION['userName'] : NULL;
 	//echo $playerIcon;?>
 	
 	<title> Pac-Fac </title>
@@ -17,6 +18,65 @@
 	<link rel="stylesheet" type="text/css" href="css/pacman.css" />
 	<link rel="stylesheet" type="text/css" href="css/pacman-home.css" />
 
+<script>
+
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    if (response.status === 'connected') {
+    	console.log("cv");
+    } else {
+      //document.getElementById('status').innerHTML = 'Please log ' +
+        //'into this app.';   
+    }
+  }
+
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      if(response.status==="connected"){
+      	console.log("cv");
+		  logout();
+	 }
+      //else
+      //login();
+      //smt();
+      //statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '1366424746780074',
+    cookie     : true,  // enable cookies to allow the server to access 
+    status     :true,  // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.8' // use graph api version 2.8
+  });
+
+  FB.getLoginStatus(function(response) {
+   
+    statusChangeCallback(response);
+  });
+
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+
+  function logout()
+  {
+    FB.logout(function(response) {
+    	 window.location.replace("login.php");
+      console.log('Bye, ' + response.name + '.');
+});
+  }</script>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery-buzz.js"></script>
 	<!--<script type="text/javascript" src="Game.js"></script>-->
@@ -202,8 +262,57 @@ window.onload = function() {
 				</tbody>
 			</table>
 		</div>-->
+
 	
-		<div id="home">
+
+	<div class="col-4 ">
+
+		<div id="rulesRectangle">
+			<div class="rulesTitle">
+				<p>Rules:</p>
+			</div>
+			<div class="rules">
+				<ul>
+					<li>eat all the memory pills </li>
+					<li>avoid the evil teachers </li>
+					<li>eat piracetam to make the teachers vulnerable </li>
+					<li>eat the special pill for bonus score </li>
+				</ul>
+			</div>
+
+		</div>
+
+		<br><br>
+		<div id="controlsRectangle">
+			<div class="controlsTitle">
+				<p>Controls:</p>
+			</div>
+
+			<div class="controls">
+				<ul>
+					<li>use arrow keys to move </li>
+					<li>press 'P' to pause/resume </li>
+				</ul>
+			</div>	
+		</div>
+
+		<div class="story">
+			<p> For more information about how Pac-Fac came to be, click the memory pill: </p>
+			<div>
+				<a href="http://localhost:8181/Pac-Fac/Description.php">
+					<img id="pill" src="pill.jpg" alt="Memory Pill" height="50" width="50">
+				</a>
+			</div>
+		</div>
+
+
+	</div>
+		<div class="col-4 col-m-12 ">
+
+		<!--<div id="game_title"> Pac-Fac </div>
+		<canvas id="game">
+		</canvas>-->
+		<div id="home"><br><br><br>
 			<h1>pac-fac</h1>
 			<!--<h3>Lucio PANEPINTO<br><em>2015</em></h3>-->
 			<canvas id="canvas-home-title-pacman"></canvas>
@@ -237,10 +346,8 @@ window.onload = function() {
 				<canvas id="canvas-bubbles"></canvas>
 				<canvas id="canvas-fruits"></canvas>
 				<canvas id="canvas-pacman"></canvas>
-				<canvas id="canvas-ghost-blinky"></canvas>
-				<canvas id="canvas-ghost-pinky"></canvas>
-				<canvas id="canvas-ghost-inky"></canvas>
-				<canvas id="canvas-ghost-clyde"></canvas>
+				<canvas id="canvas-ghost-busaco"></canvas>
+				
 				<div id="control-up-big"></div>
 				<div id="control-down-big"></div>
 				<div id="control-left-big"></div>
@@ -260,69 +367,15 @@ window.onload = function() {
 			<!--<div class="help-button">- help -</div>-->
 			<!--<a class="sound" href="javascript:void(0);" data-sound="on"><img src="img/sound-on.png" alt="" border="0"></a>-->
 		</div>
-	
+	</div>
 	<!-- Game -->
 
-	<div class="col-4 col-m-12 mobile">
 
-		<!--<div id="game_title"> Pac-Fac </div>
-		<canvas id="game">
-		</canvas>-->
-	</div>
-
-	<div class="col-4 ">
-
-		<div id="rulesRectangle">
-			<div class="rulesTitle">
-				<p>Rules:</p>
-			</div>
-			<div class="rules">
-				<ul>
-					<li>eat all the memory pills </li>
-					<li>avoid the evil teachers </li>
-					<li>eat cheat sheets to make the teachers vulnerable </li>
-					<li>eat the good grade for bonus score </li>
-				</ul>
-			</div>
-
-		</div>
-
-		<br><br>
-		<div id="controlsRectangle">
-			<div class="controlsTitle">
-				<p>Controls:</p>
-			</div>
-
-			<div class="controls">
-				<ul>
-					<li>arrow keys to move </li>
-				</ul>
-			</div>	
-		</div>
-
-		<div class="story">
-			<p> For more information about how Pac-Fac came to be, click the memory pill: </p>
-			<div>
-				<a href="http://localhost:8181/Pac-Fac/Description.php">
-					<img id="pill" src="pill.jpg" alt="Memory Pill" height="50" width="50">
-				</a>
-			</div>
-		</div>
-
-
-	</div>
-
-	<div class="col-4 col-m-12 desktop">
-
-		<!--<div id="game_title"> Pac-Fac </div>
-		<canvas id="game">
-		</canvas>-->
-	</div>
-
+	
 
 	<div class="col-4 ">
 		<div class="player">
-			Player 
+			<?php echo $userName?> 
 		</div>
 		<img src="<?php echo $playerIcon?>" id="playerIcon">
 		<!--<canvas id="playerIcon">
@@ -331,8 +384,8 @@ window.onload = function() {
 
 		<br>
 		<div class="logout">
-			<a href="http://localhost:8181/Pac-Fac/login.php"><button>Logout</button>
-			</a>
+			<button onclick="checkLoginState();">Logout</button>
+			
 
 		</div>
 		<div class="highscores">

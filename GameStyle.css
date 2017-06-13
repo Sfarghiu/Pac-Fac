@@ -20,9 +20,7 @@ html {
 	width: 100%;
 }
 
-.desktop{
-	display:none;
-}
+
 
 body{
 	background-color:#12264f;
@@ -94,6 +92,7 @@ button:active {
 #rulesRectangle{
 	width: 240px;
 	height: 270px;
+	margin-top:850px;
 }
 #controlsRectangle {
 	width: 240px;
@@ -188,7 +187,11 @@ div.highscores{
 		height: 220px;
 
 	}
+	.uhu{
+		top:500px;
+	}
 	#controlsRectangle {
+		top:500px;
 		width: 500px;
 		height: 140px;
 	}
@@ -243,11 +246,11 @@ div.highscores{
 		#rulesRectangle{
 			width: 500px;
 			height: 200px;
-			margin-top:75px;
+			margin-top:25px;
 		}
 		#controlsRectangle {
 			width: 500px;
-			height: 140px;
+			height: 160px;
 		}
 		#game_title{
 			font-size: 65px;
@@ -278,21 +281,20 @@ div.highscores{
 
 		div.player{
 			font-size: 20px;
-			margin-top:75px;
+			margin-top:25px;
 		}
 
 		#fii{
 			height:100px;
 			width:100px;
+			display:inline-block;
 		}
 
 		button{
 			width:300px;
 			font-size:26px;
 		}
-		.mobile{display:none;}
-		.desktop{
-			display:initial;
-		}
+		
+		
 
 	}

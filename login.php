@@ -20,10 +20,8 @@ session_start();
     console.log(response);
     if (response.status === 'connected') {
     } else {
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into this app.';
-
-       
+      //document.getElementById('status').innerHTML = 'Please log ' +
+        //'into this app.';   
     }
   }
 
@@ -64,9 +62,7 @@ session_start();
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 
-function smt(){
-  window.location.replace("https://www.facebook.com/v2.9/dialog/oauth?client_id=1366424746780074&redirect_uri=http://localhost:8181/Pac-Fac/login_flow.php/");
-}
+
  function login() {
     status=
     FB.login(function(response) {
@@ -104,6 +100,7 @@ function smt(){
 </script>
 
 <div class="header">
+<br>
   <img id="tuplea" src="tuplea.png" >
   <img id="buraga" src="buraga.png" >
  </div> 
