@@ -626,18 +626,18 @@ function drawBubbles() {
 	 BUBBLES_ARRAY.push( parseInt(correctionX(40, 80)) + "," + parseInt(210) + ";" + 3 + ";" + 80 + ";" + "b" + ";0" );
 
 	 ctx.beginPath();
-	 ctx.arc(correctionX(20, 81), 240, 3, 0, 2 * Math.PI, false);
+	 ctx.arc(correctionX(20, 82), 240, 3, 0, 2 * Math.PI, false);
 	 ctx.fill();
 	 ctx.closePath();
 
-	 BUBBLES_ARRAY.push( parseInt(correctionX(20, 81)) + "," + parseInt(240) + ";" + 3 + ";" + 81 + ";" + "b" + ";0" );
+	 BUBBLES_ARRAY.push( parseInt(correctionX(20, 82)) + "," + parseInt(240) + ";" + 3 + ";" + 82 + ";" + "b" + ";0" );
 
 	 ctx.beginPath();
-	 ctx.arc(correctionX(20, 82), 210, 3, 0, 2 * Math.PI, false);
+	 ctx.arc(correctionX(40, 81), 211, 3, 0, 2 * Math.PI, false);
 	 ctx.fill();
 	 ctx.closePath();
 
-	 BUBBLES_ARRAY.push( parseInt(correctionX(20, 82)) + "," + parseInt(210) + ";" + 3 + ";" + 82 + ";" + "b" + ";0" );
+	 BUBBLES_ARRAY.push( parseInt(correctionX(40, 81)) + "," + parseInt(211) + ";" + 3 + ";" + 81 + ";" + "b" + ";0" );
 
 	 ctx.beginPath();
 	 ctx.arc(correctionX(20, 83), 260, 3, 0, 2 * Math.PI, false);
@@ -885,11 +885,11 @@ function drawBubbles() {
 	 BUBBLES_ARRAY.push( parseInt(correctionX(250, 117)) + "," + parseInt(455) + ";" + 3 + ";" + 117 + ";" + "b" + ";0" );
 
 	 ctx.beginPath();
-	 ctx.arc(correctionX(250, 118), 395, 3, 0, 2 * Math.PI, false);
+	 ctx.arc(correctionX(250, 118), 455, 3, 0, 2 * Math.PI, false);
 	 ctx.fill();
 	 ctx.closePath();
 
-	 BUBBLES_ARRAY.push( parseInt(correctionX(250, 118)) + "," + parseInt(395) + ";" + 3 + ";" + 118 + ";" + "b" + ";0" );
+	 BUBBLES_ARRAY.push( parseInt(correctionX(250, 118)) + "," + parseInt(455) + ";" + 3 + ";" + 118 + ";" + "b" + ";0" );
 
 	 ctx.beginPath();
 	 ctx.arc(correctionX(250, 119), 475, 3, 0, 2 * Math.PI, false);
@@ -976,11 +976,11 @@ function drawBubbles() {
 	 BUBBLES_ARRAY.push( parseInt(correctionX(40, 131)) + "," + parseInt(520) + ";" + 3 + ";" + 131 + ";" + "b" + ";0" );
 
 	 ctx.beginPath();
-	 ctx.arc(correctionX(25, 132), 520, 3, 0, 2 * Math.PI, false);
+	 ctx.arc(correctionX(25, 132), 509, 3, 0, 2 * Math.PI, false);
 	 ctx.fill();
 	 ctx.closePath();
 
-	 BUBBLES_ARRAY.push( parseInt(correctionX(25, 132)) + "," + parseInt(520) + ";" + 4 + ";" + 132 + ";" + "b" + ";0" );
+	 BUBBLES_ARRAY.push( parseInt(correctionX(25, 132)) + "," + parseInt(509) + ";" + 4 + ";" + 132 + ";" + "b" + ";0" );
 
 	 ctx.beginPath();
 	 ctx.arc(correctionX(25, 133), 500, 3, 0, 2 * Math.PI, false);
@@ -997,11 +997,11 @@ function drawBubbles() {
 	 BUBBLES_ARRAY.push( parseInt(correctionX(25, 134)) + "," + parseInt(480) + ";" + 4 + ";" + 134 + ";" + "b" + ";0" );
 
 	 ctx.beginPath();
-	 ctx.arc(correctionX(25, 135), 455, 3, 0, 2 * Math.PI, false);
+	 ctx.arc(correctionX(25, 135), 480, 3, 0, 2 * Math.PI, false);
 	 ctx.fill();
 	 ctx.closePath();
 
-	 BUBBLES_ARRAY.push( parseInt(correctionX(25, 135)) + "," + parseInt(455) + ";" + 4 + ";" + 135 + ";" + "b" + ";0" );
+	 BUBBLES_ARRAY.push( parseInt(correctionX(25, 135)) + "," + parseInt(480) + ";" + 4 + ";" + 135 + ";" + "b" + ";0" );
 
 	 ctx.beginPath();
 	 ctx.arc(correctionX(40, 136), 455, 3, 0, 2 * Math.PI, false);
@@ -1305,11 +1305,11 @@ function drawBubbles() {
 	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 179)) + "," + parseInt(200) + ";" + 4 + ";" + 179 + ";" + "b" + ";0" );
 
 	 ctx.beginPath();
-	 ctx.arc(correctionX(480, 180), 180, 3, 0, 2 * Math.PI, false);
+	 ctx.arc(correctionX(480, 180), 200, 3, 0, 2 * Math.PI, false);
 	 ctx.fill();
 	 ctx.closePath();
 
-	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 180)) + "," + parseInt(180) + ";" + 4 + ";" + 180 + ";" + "b" + ";0" );
+	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 180)) + "," + parseInt(200) + ";" + 4 + ";" + 180 + ";" + "b" + ";0" );
 
 	 ctx.beginPath();
 	 ctx.arc(correctionX(370, 181), 20, 3, 0, 2 * Math.PI, false);
@@ -1619,7 +1619,7 @@ function drawBubbles() {
 	 ctx.fill();
 	 ctx.closePath();
 
-	 SUPER_BUBBLES[2] = 3 + ";" + 162 + ";" + parseInt(correctionX(480, 162)) + "," + parseInt(520) + ";0";
+	 SUPER_BUBBLES[3] = 3 + ";" + 162 + ";" + parseInt(correctionX(480, 162)) + "," + parseInt(520) + ";0";
 
 	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 162)) + "," + parseInt(520) + ";" + 1 + ";" + 162 + ";" + "s" + ";0" );
 
