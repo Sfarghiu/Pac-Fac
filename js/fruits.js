@@ -345,31 +345,31 @@ function drawMelon(ctx, x, y, size) {
 	ctx.fill();
 	ctx.closePath();
 
-	ctx.beginPath();
-	ctx.fillStyle = "#ACFB77";
-	ctx.moveTo(size / 2, size / 6);
-	ctx.arc(size / 2, size / 6, size / 1.3, 1.1, 2.5, true);
-	ctx.fill();
-	ctx.closePath();
+	// ctx.beginPath();
+	// ctx.fillStyle = "#ACFB77";
+	// ctx.moveTo(size / 2, size / 6);
+	// ctx.arc(size / 2, size / 6, size / 1.3, 1.1, 2.5, true);
+	// ctx.fill();
+	// ctx.closePath();
 
-	ctx.beginPath();
-	ctx.fillStyle = "#F92F2F";
-	ctx.moveTo(size / 2, size / 6);
-	ctx.arc(size / 2, size / 6, size / 1.7, 1.1, 2.5, true);
-	ctx.fill();
-	ctx.closePath();
+	// ctx.beginPath();
+	// ctx.fillStyle = "#F92F2F";
+	// ctx.moveTo(size / 2, size / 6);
+	// ctx.arc(size / 2, size / 6, size / 1.7, 1.1, 2.5, true);
+	// ctx.fill();
+	// ctx.closePath();
 
-	var mod = size / 23;
-	ctx.beginPath();
-	ctx.fillStyle = "black";
-	ctx.moveTo(12 * mod, 9 * mod);
-	ctx.arc(12 * mod, 9 * mod, size / 12, 1.1, 2.5, true);
-	ctx.moveTo(13 * mod, 12 * mod);
-	ctx.arc(13 * mod, 12 * mod, size / 12, 1.1, 2.5, true);
-	ctx.moveTo(10.5 * mod, 12 * mod);
-	ctx.arc(10.5 * mod, 12 * mod, size / 12, 1.1, 2.5, true);
-	ctx.fill();
-	ctx.closePath();
+	// var mod = size / 23;
+	// ctx.beginPath();
+	// ctx.fillStyle = "black";
+	// ctx.moveTo(12 * mod, 9 * mod);
+	// ctx.arc(12 * mod, 9 * mod, size / 12, 1.1, 2.5, true);
+	// ctx.moveTo(13 * mod, 12 * mod);
+	// ctx.arc(13 * mod, 12 * mod, size / 12, 1.1, 2.5, true);
+	// ctx.moveTo(10.5 * mod, 12 * mod);
+	// ctx.arc(10.5 * mod, 12 * mod, size / 12, 1.1, 2.5, true);
+	// ctx.fill();
+	// ctx.closePath();
 }
 function drawApple(ctx, x, y, size) { 
 
@@ -381,40 +381,40 @@ function drawApple(ctx, x, y, size) {
 	ctx.fill();
 	ctx.closePath();
 
-	ctx.fillStyle = "#ff0000";
-	ctx.beginPath();
-	ctx.arc(9, size - 3, (size / 4.5), Math.PI * 2, -Math.PI * 2, true);
-	ctx.arc(size - 8, size - 3, (size / 4.5), Math.PI * 2, -Math.PI * 2, true);
-	ctx.fill();
-	ctx.closePath();
+	// ctx.fillStyle = "#ff0000";
+	// ctx.beginPath();
+	// ctx.arc(9, size - 3, (size / 4.5), Math.PI * 2, -Math.PI * 2, true);
+	// ctx.arc(size - 8, size - 3, (size / 4.5), Math.PI * 2, -Math.PI * 2, true);
+	// ctx.fill();
+	// ctx.closePath();
 	
-	ctx.fillStyle = "black";
-	ctx.beginPath();
-	ctx.arc(size / 2, size / 6, (size / 7), Math.PI * 2, -Math.PI * 2, true);
-	ctx.fill();
-	ctx.closePath();
+	// ctx.fillStyle = "black";
+	// ctx.beginPath();
+	// ctx.arc(size / 2, size / 6, (size / 7), Math.PI * 2, -Math.PI * 2, true);
+	// ctx.fill();
+	// ctx.closePath();
 
-	var mod = size / 23;
-	ctx.strokeStyle = "#24da1c";
-	ctx.lineWidth = 2;
-	ctx.beginPath();
+	// var mod = size / 23;
+	// ctx.strokeStyle = "#24da1c";
+	// ctx.lineWidth = 2;
+	// ctx.beginPath();
 	
-	ctx.beginPath();
-	ctx.moveTo(13 * mod + 2, (size / 9) + 4);
-	ctx.lineTo( (13 * mod) - (size / 4), (size / 9) + 1);
-	ctx.stroke();
+	// ctx.beginPath();
+	// ctx.moveTo(13 * mod + 2, (size / 9) + 4);
+	// ctx.lineTo( (13 * mod) - (size / 4), (size / 9) + 1);
+	// ctx.stroke();
 	
-	ctx.beginPath();
-	ctx.moveTo(13 * mod + 2, (size / 9) + 4);
-	ctx.lineTo( (13 * mod) - (size / 2.5), (size / 9) + 3);
-	ctx.stroke();
+	// ctx.beginPath();
+	// ctx.moveTo(13 * mod + 2, (size / 9) + 4);
+	// ctx.lineTo( (13 * mod) - (size / 2.5), (size / 9) + 3);
+	// ctx.stroke();
 	
-	ctx.strokeStyle = "#bbb";
-	ctx.lineWidth = "2";
-	ctx.beginPath();
-	ctx.moveTo(12, 11);
-	ctx.arcTo(5, 11, 5, 30, 7);
-	ctx.stroke();
+	// ctx.strokeStyle = "#bbb";
+	// ctx.lineWidth = "2";
+	// ctx.beginPath();
+	// ctx.moveTo(12, 11);
+	// ctx.arcTo(5, 11, 5, 30, 7);
+	// ctx.stroke();
 	
 	
 	
@@ -431,27 +431,27 @@ function drawOrange(ctx, x, y, size) {
 	ctx.fill();
 	ctx.closePath();
 
-	ctx.fillStyle = "black";
-	ctx.beginPath();
-	ctx.arc(size / 2, size / 6, (size / 7), Math.PI * 2, -Math.PI * 2, true);
-	ctx.fill();
-	ctx.closePath();
+	// ctx.fillStyle = "black";
+	// ctx.beginPath();
+	// ctx.arc(size / 2, size / 6, (size / 7), Math.PI * 2, -Math.PI * 2, true);
+	// ctx.fill();
+	// ctx.closePath();
 
-	var mod = size / 23;
-	ctx.strokeStyle = "#24da1c";
-	ctx.lineWidth = 2.5;
-	ctx.beginPath();
-	ctx.moveTo(size / 2, size / 3);
-	ctx.lineTo(size / 2, size / 8);
-	ctx.lineTo(9 * mod, size / 9);
-	ctx.stroke();
+	// var mod = size / 23;
+	// ctx.strokeStyle = "#24da1c";
+	// ctx.lineWidth = 2.5;
+	// ctx.beginPath();
+	// ctx.moveTo(size / 2, size / 3);
+	// ctx.lineTo(size / 2, size / 8);
+	// ctx.lineTo(9 * mod, size / 9);
+	// ctx.stroke();
 	
-	ctx.beginPath();
-	ctx.moveTo(9 * mod, (size / 9));
-	ctx.lineTo( (9 * mod) + (size / 3), (size / 9) - 2);
-	ctx.stroke();
+	// ctx.beginPath();
+	// ctx.moveTo(9 * mod, (size / 9));
+	// ctx.lineTo( (9 * mod) + (size / 3), (size / 9) - 2);
+	// ctx.stroke();
 	
-	ctx.closePath();
+	// ctx.closePath();
 }
 
 function drawStrawberry(ctx, x, y, size) { 
@@ -469,35 +469,35 @@ function drawStrawberry(ctx, x, y, size) {
 	ctx.fill();
 	ctx.closePath();
 
-	ctx.fillStyle = "white";
+	// ctx.fillStyle = "white";
 
-	ctx.fillRect(size / 4, size / 3, size / 18, size / 16)
-	ctx.fillRect(size / 2, size / 4, size / 18, size / 16)
-	ctx.fillRect(size - size / 3.5, size / 2.4, size / 18, size / 16)
-	ctx.fillRect(size - size / 2.2, size / 2, size / 18, size / 16)
-	ctx.fillRect(size / 2.6, size / 1.3, size / 18, size / 16)
-	ctx.fillRect(size / 3, size / 1.8, size / 18, size / 16)
-	ctx.fillRect(size / 1.6, size / 1.4, size / 18, size / 16)
+	// ctx.fillRect(size / 4, size / 3, size / 18, size / 16)
+	// ctx.fillRect(size / 2, size / 4, size / 18, size / 16)
+	// ctx.fillRect(size - size / 3.5, size / 2.4, size / 18, size / 16)
+	// ctx.fillRect(size - size / 2.2, size / 2, size / 18, size / 16)
+	// ctx.fillRect(size / 2.6, size / 1.3, size / 18, size / 16)
+	// ctx.fillRect(size / 3, size / 1.8, size / 18, size / 16)
+	// ctx.fillRect(size / 1.6, size / 1.4, size / 18, size / 16)
 
-	ctx.beginPath();
-	ctx.fillStyle = "#24DA1D";
+	// ctx.beginPath();
+	// ctx.fillStyle = "#24DA1D";
 
-	var mod = size / 23;
-	ctx.moveTo(6 * mod, 2 * mod);
-	ctx.lineTo(1 * mod, 8 * mod);
-	ctx.lineTo(6 * mod, 6 * mod);
-	ctx.lineTo(11 * mod, 11 * mod);
-	ctx.lineTo(16 * mod, 6 * mod);
-	ctx.lineTo(21 * mod, 8 * mod);
-	ctx.lineTo(17 * mod, 2 * mod);
+	// var mod = size / 23;
+	// ctx.moveTo(6 * mod, 2 * mod);
+	// ctx.lineTo(1 * mod, 8 * mod);
+	// ctx.lineTo(6 * mod, 6 * mod);
+	// ctx.lineTo(11 * mod, 11 * mod);
+	// ctx.lineTo(16 * mod, 6 * mod);
+	// ctx.lineTo(21 * mod, 8 * mod);
+	// ctx.lineTo(17 * mod, 2 * mod);
 
-	ctx.moveTo(size / 2, 2 * mod);
-	ctx.lineTo(8 * mod, 0 * mod);
-	ctx.lineTo(15 * mod, 0 * mod);
-	ctx.lineTo(size / 2, 2 * mod);
+	// ctx.moveTo(size / 2, 2 * mod);
+	// ctx.lineTo(8 * mod, 0 * mod);
+	// ctx.lineTo(15 * mod, 0 * mod);
+	// ctx.lineTo(size / 2, 2 * mod);
 	
-	ctx.fill();
-	ctx.closePath();
+	// ctx.fill();
+	// ctx.closePath();
 }
 function drawCherry(ctx, x, y, size) {  
 	
@@ -512,28 +512,28 @@ function drawCherry(ctx, x, y, size) {
 	ctx.fill();
 	ctx.closePath();
 
-	ctx.beginPath();
-	ctx.fillStyle = "#670303";
+	// ctx.beginPath();
+	// ctx.fillStyle = "#670303";
 
-	ctx.arc(size / 7.2, size - (size / 2.25), size / 14, Math.PI * 2, -Math.PI * 2, true);
-	ctx.arc(size - size / 3, size - (size / 3), size / 14, Math.PI * 2, -Math.PI * 2, true);
+	// ctx.arc(size / 7.2, size - (size / 2.25), size / 14, Math.PI * 2, -Math.PI * 2, true);
+	// ctx.arc(size - size / 3, size - (size / 3), size / 14, Math.PI * 2, -Math.PI * 2, true);
 
-	ctx.fill();
-	ctx.closePath();
+	// ctx.fill();
+	// ctx.closePath();
 
-	ctx.beginPath();
-	ctx.strokeStyle = "#959817";
-	ctx.lineWidth = 2;
+	// ctx.beginPath();
+	// ctx.strokeStyle = "#959817";
+	// ctx.lineWidth = 2;
 
-	ctx.moveTo(size / 8, size - (size / 2));
-	ctx.bezierCurveTo(size / 6, size / 1.5, size / 7, size / 4, size - size / 4, size / 8);
-	ctx.moveTo(size - size / 2.5, size - size / 3);
-	ctx.bezierCurveTo(size / 1.3, size / 1.5, size / 3, size / 2.5, size - size / 4, size / 8);
+	// ctx.moveTo(size / 8, size - (size / 2));
+	// ctx.bezierCurveTo(size / 6, size / 1.5, size / 7, size / 4, size - size / 4, size / 8);
+	// ctx.moveTo(size - size / 2.5, size - size / 3);
+	// ctx.bezierCurveTo(size / 1.3, size / 1.5, size / 3, size / 2.5, size - size / 4, size / 8);
 
-	ctx.stroke();
-	ctx.closePath();
+	// ctx.stroke();
+	// ctx.closePath();
 
-	ctx.fillStyle = "#959817";
-	ctx.fillRect(size - size / 3, size / 12, size / 9, size / 9);
-	ctx.closePath();
+	// ctx.fillStyle = "#959817";
+	// ctx.fillRect(size - size / 3, size / 12, size / 9, size / 9);
+	// ctx.closePath();
 }

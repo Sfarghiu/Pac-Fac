@@ -1583,12 +1583,6 @@ function drawBubbles() {
 	 ctx.closePath();
 
 	 BUBBLES_ARRAY.push( parseInt(correctionX(390, 219)) + "," + parseInt(180) + ";" + 4 + ";" + 219 + ";" + "b" + ";0" );
-
-	 
-	 
-
-
-	 
 	 
 
 	// //add 2K
@@ -1629,7 +1623,7 @@ function drawBubbles() {
 
 	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 162)) + "," + parseInt(520) + ";" + 1 + ";" + 162 + ";" + "s" + ";0" );
 
-	 BUBBLES_COUNTER = 163;
+	 BUBBLES_COUNTER = 220;
 	 
 
 
