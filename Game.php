@@ -14,7 +14,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" type="text/css" href="GameStyle.css">
+	<link rel="stylesheet" type="text/css" href="css/GameStyle.css">
 	<link rel="stylesheet" type="text/css" href="css/pacman.css" />
 	<link rel="stylesheet" type="text/css" href="css/pacman-home.css" />
 
@@ -112,41 +112,6 @@
 				
 				initHome();
 				
-				// $(".sound").click(function(e) { 
-				// 	e.stopPropagation();
-					
-				// 	var sound = $(this).attr("data-sound");
-				// 	if ( sound === "on" ) { 
-				// 		$(".sound").attr("data-sound", "off");
-				// 		$(".sound").find("img").attr("src", "img/sound-off.png");
-				// 		GROUP_SOUND.mute();
-				// 	} else { 
-				// 		$(".sound").attr("data-sound", "on");
-				// 		$(".sound").find("img").attr("src", "img/sound-on.png");
-				// 		GROUP_SOUND.unmute();
-				// 	}
-				// });
-				
-				// $(".help-button, #help").click(function(e) { 
-				// 	e.stopPropagation();
-				// 	if (!PACMAN_DEAD && !LOCK && !GAMEOVER) { 
-				// 		if ( $('#help').css("display") === "none") { 
-				// 			$('#help').fadeIn("slow");
-				// 			$(".help-button").hide();
-				// 			if ( $("#panel").css("display") !== "none") { 
-				// 				pauseGame();
-				// 			}
-				// 		} else { 
-				// 			$('#help').fadeOut("slow");
-				// 			$(".help-button").show();
-				// 		}
-				// 	}
-				// });
-				
-				// $(".github").click(function(e) { 
-				// 	e.stopPropagation();
-				// });
-				
 				$("#home").on("click touchstart", function(e) { 
 					if ( $('#help').css("display") === "none") { 
 						e.preventDefault();
@@ -232,38 +197,12 @@
 </head>
 
 <body>
-<!--<script>
-window.onload = function() {
-    var c = document.getElementById("playerIcon");
-    var ctx = c.getContext("2d");
-    var img = new Image();
-    img.src="<?php //echo $pathimage1?>";
-    ctx.drawImage(img, 1, 1, 300, 150);
-}
-</script>-->
+
 	<div class="header">
-		<img id="fii" src="fii.png" alt="Fii" height="100" width="100">
+		<img id="fii" src="img/fii.png" alt="Fii" height="100" width="100">
 	</div>
 
 	<!-- Game -->
-
-	<!--<div id="sound"></div>
-	
-		<div id="help">
-			<h2>Help</h2>
-			<table align="center" border="0" cellPadding="2" cellSpacing="0">
-				<tbody>
-					<tr><td>Arrow Left : </td><td>Move Left</td></tr>
-					<tr><td>Arrow Right : </td><td>Move Right</td></tr>
-					<tr><td>Arrow Down : </td><td>Move Down</td></tr>
-					<tr><td>Arrow Up : </td><td>Move Up</td></tr>
-					<tr><td colspan="2">&nbsp;</td></tr>
-					<tr><td>P : </td><td>PAUSE</td></tr>
-				</tbody>
-			</table>
-		</div>-->
-
-	
 
 	<div class="col-4 ">
 
@@ -300,7 +239,7 @@ window.onload = function() {
 			<p> For more information about how Pac-Fac came to be, click the memory pill: </p>
 			<div>
 				<a href="http://localhost:8181/Pac-Fac/Description.php">
-					<img id="pill" src="pill.jpg" alt="Memory Pill" height="50" width="50">
+					<img id="pill" src="img/pill.jpg" alt="Memory Pill" height="50" width="50">
 				</a>
 			</div>
 		</div>
@@ -308,32 +247,22 @@ window.onload = function() {
 
 	</div>
 		<div class="col-4 col-m-12 ">
-
-		<!--<div id="game_title"> Pac-Fac </div>
-		<canvas id="game">
-		</canvas>-->
 		<div id="home"><br><br><br>
 			<h1>pac-fac</h1>
-			<!--<h3>Lucio PANEPINTO<br><em>2015</em></h3>-->
 			<canvas id="canvas-home-title-pacman"></canvas>
 			<div id="presentation">
-				<!--<div id="presentation-titles">character &nbsp;/&nbsp; nickname</div>-->
 				<canvas id="canvas-presentation-blinky"></canvas><div id="presentation-character-blinky">- busaco</div><div id="presentation-name-blinky">"blinky"</div>
 				<canvas id="canvas-presentation-pinky"></canvas><div id="presentation-character-pinky">- radu</div><div id="presentation-name-pinky">"pinky"</div>
 				<canvas id="canvas-presentation-inky"></canvas><div id="presentation-character-inky">- tuplea</div><div id="presentation-name-inky">"inky"</div>
 				<canvas id="canvas-presentation-clyde"></canvas><div id="presentation-character-clyde">- ifte</div><div id="presentation-name-clyde">"clyde"</div>
 			</div>
-			<!--<canvas id="trailer"></canvas>
-			<div class="help-button">- help -</div>
-			<a class="sound" href="javascript:void(0);" data-sound="on"><img src="img/sound-on.png" alt="" border="0"></a>
-			<a class="github" target="_blank" href="https://github.com/luciopanepinto/pacman"><img src="img/github.png" alt="GitHub - Lucio PANEPINTO - Pac-Man"></a>-->
 		</div>
 
-		<img id="head" src="pac-man.PNG">
-		<img id="busaco" src="buraga.png">
-		<img id="tuplea" src="tuplea.png">
-		<img id="radulescu" src="radulescu.png">
-		<img id="iftene" src="iftene.png">
+		<img id="head" src="img/pac-man.PNG">
+		<img id="busaco" src="img/buraga.png">
+		<img id="tuplea" src="img/tuplea.png">
+		<img id="radulescu" src="img/radulescu.png">
+		<img id="iftene" src="img/iftene.png">
 	
 		<div id="panel">
 			<h1>pac-fac</h1>
@@ -364,8 +293,6 @@ window.onload = function() {
 			<canvas id="canvas-lifes"></canvas>
 			<canvas id="canvas-level-fruits"></canvas>
 			<div id="message"></div>
-			<!--<div class="help-button">- help -</div>-->
-			<!--<a class="sound" href="javascript:void(0);" data-sound="on"><img src="img/sound-on.png" alt="" border="0"></a>-->
 		</div>
 	</div>
 	<!-- Game -->
@@ -378,10 +305,7 @@ window.onload = function() {
 			<?php echo $userName?> 
 		</div>
 		<img src="<?php echo $playerIcon?>" id="playerIcon">
-		<!--<canvas id="playerIcon">
-		</canvas>-->
 		
-
 		<br>
 		<div class="logout">
 			<button onclick="checkLoginState();">Logout</button>

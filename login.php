@@ -7,7 +7,7 @@ session_start();
 <head>
 <meta name="viewport" content="width=device-width" />
   <title>Login Page</title>
-  <link rel="stylesheet" type="text/css" href="login_style.css">
+  <link rel="stylesheet" type="text/css" href="css/login_style.css">
 </head>
 
 <body>

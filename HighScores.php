@@ -9,7 +9,7 @@
 
 <head>
 	<title> HighScores </title>
-	<link rel = "stylesheet" type = "text/css" href = "StyleVladut.css">
+	<link rel = "stylesheet" type = "text/css" href = "css/StyleVladut.css">
 	<meta name="viewport" content="width=device-width" />
 </head>
 <body>

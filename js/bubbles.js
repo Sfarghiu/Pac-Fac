@@ -63,7 +63,7 @@ function drawBubbles() {
 	// 	}
 	// }
 
-	// //add Heinz
+	// //add small bubble
 
 	 ctx.beginPath();
 	 ctx.arc(correctionX(40, 1), 20, 3, 0, 2 * Math.PI, false);
@@ -1585,7 +1585,7 @@ function drawBubbles() {
 	 BUBBLES_ARRAY.push( parseInt(correctionX(390, 219)) + "," + parseInt(180) + ";" + 4 + ";" + 219 + ";" + "b" + ";0" );
 	 
 
-	// //add 2K
+	//add big bubble
 
 	 ctx.beginPath();
 	 ctx.arc(correctionX(15, 9), 70, 8, 0, 2 * Math.PI, false);
@@ -1623,7 +1623,7 @@ function drawBubbles() {
 
 	 BUBBLES_ARRAY.push( parseInt(correctionX(480, 162)) + "," + parseInt(520) + ";" + 1 + ";" + 162 + ";" + "s" + ";0" );
 
-	 BUBBLES_COUNTER = 220;
+	 BUBBLES_COUNTER = 214;
 	 
 
 

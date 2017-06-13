@@ -1,0 +1,256 @@
+* {
+	box-sizing: border-box;
+}
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+}
+html {
+	font-family: Consolas;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+	width: 100%;
+}
+
+body{
+	background-color:#12264f;
+}
+
+div.col-12,div.col-m-12{
+	text-align:center;
+	color:gold;
+}
+
+button{
+	padding: 8px 8px;
+	position:center;
+	font-size: 16px;
+	cursor: pointer;
+	color: #12264f;
+	background-color: gold;
+	border-style: solid;
+	border-color: #12264f;
+	border-width: 2px;
+	border-radius: 30px;
+	text-decoration: none;
+	width:150px;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+}
+
+button:hover {
+	background-color: gold;
+	border-color: gold;
+	color: #847CB6;
+	box-shadow: 0px 0px 10px #847CB6;
+}
+
+button:active {
+	background-color: #12264f;
+	color: gold;
+	transform: translateY(3px);
+}
+
+div.pac-fac{
+	font-size:20px;	
+}
+div.but{
+	float:right;
+	margin:10px;
+}
+
+div.description{
+	font-size:16px;
+}
+
+div.urla{
+	font-size:20px;
+}
+
+#pacman{
+	display: block;
+	margin: 0 auto;
+	height:80px;
+	margin-top:-20px;
+}
+#fii{
+	height:50px;
+	width:50px;
+	display: inline-block;
+}
+
+
+
+@media only screen and (min-width: 480px){
+	
+	/* For tablets: */
+	.col-m-1 {width: 8.33%;}
+	.col-m-2 {width: 16.66%;}
+	.col-m-3 {width: 25%;}
+	.col-m-4 {width: 33.33%;}
+	.col-m-5 {width: 41.66%;}
+	.col-m-6 {width: 50%;}
+	.col-m-7 {width: 58.33%;}
+	.col-m-8 {width: 66.66%;}
+	.col-m-9 {width: 75%;}
+	.col-m-10 {width: 83.33%;}
+	.col-m-11 {width: 91.66%;}
+	.col-m-12 {width: 100%;}
+
+	div.pac-fac{
+		font-size: 26px;
+	}
+
+	div.description{	
+		font-size: 20px;	
+	}
+
+	div.urla{
+		font-size: 26px;
+	}
+
+	button{
+		font-size: 20px;
+		width:200px;
+	}
+
+	#fii{  
+		height:70px;
+		width:70px;
+	}
+
+
+	#pacman{
+		height:100px;
+		margin-top:-20px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+
+	/* For desktop: */
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	
+	div.pac-fac{
+		font-size:65px;
+	}
+
+	div.description{	
+		font-size: 26px;	
+	}
+
+	div.urla{
+		font-size:65px;
+	}
+
+	button{
+		font-size: 26px;
+		width:300px;
+	}
+
+	#fii{
+		
+		height:100px;
+		width:100px;
+	}
+
+
+	#pacman{
+		height:200px;
+		margin-top:-50px;
+	}
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+
+}
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+
+}
+
+.popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 30%;
+	position: relative;
+	transition: all 5s ease-in-out;
+	background-color:gold;
+}
+
+.popup h1 {
+	margin-top: 0;
+	color: navy;
+	font-family: Consolas;
+	margin-bottom:50px;
+	margin-top:15px;
+}
+.popup .close {
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: navy;
+}
+.popup .close:hover {
+	color: gold;
+}
+.popup .content {
+
+	max-height: 40%;
+	overflow: auto;
+	color:navy;
+	text-align:center;
+	display:inline-block;
+	background-color:gold;
+	
+}
+
+@media screen and (max-width: 700px){
+	.box{
+		width: 70%;
+	}
+	.popup{
+		width: 70%;
+	}
+	.popupall{
+		width:70%;
+	}
+}
+
+
+
+

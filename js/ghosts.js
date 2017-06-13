@@ -74,31 +74,31 @@ var GHOST_EAT_TIME = 5500;
 var GHOST_BODY_STATE_MAX = 6;
 
 var busaco=new Image();
-busaco.src="buraga_small.png";
+busaco.src="img/buraga_small.png";
 var radu=new Image();
-radu.src="radulescu_small.png";
+radu.src="img/radulescu_small.png";
 var tuplea=new Image();
-tuplea.src="tuplea_small.png";
+tuplea.src="img/tuplea_small.png";
 var ifte=new Image();
-ifte.src="iftene_small.png";
+ifte.src="img/iftene_small.png";
 
 var busaco_afraid=new Image();
-busaco_afraid.src="buraga_afraid.png";
+busaco_afraid.src="img/buraga_afraid.png";
 var radu_afraid=new Image();
-radu_afraid.src="radulescu_afraid.png";
+radu_afraid.src="img/radulescu_afraid.png";
 var tuplea_afraid=new Image();
-tuplea_afraid.src="tuplea_afraid.png";
+tuplea_afraid.src="img/tuplea_afraid.png";
 var ifte_afraid=new Image();
-ifte_afraid.src="iftene_afraid.png";
+ifte_afraid.src="img/iftene_afraid.png";
 
 var busaco_eaten=new Image();
-busaco_eaten.src="buraga_eaten.png";
+busaco_eaten.src="img/buraga_eaten.png";
 var radu_eaten=new Image();
-radu_eaten.src="radulescu_eaten.png";
+radu_eaten.src="img/radulescu_eaten.png";
 var tuplea_eaten=new Image();
-tuplea_eaten.src="tuplea_eaten.png";
+tuplea_eaten.src="img/tuplea_eaten.png";
 var ifte_eaten=new Image();
-ifte_eaten.src="iftene_eaten.png";
+ifte_eaten.src="img/iftene_eaten.png";
 
 function initGhosts() { 
 	initGhost('busaco');
