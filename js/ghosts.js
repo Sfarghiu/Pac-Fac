@@ -118,7 +118,7 @@ function resetGhosts() {
 	stopGhosts();
 
 	GHOST_BUSACO_POSITION_X = 490;
-    GHOST_BUSACO_POSITION_Y = 20;
+	GHOST_BUSACO_POSITION_Y = 20;
 
 	GHOST_BUSACO_DIRECTION = 1;
 	GHOST_BUSACO_MOVING_TIMER = -1;
@@ -182,48 +182,17 @@ function drawGhost(ghost) {
 		ctx.drawImage(eval(ghost), eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X-17'),eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y-8'),35,40);
 	} else { 
 		if (eval('GHOST_' + ghost.toUpperCase() + '_AFFRAID_STATE === 1')) { 
-			//ctx.drawImage(eval(ghost+'_afraid'), eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X-17'),eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y-8'),35,40);
 		} else 
 		if(eval('GHOST_' + ghost.toUpperCase() + '_STATE===-1')){
-		ctx.drawImage(eval(ghost+'_eaten'), eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X-17'),eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y-8'),35,40);
-	}
+			ctx.drawImage(eval(ghost+'_eaten'), eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X-17'),eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y-8'),35,40);
+		}
 		else { 
-			//eval('ctx.fillStyle = GHOST_AFFRAID_COLOR');
 			ctx.drawImage(eval(ghost+'_afraid'), eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X-17'),eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y-8'),35,40);
 		}
 	}
 	
-	//eval('drawHelperGhost(ctx, GHOST_' + ghost.toUpperCase() + '_POSITION_X, GHOST_' + ghost.toUpperCase() + '_POSITION_Y, GHOST_' + ghost.toUpperCase() + '_DIRECTION, GHOST_' + ghost.toUpperCase() + '_BODY_STATE, GHOST_' + ghost.toUpperCase() + '_STATE, GHOST_' + ghost.toUpperCase() + '_AFFRAID_STATE)');
-	
-	//ctx.closePath();
-	//var img = document.getElementById(prof);
-    //ctx.drawImage(img, prof.toUpperCase()+'_X',prof.toUpperCase()+'_Y',45,43);
-    eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X');
-    var y=eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y');
-    //console.log(GHOST_BUSACO_POSITION_X);
-    //ctx.drawImage(eval(ghost), eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X'),y,50,45);
-    //GHOST_BUSACO_POSITION_X= eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X+=1');
-    //GHOST_BUSACO_POSITION_Y= eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y+=1');
-     /*ctx.drawImage(busaco, eval('GHOST_BUSACO_POSITION_X'),eval('GHOST_BUSACO_POSITION_Y'),50,45);
-      ctx.drawImage(radu, eval('GHOST_RADU_POSITION_X'),eval('GHOST_RADU_POSITION_Y'),50,45);
-       ctx.drawImage(tuplea, eval('GHOST_TUPLEA_POSITION_X'),eval('GHOST_TUPLEA_POSITION_Y'),50,45);
-        ctx.drawImage(ifte, eval('GHOST_IFTE_POSITION_X'),eval('GHOST_IFTE_POSITION_Y'),50,45);*/
-        //ctx.drawImage(eval(ghost), eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X'),eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y'),35,40);
-     //console.log(GHOST_BUSACO_POSITION_X);
-    /*eraseGhost(ghost);
-    ctx.drawImage(eval(ghost), x+2,y,50,45);
-    eraseGhost(ghost);
-    ctx.drawImage(eval(ghost), x+3,y,50,45);
-    eraseGhost(ghost);
-    ctx.drawImage(eval(ghost), x+4,y,50,45);
-     eraseGhost(ghost);
-    ctx.drawImage(eval(ghost), x+5,y,50,45);
-*/
-     
-
-
-
-	
+	eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X');
+	var y=eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y');
 	
 }
 
@@ -264,20 +233,20 @@ function cancelAffraidGhost(ghost) {
 function testStateGhosts() { 
 
 	if ( GHOST_BUSACO_STATE === 1 ||  
-		 GHOST_RADU_STATE === 1 ||  
-		 GHOST_TUPLEA_STATE === 1 ||  
-		 GHOST_IFTE_STATE === 1 
-	) { 
+		GHOST_RADU_STATE === 1 ||  
+		GHOST_TUPLEA_STATE === 1 ||  
+		GHOST_IFTE_STATE === 1 
+		) { 
 		playWazaSound();
-	} else if ( GHOST_BUSACO_STATE === -1 ||  
-		 GHOST_RADU_STATE === -1 ||  
-		 GHOST_TUPLEA_STATE === -1 ||  
-		 GHOST_IFTE_STATE === -1 
+} else if ( GHOST_BUSACO_STATE === -1 ||  
+	GHOST_RADU_STATE === -1 ||  
+	GHOST_TUPLEA_STATE === -1 ||  
+	GHOST_IFTE_STATE === -1 
 	) { 
-		playGhostEatenSound();		
-	} else { 
-		playSirenSound();
-	}
+	playGhostEatenSound();		
+} else { 
+	playSirenSound();
+}
 }
 
 function startEatGhost(ghost) { 
@@ -350,7 +319,7 @@ function moveGhost(ghost) {
 		}
 		eval('GHOST_' + ghost.toUpperCase() + '_MOVING_TIMER = setInterval("moveGhost(\'' + ghost + '\')", ' + speed + ');');
 	} else { 
-	
+		
 		changeDirection(ghost);
 		
 		if ( eval('GHOST_' + ghost.toUpperCase() + '_AFFRAID_TIMER !== null')) { 
@@ -364,13 +333,13 @@ function moveGhost(ghost) {
 		
 		if (canMoveGhost(ghost)) { 
 			eraseGhost(ghost);
-						
+			
 			if (eval('GHOST_' + ghost.toUpperCase() + '_BODY_STATE < GHOST_BODY_STATE_MAX')) { 
 				eval('GHOST_' + ghost.toUpperCase() + '_BODY_STATE ++;');
 			} else { 
 				eval('GHOST_' + ghost.toUpperCase() + '_BODY_STATE = 0;');
 			}
-						
+			
 			if ( eval('GHOST_' + ghost.toUpperCase() + '_DIRECTION === 1') ) { 
 				eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X += GHOST_POSITION_STEP;');
 			} else if ( eval('GHOST_' + ghost.toUpperCase() + '_DIRECTION === 2') ) { 
@@ -439,7 +408,7 @@ function changeDirection(ghost) {
 			var pacmanY = PACMAN_POSITION_Y;
 			var axe = oneAxe();
 			if (ghost === "blinky") { 
-			
+				
 				var nothing = whatsYourProblem();
 				if (nothing < 6) { 
 					tryDirection = getRightDirection(axe, ghostX, ghostY, pacmanX, pacmanY);
@@ -451,10 +420,10 @@ function changeDirection(ghost) {
 				}
 				
 			} else if (ghost === "radu") { 
-			
+				
 				var nothing = whatsYourProblem();
 				if (nothing < 3) { 
-				
+					
 					tryDirection = getRightDirection(axe, ghostX, ghostY, pacmanX, pacmanY);
 					if ( !(canMoveGhost(ghost, tryDirection) && (direction != tryDirection -2 && direction != tryDirection + 2)) ) { 
 						axe ++;
@@ -483,7 +452,7 @@ function changeDirection(ghost) {
 		var axe = oneAxe();
 		tryDirection = getRightDirectionForHome(axe, ghostX, ghostY);
 		if (canMoveGhost(ghost, tryDirection) && (direction != tryDirection -2 && direction != tryDirection + 2)) { 
-		
+			
 		} else { 
 			axe ++;
 			if (axe > 2) axe = 1; 
@@ -507,13 +476,13 @@ function getRightDirectionForHome(axe, ghostX, ghostY) {
 	} else { 
 		if (axe === 1) { 
 			if (ghostX > homeX) { 
-			 return 3;
+				return 3;
 			} else { 
 				return 1;
 			}
 		} else { 
 			if (ghostY > homeY) { 
-			 return 4;
+				return 4;
 			} else { 
 				return 2;
 			}
@@ -523,13 +492,13 @@ function getRightDirectionForHome(axe, ghostX, ghostY) {
 function getRightDirection(axe, ghostX, ghostY, pacmanX, pacmanY) { 
 	if (axe === 1) { 
 		if (ghostX > pacmanX) { 
-		 return 3;
+			return 3;
 		} else { 
 			return 1;
 		}
 	} else { 
 		if (ghostY > pacmanY) { 
-		 return 4;
+			return 4;
 		} else { 
 			return 2;
 		}
@@ -575,9 +544,9 @@ function canMoveGhost(ghost, direction) {
 	}
 	
 	for (var i = 0, imax = PATHS.length; i < imax; i ++) { 
-	
+		
 		var p = PATHS[i];
-	
+		
 		var startX = p.split("-")[0].split(",")[0];
 		var startY = p.split("-")[0].split(",")[1];
 		var endX = p.split("-")[1].split(",")[0];
@@ -665,114 +634,3 @@ function resumeGhosts() {
 	resumeGhost('ifte');
 }
 
-function drawHelperGhost(ctx, x, y, d, b, s, a) { 
-	
-	if (s != -1) { 
-		ctx.beginPath();
-		ctx.moveTo((x - 15), (y + 16));
-		ctx.lineTo((x - 15), (y + 16) - 18);
-		ctx.bezierCurveTo((x - 15), (y + 16) - 26, (x - 15) + 6, (y + 16) - 32, (x - 15) + 14, (y + 16) - 32);
-		ctx.bezierCurveTo((x - 15) + 22, (y + 16) - 32, (x - 15) + 28, (y + 16) - 26, (x - 15) + 28, (y + 16) - 18);
-		ctx.lineTo((x - 15) + 28, (y + 16));
-		if (b < 4) { 
-			ctx.lineTo((x - 15) + 23.333, (y + 16) - 5.333);
-			ctx.lineTo((x - 15) + 18.666, (y + 16));
-			ctx.lineTo((x - 15) + 14, (y + 16) - 5.333);
-			ctx.lineTo((x - 15) + 9.333, (y + 16));
-			ctx.lineTo((x - 15) + 4.666, (y + 16) - 5.333);
-		} else { 
-			ctx.lineTo((x - 15) + 24.333, (y + 16) - 5.333);
-			ctx.lineTo((x - 15) + 20.666, (y + 16));
-			ctx.lineTo((x - 15) + 17.333, (y + 16) - 5.333);
-			ctx.lineTo((x - 15) + 12.666, (y + 16));
-			ctx.lineTo((x - 15) + 9, (y + 16) - 5.333);
-			ctx.lineTo((x - 15) + 5.333, (y + 16));
-			ctx.lineTo((x - 15) + 2.666, (y + 16) - 5.333);
-		}
-		ctx.lineTo((x - 15), (y + 16) );
-		ctx.fill();
-	}
-
-	var eyesX = 0;
-	var eyesY = 0;
-	
-	if (d === 4) { 
-		eyesY = -5;
-	} else if (d === 1) { 
-		eyesX = +2;
-	} else if (d === 2) { 
-		eyesY = 0;
-		eyesY = +5;
-	} else if (d === 3) { 
-		eyesX = -3;
-	}
-
-	if (s === 0 || s === -1) { 
-		ctx.fillStyle = "white";
-		ctx.beginPath();
-		ctx.moveTo((x - 15) + 8 + eyesX, (y + 16) - 24 + eyesY);
-		ctx.bezierCurveTo((x - 15) + 5 + eyesX, (y + 16) - 24 + eyesY, (x - 15) + 4 + eyesX, (y + 16) - 21 + eyesY, (x - 15) + 4 + eyesX, (y + 16) - 19 + eyesY);
-		ctx.bezierCurveTo((x - 15) + 4 + eyesX, (y + 16) - 17 + eyesY, (x - 15) + 5 + eyesX, (y + 16) - 14 + eyesY, (x - 15) + 8 + eyesX, (y + 16) - 14 + eyesY);
-		ctx.bezierCurveTo((x - 15) + 11 + eyesX, (y + 16) - 14 + eyesY, (x - 15) + 12 + eyesX, (y + 16) - 17 + eyesY, (x - 15) + 12 + eyesX, (y + 16) - 19 + eyesY);
-		ctx.bezierCurveTo((x - 15) + 12 + eyesX, (y + 16) - 21 + eyesY, (x - 15) + 11 + eyesX, (y + 16) - 24 + eyesY, (x - 15) + 8 + eyesX, (y + 16) - 24 + eyesY);
-		
-		ctx.moveTo((x - 15) + 20 + eyesX, (y + 16) - 24 + eyesY);
-		ctx.bezierCurveTo((x - 15) + 17 + eyesX, (y + 16) - 24 + eyesY, (x - 15) + 16 + eyesX, (y + 16) - 21 + eyesY, (x - 15) + 16 + eyesX, (y + 16) - 19 + eyesY);
-		ctx.bezierCurveTo((x - 15) + 16 + eyesX, (y + 16) - 17 + eyesY, (x - 15) + 17 + eyesX, (y + 16) - 14 + eyesY, (x - 15) + 20 + eyesX, (y + 16) - 14 + eyesY);
-		ctx.bezierCurveTo((x - 15) + 23 + eyesX, (y + 16) - 14 + eyesY, (x - 15) + 24 + eyesX, (y + 16) - 17 + eyesY, (x - 15) + 24 + eyesX, (y + 16) - 19 + eyesY);
-		ctx.bezierCurveTo((x - 15) + 24 + eyesX, (y + 16) - 21 + eyesY, (x - 15) + 23 + eyesX, (y + 16) - 24 + eyesY, (x - 15) + 20 + eyesX, (y + 16) - 24 + eyesY);
-		ctx.fill();
-		
-		if (d === 4) { 
-			eyesY = -9;
-			eyesX = 2;
-		} else if (d === 1) { 
-			eyesX = +6;
-		} else if (d === 2) { 
-			eyesY = +8;
-			eyesX = 2;
-		} else if (d === 3) { 
-			
-		}
-		
-		ctx.fillStyle = "#0000fa";
-		ctx.beginPath();
-		ctx.arc((x - 15) + 18 + eyesX, (y + 16) - 18 + eyesY, 2, 0, Math.PI * 2, true);
-		ctx.fill();
-
-		ctx.beginPath();
-		ctx.arc((x - 15) + 6 + eyesX, (y + 16) - 18 + eyesY, 2, 0, Math.PI * 2, true);
-		ctx.fill();
-	} else { 
-		if (a === 1) { 
-			ctx.fillStyle = "#ee2933";
-		} else { 
-			ctx.fillStyle = "#e5bed0";
-		}
-		ctx.beginPath();
-		ctx.arc((x - 15) + 18, (y + 13) - 17, 2, 0, Math.PI * 2, true);
-		ctx.fill();
-
-		ctx.beginPath();
-		ctx.arc((x - 15) + 10, (y + 13) - 17, 2, 0, Math.PI * 2, true);
-		ctx.fill();
-		
-		if (a === 1) { 
-			ctx.strokeStyle = "#ee2933";
-		} else { 
-			ctx.strokeStyle = "#e5bed0";
-		}
-		ctx.beginPath();
-		ctx.lineTo((x - 14.333) + 24, (y + 6));
-		
-		ctx.lineTo((x - 14.333) + 21, (y + 6) - 3);		
-		ctx.lineTo((x - 14.333) + 17, (y + 6));
-		
-		ctx.lineTo((x - 14.333) + 14, (y + 6) - 3);
-		ctx.lineTo((x - 14.333) + 10, (y + 6));
-		
-		ctx.lineTo((x - 14.333) + 7, (y + 6) - 3);
-		ctx.lineTo((x - 14.333) + 3, (y + 6));
-		ctx.stroke();
-	}
-}
