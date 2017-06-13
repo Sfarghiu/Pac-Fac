@@ -1,6 +1,11 @@
 #home,#panel{
 	top:138px;
+
 }
+html{
+	background-color:#12264f;
+}
+
 #home h1 { 
 	text-align: center;
 	font-size: 78px;

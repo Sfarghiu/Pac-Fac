@@ -202,7 +202,56 @@ window.onload = function() {
 				</tbody>
 			</table>
 		</div>-->
+
 	
+
+	<div class="col-4 ">
+
+		<div id="rulesRectangle">
+			<div class="rulesTitle">
+				<p>Rules:</p>
+			</div>
+			<div class="rules">
+				<ul>
+					<li>eat all the memory pills </li>
+					<li>avoid the evil teachers </li>
+					<li>eat piracetam to make the teachers vulnerable </li>
+					<li>eat the good grade for bonus score </li>
+				</ul>
+			</div>
+
+		</div>
+
+		<br><br>
+		<div id="controlsRectangle">
+			<div class="controlsTitle">
+				<p>Controls:</p>
+			</div>
+
+			<div class="controls">
+				<ul>
+					<li>use arrow keys to move </li>
+					<li>press 'P' to pause/resume </li>
+				</ul>
+			</div>	
+		</div>
+
+		<div class="story">
+			<p> For more information about how Pac-Fac came to be, click the memory pill: </p>
+			<div>
+				<a href="http://localhost:8181/Pac-Fac/Description.php">
+					<img id="pill" src="pill.jpg" alt="Memory Pill" height="50" width="50">
+				</a>
+			</div>
+		</div>
+
+
+	</div>
+		<div class="col-4 col-m-12 ">
+
+		<!--<div id="game_title"> Pac-Fac </div>
+		<canvas id="game">
+		</canvas>-->
 		<div id="home"><br><br><br>
 			<h1>pac-fac</h1>
 			<!--<h3>Lucio PANEPINTO<br><em>2015</em></h3>-->
@@ -258,65 +307,11 @@ window.onload = function() {
 			<!--<div class="help-button">- help -</div>-->
 			<!--<a class="sound" href="javascript:void(0);" data-sound="on"><img src="img/sound-on.png" alt="" border="0"></a>-->
 		</div>
-	
+	</div>
 	<!-- Game -->
 
-	<div class="col-4 col-m-12 mobile">
 
-		<!--<div id="game_title"> Pac-Fac </div>
-		<canvas id="game">
-		</canvas>-->
-	</div>
-
-	<div class="col-4 ">
-
-		<div id="rulesRectangle">
-			<div class="rulesTitle">
-				<p>Rules:</p>
-			</div>
-			<div class="rules">
-				<ul>
-					<li>eat all the memory pills </li>
-					<li>avoid the evil teachers </li>
-					<li>eat cheat sheets to make the teachers vulnerable </li>
-					<li>eat the good grade for bonus score </li>
-				</ul>
-			</div>
-
-		</div>
-
-		<br><br>
-		<div id="controlsRectangle">
-			<div class="controlsTitle">
-				<p>Controls:</p>
-			</div>
-
-			<div class="controls">
-				<ul>
-					<li>arrow keys to move </li>
-				</ul>
-			</div>	
-		</div>
-
-		<div class="story">
-			<p> For more information about how Pac-Fac came to be, click the memory pill: </p>
-			<div>
-				<a href="http://localhost:8181/Pac-Fac/Description.php">
-					<img id="pill" src="pill.jpg" alt="Memory Pill" height="50" width="50">
-				</a>
-			</div>
-		</div>
-
-
-	</div>
-
-	<div class="col-4 col-m-12 desktop">
-
-		<!--<div id="game_title"> Pac-Fac </div>
-		<canvas id="game">
-		</canvas>-->
-	</div>
-
+	
 
 	<div class="col-4 ">
 		<div class="player">

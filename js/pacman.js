@@ -279,10 +279,10 @@ function killingPacman() {
 }
 
 function testGhostsPacman() { 
-	testGhostPacman('blinky');
-	testGhostPacman('pinky');
-	testGhostPacman('inky');
-	testGhostPacman('clyde');
+	testGhostPacman('busaco');
+	testGhostPacman('radu');
+	testGhostPacman('tuplea');
+	testGhostPacman('ifte');
 
 }
 function testGhostPacman(ghost) { 

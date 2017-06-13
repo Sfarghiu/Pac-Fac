@@ -1,58 +1,66 @@
-var GHOST_BLINKY_CANVAS_CONTEXT = null;
-var GHOST_BLINKY_POSITION_X = 490;
-var GHOST_BLINKY_POSITION_Y = 20;
-var GHOST_BLINKY_DIRECTION = 1;
-var GHOST_BLINKY_COLOR = "#ed1b24";
-var GHOST_BLINKY_MOVING_TIMER = -1;
-var GHOST_BLINKY_MOVING = false;
-var GHOST_BLINKY_BODY_STATE = 0;
-var GHOST_BLINKY_STATE = 0;
-var GHOST_BLINKY_EAT_TIMER = null;
-var GHOST_BLINKY_AFFRAID_TIMER = null;
-var GHOST_BLINKY_AFFRAID_STATE = 0;
-var GHOST_BLINKY_TUNNEL = false;
+var GHOST_BUSACO_CANVAS_CONTEXT = null;
+//var GHOST_BUSACO_POSITION_X = 276;
+//var GHOST_BUSACO_POSITION_Y = 204;
+var GHOST_BUSACO_POSITION_X = 490;
+var GHOST_BUSACO_POSITION_Y = 20;
+var GHOST_BUSACO_DIRECTION = 1;
+var GHOST_BUSACO_COLOR = "#ed1b24";
+var GHOST_BUSACO_MOVING_TIMER = -1;
+var GHOST_BUSACO_MOVING = false;
+var GHOST_BUSACO_BODY_STATE = 0;
+var GHOST_BUSACO_STATE = 0;
+var GHOST_BUSACO_EAT_TIMER = null;
+var GHOST_BUSACO_AFFRAID_TIMER = null;
+var GHOST_BUSACO_AFFRAID_STATE = 0;
+var GHOST_BUSACO_TUNNEL = false;
 
-var GHOST_PINKY_CANVAS_CONTEXT = null;
-var GHOST_PINKY_POSITION_X = 490;
-var GHOST_PINKY_POSITION_Y = 60;
-var GHOST_PINKY_DIRECTION = 2;
-var GHOST_PINKY_COLOR = "#feaec9";
-var GHOST_PINKY_MOVING_TIMER = -1;
-var GHOST_PINKY_MOVING = false;
-var GHOST_PINKY_BODY_STATE = 1;
-var GHOST_PINKY_STATE = 0;
-var GHOST_PINKY_EAT_TIMER = null;
-var GHOST_PINKY_AFFRAID_TIMER = null;
-var GHOST_PINKY_AFFRAID_STATE = 0;
-var GHOST_PINKY_TUNNEL = false;
+var GHOST_RADU_CANVAS_CONTEXT = null;
+//var GHOST_RADU_POSITION_X = 276;
+//var GHOST_RADU_POSITION_Y = 258;
+var GHOST_RADU_POSITION_X = 490;
+var GHOST_RADU_POSITION_Y = 60;
+var GHOST_RADU_DIRECTION = 2;
+var GHOST_RADU_COLOR = "#feaec9";
+var GHOST_RADU_MOVING_TIMER = -1;
+var GHOST_RADU_MOVING = false;
+var GHOST_RADU_BODY_STATE = 1;
+var GHOST_RADU_STATE = 0;
+var GHOST_RADU_EAT_TIMER = null;
+var GHOST_RADU_AFFRAID_TIMER = null;
+var GHOST_RADU_AFFRAID_STATE = 0;
+var GHOST_RADU_TUNNEL = false;
 
-var GHOST_INKY_CANVAS_CONTEXT = null;
-var GHOST_INKY_POSITION_X = 490;
-var GHOST_INKY_POSITION_Y = 100;
-var GHOST_INKY_DIRECTION = 3;
-var GHOST_INKY_COLOR = "#4adecb";
-var GHOST_INKY_MOVING_TIMER = -1;
-var GHOST_INKY_MOVING = false;
-var GHOST_INKY_BODY_STATE = 2;
-var GHOST_INKY_STATE = 0;
-var GHOST_INKY_EAT_TIMER = null;
-var GHOST_INKY_AFFRAID_TIMER = null;
-var GHOST_INKY_AFFRAID_STATE = 0;
-var GHOST_INKY_TUNNEL = false;
+var GHOST_TUPLEA_CANVAS_CONTEXT = null;
+//var GHOST_TUPLEA_POSITION_X = 238;
+//var GHOST_TUPLEA_POSITION_Y = 258;
+var GHOST_TUPLEA_POSITION_X = 490;
+var GHOST_TUPLEA_POSITION_Y = 100;
+var GHOST_TUPLEA_DIRECTION = 3;
+var GHOST_TUPLEA_COLOR = "#4adecb";
+var GHOST_TUPLEA_MOVING_TIMER = -1;
+var GHOST_TUPLEA_MOVING = false;
+var GHOST_TUPLEA_BODY_STATE = 2;
+var GHOST_TUPLEA_STATE = 0;
+var GHOST_TUPLEA_EAT_TIMER = null;
+var GHOST_TUPLEA_AFFRAID_TIMER = null;
+var GHOST_TUPLEA_AFFRAID_STATE = 0;
+var GHOST_TUPLEA_TUNNEL = false;
 
-var GHOST_CLYDE_CANVAS_CONTEXT = null;
-var GHOST_CLYDE_POSITION_X = 490;
-var GHOST_CLYDE_POSITION_Y = 140;
-var GHOST_CLYDE_DIRECTION = 4;
-var GHOST_CLYDE_COLOR = "#f99c00";
-var GHOST_CLYDE_MOVING_TIMER = -1;
-var GHOST_CLYDE_MOVING = false;
-var GHOST_CLYDE_BODY_STATE = 3;
-var GHOST_CLYDE_STATE = 0;
-var GHOST_CLYDE_EAT_TIMER = null;
-var GHOST_CLYDE_AFFRAID_TIMER = null;
-var GHOST_CLYDE_AFFRAID_STATE = 0;
-var GHOST_CLYDE_TUNNEL = false;
+var GHOST_IFTE_CANVAS_CONTEXT = null;
+//var GHOST_IFTE_POSITION_X = 314;
+//var GHOST_IFTE_POSITION_Y = 258;
+var GHOST_IFTE_POSITION_X = 490;
+var GHOST_IFTE_POSITION_Y = 140;
+var GHOST_IFTE_DIRECTION = 4;
+var GHOST_IFTE_COLOR = "#f99c00";
+var GHOST_IFTE_MOVING_TIMER = -1;
+var GHOST_IFTE_MOVING = false;
+var GHOST_IFTE_BODY_STATE = 3;
+var GHOST_IFTE_STATE = 0;
+var GHOST_IFTE_EAT_TIMER = null;
+var GHOST_IFTE_AFFRAID_TIMER = null;
+var GHOST_IFTE_AFFRAID_STATE = 0;
+var GHOST_IFTE_TUNNEL = false;
 
 var GHOST_AFFRAID_COLOR = "#2d3eff";
 var GHOST_AFFRAID_FINISH_COLOR = "#fff";
@@ -65,14 +73,41 @@ var GHOST_AFFRAID_TIME = 8500;
 var GHOST_EAT_TIME = 5500;
 var GHOST_BODY_STATE_MAX = 6;
 
+var busaco=new Image();
+busaco.src="buraga_small.png";
+var radu=new Image();
+radu.src="radulescu_small.png";
+var tuplea=new Image();
+tuplea.src="tuplea_small.png";
+var ifte=new Image();
+ifte.src="iftene_small.png";
+
+var busaco_afraid=new Image();
+busaco_afraid.src="buraga_afraid.png";
+var radu_afraid=new Image();
+radu_afraid.src="radulescu_afraid.png";
+var tuplea_afraid=new Image();
+tuplea_afraid.src="tuplea_afraid.png";
+var ifte_afraid=new Image();
+ifte_afraid.src="iftene_afraid.png";
+
+var busaco_eaten=new Image();
+busaco_eaten.src="buraga_eaten.png";
+var radu_eaten=new Image();
+radu_eaten.src="radulescu_eaten.png";
+var tuplea_eaten=new Image();
+tuplea_eaten.src="tuplea_eaten.png";
+var ifte_eaten=new Image();
+ifte_eaten.src="iftene_eaten.png";
+
 function initGhosts() { 
-	initGhost('blinky');
-	initGhost('pinky');
-	initGhost('inky');
-	initGhost('clyde');
+	initGhost('busaco');
+	initGhost('radu');
+	initGhost('tuplea');
+	initGhost('ifte');
 }
 function initGhost(ghost) { 
-	var canvas = document.getElementById('canvas-ghost-' + ghost);
+	var canvas = document.getElementById('canvas-ghost-busaco');
 	canvas.setAttribute('width', '550');
 	canvas.setAttribute('height', '550');
 	if (canvas.getContext) { 
@@ -82,76 +117,112 @@ function initGhost(ghost) {
 function resetGhosts() { 
 	stopGhosts();
 
-	GHOST_BLINKY_POSITION_X = 490;
-	GHOST_BLINKY_POSITION_Y = 20;
-	GHOST_BLINKY_DIRECTION = 1;
-	GHOST_BLINKY_MOVING_TIMER = -1;
-	GHOST_BLINKY_MOVING = false;
-	GHOST_BLINKY_BODY_STATE = 0;
-	GHOST_BLINKY_STATE = 0;
-	GHOST_BLINKY_EAT_TIMER = null;
-	GHOST_BLINKY_AFFRAID_TIMER = null;
-	GHOST_BLINKY_AFFRAID_STATE = 0;
+	GHOST_BUSACO_POSITION_X = 490;
+    GHOST_BUSACO_POSITION_Y = 20;
 
-	GHOST_PINKY_POSITION_X = 490;
-	GHOST_PINKY_POSITION_Y = 40;
-	GHOST_PINKY_DIRECTION = 2;
-	GHOST_PINKY_MOVING_TIMER = -1;
-	GHOST_PINKY_MOVING = false;
-	GHOST_PINKY_BODY_STATE = 1;
-	GHOST_PINKY_STATE = 0;
-	GHOST_PINKY_EAT_TIMER = null;
-	GHOST_PINKY_AFFRAID_TIMER = null;
-	GHOST_PINKY_AFFRAID_STATE = 0;
+	GHOST_BUSACO_DIRECTION = 1;
+	GHOST_BUSACO_MOVING_TIMER = -1;
+	GHOST_BUSACO_MOVING = false;
+	GHOST_BUSACO_BODY_STATE = 0;
+	GHOST_BUSACO_STATE = 0;
+	GHOST_BUSACO_EAT_TIMER = null;
+	GHOST_BUSACO_AFFRAID_TIMER = null;
+	GHOST_BUSACO_AFFRAID_STATE = 0;
 
-	GHOST_INKY_POSITION_X = 490;
-	GHOST_INKY_POSITION_Y = 60;
-	GHOST_INKY_DIRECTION = 3;
-	GHOST_INKY_MOVING_TIMER = -1;
-	GHOST_INKY_MOVING = false;
-	GHOST_INKY_BODY_STATE = 2;
-	GHOST_INKY_STATE = 0;
-	GHOST_INKY_EAT_TIMER = null;
-	GHOST_INKY_AFFRAID_TIMER = null;
-	GHOST_INKY_AFFRAID_STATE = 0;
+	GHOST_RADU_POSITION_X = 490;
+	GHOST_RADU_POSITION_Y = 60;
+	GHOST_RADU_DIRECTION = 2;
+	GHOST_RADU_MOVING_TIMER = -1;
+	GHOST_RADU_MOVING = false;
+	GHOST_RADU_BODY_STATE = 1;
+	GHOST_RADU_STATE = 0;
+	GHOST_RADU_EAT_TIMER = null;
+	GHOST_RADU_AFFRAID_TIMER = null;
+	GHOST_RADU_AFFRAID_STATE = 0;
 
-	GHOST_CLYDE_POSITION_X = 490;
-	GHOST_CLYDE_POSITION_Y = 80;
-	GHOST_CLYDE_DIRECTION = 4;
-	GHOST_CLYDE_MOVING_TIMER = -1;
-	GHOST_CLYDE_MOVING = false;
-	GHOST_CLYDE_BODY_STATE = 3;
-	GHOST_CLYDE_STATE = 0;
-	GHOST_CLYDE_EAT_TIMER = null;
-	GHOST_CLYDE_AFFRAID_TIMER = null;
-	GHOST_CLYDE_AFFRAID_STATE = 0;
+	GHOST_TUPLEA_POSITION_X = 490;
+	GHOST_TUPLEA_POSITION_Y = 100;
+	GHOST_TUPLEA_DIRECTION = 3;
+	GHOST_TUPLEA_MOVING_TIMER = -1;
+	GHOST_TUPLEA_MOVING = false;
+	GHOST_TUPLEA_BODY_STATE = 2;
+	GHOST_TUPLEA_STATE = 0;
+	GHOST_TUPLEA_EAT_TIMER = null;
+	GHOST_TUPLEA_AFFRAID_TIMER = null;
+	GHOST_TUPLEA_AFFRAID_STATE = 0;
+
+	GHOST_IFTE_POSITION_X = 490;
+	GHOST_IFTE_POSITION_Y = 140;
+	GHOST_IFTE_DIRECTION = 4;
+	GHOST_IFTE_MOVING_TIMER = -1;
+	GHOST_IFTE_MOVING = false;
+	GHOST_IFTE_BODY_STATE = 3;
+	GHOST_IFTE_STATE = 0;
+	GHOST_IFTE_EAT_TIMER = null;
+	GHOST_IFTE_AFFRAID_TIMER = null;
+	GHOST_IFTE_AFFRAID_STATE = 0;
 }
 function getGhostCanevasContext(ghost) { 
 	return eval('GHOST_' + ghost.toUpperCase() + '_CANVAS_CONTEXT');
 }
 
 function drawGhosts() { 
-	drawGhost("blinky");
-	drawGhost('pinky');
-	drawGhost('inky');
-	drawGhost("clyde");
+	drawGhost("busaco");
+	drawGhost('radu');
+	drawGhost('tuplea');
+	drawGhost("ifte");
 }
 function drawGhost(ghost) { 
 
-	var ctx = getGhostCanevasContext(ghost);
+	var ctx = getGhostCanevasContext("busaco");
+	//console.log(ctx);
 	
 	if (eval('GHOST_' + ghost.toUpperCase() + '_STATE === 0')) { 
-		eval('ctx.fillStyle = GHOST_' + ghost.toUpperCase() + '_COLOR');
+		//eval('ctx.fillStyle = GHOST_' + ghost.toUpperCase() + '_COLOR');
+		ctx.drawImage(eval(ghost), eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X-17'),eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y-8'),35,40);
 	} else { 
 		if (eval('GHOST_' + ghost.toUpperCase() + '_AFFRAID_STATE === 1')) { 
-			eval('ctx.fillStyle = GHOST_AFFRAID_FINISH_COLOR');
-		} else { 
-			eval('ctx.fillStyle = GHOST_AFFRAID_COLOR');
+			//ctx.drawImage(eval(ghost+'_afraid'), eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X-17'),eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y-8'),35,40);
+		} else 
+		if(eval('GHOST_' + ghost.toUpperCase() + '_STATE===-1')){
+		ctx.drawImage(eval(ghost+'_eaten'), eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X-17'),eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y-8'),35,40);
+	}
+		else { 
+			//eval('ctx.fillStyle = GHOST_AFFRAID_COLOR');
+			ctx.drawImage(eval(ghost+'_afraid'), eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X-17'),eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y-8'),35,40);
 		}
 	}
-	eval('drawHelperGhost(ctx, GHOST_' + ghost.toUpperCase() + '_POSITION_X, GHOST_' + ghost.toUpperCase() + '_POSITION_Y, GHOST_' + ghost.toUpperCase() + '_DIRECTION, GHOST_' + ghost.toUpperCase() + '_BODY_STATE, GHOST_' + ghost.toUpperCase() + '_STATE, GHOST_' + ghost.toUpperCase() + '_AFFRAID_STATE)');
 	
-	ctx.closePath();
+	//eval('drawHelperGhost(ctx, GHOST_' + ghost.toUpperCase() + '_POSITION_X, GHOST_' + ghost.toUpperCase() + '_POSITION_Y, GHOST_' + ghost.toUpperCase() + '_DIRECTION, GHOST_' + ghost.toUpperCase() + '_BODY_STATE, GHOST_' + ghost.toUpperCase() + '_STATE, GHOST_' + ghost.toUpperCase() + '_AFFRAID_STATE)');
+	
+	//ctx.closePath();
+	//var img = document.getElementById(prof);
+    //ctx.drawImage(img, prof.toUpperCase()+'_X',prof.toUpperCase()+'_Y',45,43);
+    eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X');
+    var y=eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y');
+    //console.log(GHOST_BUSACO_POSITION_X);
+    //ctx.drawImage(eval(ghost), eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X'),y,50,45);
+    //GHOST_BUSACO_POSITION_X= eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X+=1');
+    //GHOST_BUSACO_POSITION_Y= eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y+=1');
+     /*ctx.drawImage(busaco, eval('GHOST_BUSACO_POSITION_X'),eval('GHOST_BUSACO_POSITION_Y'),50,45);
+      ctx.drawImage(radu, eval('GHOST_RADU_POSITION_X'),eval('GHOST_RADU_POSITION_Y'),50,45);
+       ctx.drawImage(tuplea, eval('GHOST_TUPLEA_POSITION_X'),eval('GHOST_TUPLEA_POSITION_Y'),50,45);
+        ctx.drawImage(ifte, eval('GHOST_IFTE_POSITION_X'),eval('GHOST_IFTE_POSITION_Y'),50,45);*/
+        //ctx.drawImage(eval(ghost), eval('GHOST_' + ghost.toUpperCase() + '_POSITION_X'),eval('GHOST_' + ghost.toUpperCase() + '_POSITION_Y'),35,40);
+     //console.log(GHOST_BUSACO_POSITION_X);
+    /*eraseGhost(ghost);
+    ctx.drawImage(eval(ghost), x+2,y,50,45);
+    eraseGhost(ghost);
+    ctx.drawImage(eval(ghost), x+3,y,50,45);
+    eraseGhost(ghost);
+    ctx.drawImage(eval(ghost), x+4,y,50,45);
+     eraseGhost(ghost);
+    ctx.drawImage(eval(ghost), x+5,y,50,45);
+*/
+     
+
+
+
 	
 	
 }
@@ -162,10 +233,10 @@ function affraidGhosts() {
 	
 	SCORE_GHOST_COMBO = 200;
 
-	affraidGhost("blinky");
-	affraidGhost("pinky");
-	affraidGhost("inky");
-	affraidGhost("clyde");
+	affraidGhost("busaco");
+	affraidGhost("radu");
+	affraidGhost("tuplea");
+	affraidGhost("ifte");
 }
 function affraidGhost(ghost) { 
 	if ( eval('GHOST_' + ghost.toUpperCase() + '_AFFRAID_TIMER !== null') ) { 
@@ -192,16 +263,16 @@ function cancelAffraidGhost(ghost) {
 }
 function testStateGhosts() { 
 
-	if ( GHOST_BLINKY_STATE === 1 ||  
-		 GHOST_PINKY_STATE === 1 ||  
-		 GHOST_INKY_STATE === 1 ||  
-		 GHOST_CLYDE_STATE === 1 
+	if ( GHOST_BUSACO_STATE === 1 ||  
+		 GHOST_RADU_STATE === 1 ||  
+		 GHOST_TUPLEA_STATE === 1 ||  
+		 GHOST_IFTE_STATE === 1 
 	) { 
 		playWazaSound();
-	} else if ( GHOST_BLINKY_STATE === -1 ||  
-		 GHOST_PINKY_STATE === -1 ||  
-		 GHOST_INKY_STATE === -1 ||  
-		 GHOST_CLYDE_STATE === -1 
+	} else if ( GHOST_BUSACO_STATE === -1 ||  
+		 GHOST_RADU_STATE === -1 ||  
+		 GHOST_TUPLEA_STATE === -1 ||  
+		 GHOST_IFTE_STATE === -1 
 	) { 
 		playGhostEatenSound();		
 	} else { 
@@ -255,10 +326,10 @@ function cancelEatGhost(ghost) {
 }
 
 function moveGhosts() { 
-	moveGhost("blinky");
-	moveGhost('pinky');
-	moveGhost('inky');
-	moveGhost("clyde");
+	moveGhost("busaco");
+	moveGhost('radu');
+	moveGhost('tuplea');
+	moveGhost("ifte");
 }
 function moveGhost(ghost) {
 
@@ -379,7 +450,7 @@ function changeDirection(ghost) {
 					}
 				}
 				
-			} else if (ghost === "pinky") { 
+			} else if (ghost === "radu") { 
 			
 				var nothing = whatsYourProblem();
 				if (nothing < 3) { 
@@ -393,7 +464,7 @@ function changeDirection(ghost) {
 					tryDirection = reverseDirection(tryDirection);
 				}
 				
-			} else if (ghost === "inky") { 
+			} else if (ghost === "tuplea") { 
 				var good = anyGoodIdea();
 				if (good < 3) { 
 					tryDirection = getRightDirection(axe, ghostX, ghostY, pacmanX, pacmanY);
@@ -473,14 +544,14 @@ function eraseGhost(ghost) {
 
 	var ctx = getGhostCanevasContext(ghost);
 	
-	eval('ctx.clearRect(GHOST_' + ghost.toUpperCase() + '_POSITION_X - 17, GHOST_' + ghost.toUpperCase() + '_POSITION_Y - 17, 34, 34)');
+	eval('ctx.clearRect(GHOST_' + ghost.toUpperCase() + '_POSITION_X-17, GHOST_' + ghost.toUpperCase() + '_POSITION_Y-8, 35, 40)');
 }
 function eraseGhosts() { 
 
-	eraseGhost('blinky');
-	eraseGhost('pinky');
-	eraseGhost('inky');
-	eraseGhost('clyde');
+	eraseGhost('busaco');
+	eraseGhost('radu');
+	eraseGhost('tuplea');
+	eraseGhost('ifte');
 }
 
 function canMoveGhost(ghost, direction) { 
@@ -553,10 +624,10 @@ function stopGhost(ghost) {
 	}
 }
 function stopGhosts() { 
-	stopGhost('blinky');
-	stopGhost('pinky');
-	stopGhost('inky');
-	stopGhost('clyde');
+	stopGhost('busaco');
+	stopGhost('radu');
+	stopGhost('tuplea');
+	stopGhost('ifte');
 }
 
 function pauseGhost(ghost) { 
@@ -573,10 +644,10 @@ function pauseGhost(ghost) {
 	}
 }
 function pauseGhosts() { 
-	pauseGhost('blinky');
-	pauseGhost('pinky');
-	pauseGhost('inky');
-	pauseGhost('clyde');
+	pauseGhost('busaco');
+	pauseGhost('radu');
+	pauseGhost('tuplea');
+	pauseGhost('ifte');
 }
 
 function resumeGhost(ghost) { 
@@ -588,10 +659,10 @@ function resumeGhost(ghost) {
 	moveGhost(ghost);
 }
 function resumeGhosts() { 
-	resumeGhost('blinky');
-	resumeGhost('pinky');
-	resumeGhost('inky');
-	resumeGhost('clyde');
+	resumeGhost('busaco');
+	resumeGhost('radu');
+	resumeGhost('tuplea');
+	resumeGhost('ifte');
 }
 
 function drawHelperGhost(ctx, x, y, d, b, s, a) { 
